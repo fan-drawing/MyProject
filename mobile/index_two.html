@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>一级页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cj.css">
+    <style>
+     .swiper-wrapper {
+        -webkit-transition-timing-function: linear;    /*之前是ease-out*/
+        -moz-transition-timing-function: linear;
+        -ms-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        transition-timing-function: linear;
+        margin: 0 auto;
+      }
+
+    </style>
+</head>
+<body style="background-color:#cd0647;">
+	<div class="Main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper clearfix">
+                 <div class="swiper-slide">
+                    <div class="a bsixe">
+                       <a class="big" href="LevelTwoZero.html"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="b bsixe">
+                        <a class="big" href="#">
+                            
+                        </a>
+                        <a href="LevelThreeOne.html" class="move a-1">建国门店</a>
+                        <a href="LevelThreeTwo.html"  class="move a-2">团结湖店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="c bsixe">
+                        <a class="big" href="#">
+                
+                        </a>
+                        <a  href="LevelThreeThree.html"  class="move c-1">金融街店</a>
+                        <a  href="LevelThreeFour.html"  class="move c-2">京粮店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="d bsixe">
+                        <a class="big" href="#">
+                
+                        </a>
+                        <a class="move d-1">霄云路店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="e bsixe">
+                        <a class="big" href="#">
+                
+                        </a>
+                        <a  href="LevelThreeFive.html"  class="move e-1">紫檀万豪店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="f bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a  href="LevelThreeNine.html"  class="move f-1">华贸公寓店</a>
+                        <a  href="LevelThreeEight.html"  class="move f-2">华贸商场店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="g bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a  href="LevelThreeTen.html"  class="move g-1">中关村店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="h bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeEleven.html" class="move h-1">方庄店</a>
+                        <a href="LevelThreeTwelve.html" class="move h-2">大悦城店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="i bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeThirteen.html" class="move i-1">蓟门桥店</a>
+                        <a href="LevelThreeFourteen.html" class="move i-2">万丰路店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="j bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeFifteen.html" class="move j-1">亦庄店</a>
+                        <a href="LevelThreeSixteen.html" class="move j-2">燕郊店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="k bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeSeventeen.html" class="move k-1">上海店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="l bsixe">
+                       <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeEighteen.html" class="move l-1">广州汤泉良子</a>
+                        <a href="LevelThreeNineteen.html" class="move l-2">甘家口店</a>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="m bsixe">
+                        <a class="big" href="#">
+                
+                        </a>
+                        <a href="LevelThreeTwenty.html" class="move m-1">世纪金源</a>
+                        <a href="LevelThreeTwentyone.html" class="move m-2">马连道店</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<script type="text/javascript">
+
+
+function set(){
+var width=$(document).width();
+var imgH=width*(666/375);
+	var height=document.documentElement.clientHeight;
+    $(".bsixe").css({"backgroundSize":width+"px"+" auto","height":imgH+1+"px"})
+	$(".Main").animate({"backgroundSize":width+"px"+" auto","width":width+"px","height":imgH+1+"px"},function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'vertical',
+            roundLengths : true, 
+            spaceBetween: -1,
+            autoplay: {
+              delay:0,
+              disableOnInteraction: false,
+              autoplayDisableOnInteraction:false,
+              stopOnLastSlide: true,
+            },
+            resistanceRatio : 0,
+            delay:0, 
+            speed:9000,
+            freeMode:false,
+            
+            slidesPerView : 1,
+  
+        }) ;
+        
+
+    });
+}
+
+
+
+
+// 样式---js
+window.onload=function(){
+  set();
+}
+
+</script>
+<script>        
+        
+  </script>
+</html>
