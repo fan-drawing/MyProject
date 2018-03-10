@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-直播课</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style type="text/css">
+    .header .search {
+        position: absolute;
+        float: none!important;
+        left: 50%;
+        margin-left: -7.3rem;
+        margin-top: 0.465rem;
+    }
+
+    .header .search .text {
+        line-height: 1.8rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message">
+            <img src="img/mess.png">
+        </a>
+    </div>
+    <div class="zy-container sc-box">
+        <ul class="sc-select">
+            <li>
+                <select>
+                    <option>科目</option>
+                </select>
+            </li>
+            <li>
+                <select>
+                    <option>付费</option>
+                </select>
+            </li>
+            <li>
+                <select>
+                    <option>类型</option>
+                </select>
+            </li>
+            <li>
+                <select>
+                    <option>排序</option>
+                </select>
+            </li>
+        </ul>
+        <div class="imma-classes">
+            <div class="matter">
+                <ul>
+                    <li class="clearfix">
+                        <a href="stu_playDetails.html" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                        <div class="center">
+                            <a href="stu_playDetails.html" class="title">英语课程名称</a>
+                            <p class="time">7:55</p>
+                            <p class="price">￥245</p>
+                            <p class="number">159人付款</p>
+                            <a href="stu_playDetails.html" class="teacher">
+                        <img src="img/r1.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                        </div>
+                        <div class="right">
+                            <img src="img/xin1.png">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="stu_playDetails.html" class="left">
+                      <img src="img/sl2.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                        <div class="center">
+                            <a href="stu_playDetails.html" class="title">教你编写小故事</a>
+                            <p class="time">7:55</p>
+                            <p class="price">￥248</p>
+                            <p class="number">159人付款</p>
+                            <a href="stu_playDetails.html" class="teacher">
+                        <img src="img/r2.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                        </div>
+                        <div class="right">
+                            <img src="img/xin.png">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a href="stu_playDetails.html" class="left">
+                      <img src="img/sl3.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                        <div class="center">
+                            <a href="stu_playDetails.html" class="title">教你编写小故事</a>
+                            <p class="time">7:55</p>
+                            <p class="price">￥245</p>
+                            <p class="number">159人付款</p>
+                            <a href="stu_playDetails.html" class="teacher">
+                        <img src="img/r3.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                        </div>
+                        <div class="right">
+                            <img src="img/xin.png">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.banner .swiper-container', {
+    spaceBetween: 0,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.banner .swiper-pagination',
+        clickable: true,
+    },
+});
+var swiper1 = new Swiper('.live-preview .matter .swiper-container', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.live-preview .matter .swiper-pagination',
+        clickable: true,
+    },
+});
+$('.imma-classes .matter ul li .right img').click(function() {
+    if ($(this).attr('src') == 'img/xin.png') {
+        $(this).attr('src', 'img/xin1.png');
+    } else {
+        $(this).attr('src', 'img/xin.png');
+    }
+})
+</script>
+
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-错题练习</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style type="text/css">
+    .header .search {
+        position: absolute;
+        float: none!important;
+        left: 50%;
+        margin-left: -7.3rem;
+        margin-top: 0.465rem;
+    }
+
+    .study-header .text {
+        line-height: 1.875rem;
+    }
+    </style>
+</head>
+
+<body style="background:#f1f1f1;">
+    <div class="study-header header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message">
+            <img src="img/mess.png">
+        </a>
+    </div>
+    <div class="list_friend">
+        <ul class="block_one">
+            <li>
+                <p id="A">A</p>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p id="B">B</p>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p id="C">C</p>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="item">
+                                <img src="./img/1.png"><span>安娜</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <ul class="list_AZ">
+        <li class="active">A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+        <li>I</li>
+        <li>J</li>
+        <li>K</li>
+        <li>L</li>
+        <li>M</li>
+        <li>N</li>
+        <li>O</li>
+        <li>P</li>
+        <li>Q</li>
+        <li>R</li>
+    </ul>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$(".nav_homework li").click(function() {
+    var index = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+})
+
+
+
+$(".list_AZ").on("click", "li", function() {
+    $(this).addClass("active").siblings().removeClass("active");
+    var text = $(this).text();
+    var offTop = $("#" + text).offset().top;
+})
+</script>
+
+</html>

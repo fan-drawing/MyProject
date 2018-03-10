@@ -1,0 +1,77 @@
+index  首页
+coupon_list.html  优惠券列表
+out_coupons.html  失效优惠券
+sign.html  注册
+login_user.html   用户登录
+order_management.html  订单管理
+line_item.html     订单管理详情
+set 设置
+map  附近跑腿
+change_password.html  修改密码
+faq.html   常见问题
+Terms_of_Service.html   服务条款
+system_ to_notify.html  系统通知
+About_us.html 关于我们
+fill_remark.html  填写备注
+fill_evaluate.html  填写评价
+rule_description.html   代我买说明
+buy_site.html  购买地址
+receive_site.html  收货地址
+in_forMe_buy.html   代我买
+in_forMe_buy_text.html  代我买文字下单
+in_forMe_send.html  带我送/
+in_forMe_get.html  带我/取
+in_forMe_handle.html  代我办
+take-out_details.html  外卖详情
+take-out_details_shop.html   外卖详情店铺
+order_identify.html  订单确认
+take_out.html   外卖
+evaluate.html  评价
+option_city.html  城市选择
+Convenience_message.html  便民信息
+Convenience_my.html   我的便民信息
+release_Convenience.html  发布便民信息
+
+zyadd_adress.html添加收货地址
+zyedit_adress.html编辑收货地址
+zyrecharge.html充值
+zyadress_administer.html地址管理
+zyaccount_balance.html账户余额
+zybusiness_application.html商家申请
+zyrun_errands.html跑腿申请
+zyshop_collect.html店铺收藏
+
+shop_Management.html  店铺管理
+
+
+
+
+
+
+
+
+
+
+
+
+
+account_details.html   账户明细
+order_details.html   订单明细
+new_activity.html  新建活动
+
+
+
+index.html 首页
+
+In_store_event.html  满减服务 店铺活动
+
+new_activity.html 满减服务 新建活动
+
+marketing.html  营销
+
+
+manage.html  菜品管理
+
+new_dish.html 添加新菜品
+
+shop_message.html 店铺信息

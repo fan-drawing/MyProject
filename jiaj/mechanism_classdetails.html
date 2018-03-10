@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-机构课程详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body class="grey">
+ <div class="p-header">
+    <div class="header">
+      <div class="left">
+        <a href="javascript:;" class="back" onclick="history.go(-1)">
+          <img src="img/baw.png">
+        </a>
+        <select class="area">
+          <option>北京</option>
+        </select>
+      </div>
+      <p class="title">高校详情</p>
+      <div class="right">
+        <a href="index.html">家教网</a>
+      </div>
+    </div>
+ </div>
+  <div class="s-banner">
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/c-banner.png">
+            </a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+  </div>
+  <div class="s-matter s-matter1">
+    <div class="top">
+      <div class="left">语文课</div>
+      <!-- <a class="tel">
+        <img src="img/telp.png">
+      </a> -->
+    </div>
+    <div class="bottom">
+      <p class="text lue">课程简介：“教育者，非为己往，非为现在，而专为将来”。我以自己是一名教育工作者为荣，并将学生拥有美好未来当做自己的使命。有的学生明确自己哪部分有问题，有的却课程简介：“教育者，非为己往，非为现在，而专为将来”。我以自己是一名教育工作者为荣，并将学生拥有美好未来当做自己的使命。有的学生明确自己哪部分有问题，有的却</p>
+      <div class="s-look-more">
+        <span>查看更多</span>
+        <img src="img/xiac.png">
+      </div>
+    </div>
+  </div>
+  <!--授课教师开始-->
+    <div class="t-lun-title">
+      <span>授课教师</span>
+    </div>
+    <div class="t-lun-matter">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t1.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t1.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t1.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t2.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t1.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+             <div class="swiper-slide">
+              <a href="mechanism_teacherdetails.html">
+                <img src="img/t2.png" class="img">
+                <p class="n-l">
+                  <span class="name">张智涵</span>
+                  <span class="lev">骨干老师</span>
+                </p>
+                <p class="proj">辅导科目：语文</p>
+              </a>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <a href="#" class="line-tel">
+      在线咨询
+    </a>
+  <!--授课教师结束-->
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+  <script>
+    $('.s-look-more').click(function(){
+      $('.s-matter .bottom .text').toggleClass('lue');
+    })
+    var swiper = new Swiper('.t-lun-matter .swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      pagination: {
+        el: '.t-lun-matter .swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</html>

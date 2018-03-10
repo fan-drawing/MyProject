@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>班级</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+	      <img src="img/back.png">
+	    </a>
+        <p class="text">学习报告</p>
+    </div>
+    <div class="report-authority-wrap">
+        <div class="report-authority">
+            <h4 class="report-student-h4">三年级2班学习报告</h4>
+            <p class="">2017-12-12 周天</p>
+        </div>
+        <div class="student-report">
+            <div class="student-report-tab">
+                <p class="report-tab-list">姓名</p>
+                <p class="report-tab-list">作业次数</p>
+                <p class="report-tab-list">作业完成</p>
+                <p class="report-tab-list">成绩</p>
+            </div>
+            <ol class="student-report-ol">
+                <li class="report-tab-lists">
+                    <div class="tab-lists-div">学生1</div>
+                    <div class="tab-lists-div">1</div>
+                    <div class="tab-lists-div">10/10</div>
+                    <div class="tab-lists-div">A</div>
+                </li>
+                <li class="report-tab-lists">
+                    <div class="tab-lists-div">学生1</div>
+                    <div class="tab-lists-div">1</div>
+                    <div class="tab-lists-div">10/10</div>
+                    <div class="tab-lists-div">A</div>
+                </li>
+                <li class="report-tab-lists">
+                    <div class="tab-lists-div">学生1</div>
+                    <div class="tab-lists-div">1</div>
+                    <div class="tab-lists-div">10/10</div>
+                    <div class="tab-lists-div">A</div>
+                </li>
+                <li class="report-tab-lists">
+                    <div class="tab-lists-div">学生1</div>
+                    <div class="tab-lists-div">1</div>
+                    <div class="tab-lists-div">10/10</div>
+                    <div class="tab-lists-div">A</div>
+                </li>
+                <li class="report-tab-lists">
+                    <div class="tab-lists-div">学生1</div>
+                    <div class="tab-lists-div">1</div>
+                    <div class="tab-lists-div">10/10</div>
+                    <div class="tab-lists-div">A</div>
+                </li>
+            </ol>
+        </div>
+        <div class="report-tab-select"><img src="img/baiGou.png">批量操作</div>
+        <button class="report-tab-btn">
+            发布学习报告
+        </button>
+    </div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#" class="active">
+           <img src="img/ft1.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft3.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function (){
+        var i=1;
+        $('.report-tab-select').click(function () {
+            if(i%2){
+                $(this).find('img').attr('src','img/report_tab_select.png');
+            }else {
+                $(this).find('img').attr('src','img/baiGou.png');
+            }
+            i++;
+        })
+    })
+</script>
+</html>

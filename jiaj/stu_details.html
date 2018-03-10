@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-学员详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body class="grey">
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <p class="title">学员详情</p>
+    <div class="right">
+      <a href="index.html">家教网</a>
+    </div>
+  </div>
+  <div class="data-appraise"  style="padding-top:0.3125rem">
+    <div class="da-matter">
+      <div class="d-list">
+        <div class="d-title">
+          学生信息
+        </div>
+        <div class="d-matter">
+          <ul class="data">
+            <li>教师编号：666</li>
+            <li>授课方式：辅导</li>
+            <li>可授科目：小学英语   初中英语   高中英语</li>
+            <li>授课地点：北京市昌平区珠江摩尔大厦A座</li>
+            <li>课时费用：小学 120元／小时   初中  150元／小时</li>
+          </ul>
+        </div>
+        <div class="d-title">
+          授课时间
+        </div>
+        <div class="d-matter">
+          <table class="ctime">
+            <tr>
+              <td>时间</td>
+              <td>一</td>
+              <td>二</td>
+              <td>三</td>
+              <td>四</td>
+              <td>五</td>
+              <td>六</td>
+              <td>日</td>
+            </tr>
+            <tr>
+              <td>上午</td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>下午</td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td class="active"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>晚上</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="d-title">
+          学生状况
+        </div>
+        <div class="d-matter">
+         <div class="d-matter-intro">
+           <p class="text lue">教育者，非为己往，非为现在，而专为将来”。我以自己是一名教育工作者为荣，并将学生拥有美好未来当做自己的使命。有的学生明确自己哪部分有问题，有的却没有认识到教育者，非为己往，非为现在，而专为将来”。我以自己是一名教育工作者为荣，并将学生拥有美好未来当做自己的使命。有的学生明确自己哪部分有问题，有的却没有认识到</p>
+           <div class="d-look-more">
+             <span>查看更多</span>
+             <img src="img/xiac.png">
+           </div>
+         </div>
+        </div>
+         <div class="d-title">
+          家教要求
+        </div>
+        <div class="d-matter">
+          <ul class="data">
+            <li>家教性别：不限</li>
+            <li>授课次数：1次／周</li>
+            <li>课时标准：100～150元/小时</li>
+            <li>身份要求：大学生家教  专职家教</li>
+            <li>家教要求：1年以上经验</li>
+          </ul>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="sd-matter">
+    <div class="sd-matter-btn">
+      <button>在线预约</button>
+    </div>
+    <div class="sd-matter-text">如次订单不合适您，可介绍给您的朋友，邀请好友成功授课，可获得1～10个学币不等的奖励，可用于抵消预约付费（1学币＝1元）</div>
+    <a class="sd-matter-share">
+      <span>
+        <img src="img/sh.png">
+        <span>分享</span>
+      </span>
+    </a>
+  </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+  $('.d-look-more').click(function(){
+    $('.d-matter-intro .text').toggleClass('lue');
+  })
+  
+</script>
+</html>

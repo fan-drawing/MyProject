@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>教师端-评论消息</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" href="css/sc_t.css">
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+         <img src="images/sc_t_1.png">
+        </a>
+        <p class="text black">评论消息</p>
+        <a href="javascript:;" class="edit"><img src="images/sc_t_2.png" alt=""></a>
+    </div>
+    <div class="sc-box">
+        <div class="English">
+            <ul>
+                <li class="clearfix pr">
+                    <a href="course_comment.html">
+                        <h3 class="c-333"><span class="c-999">主讲：</span> 张老师</h3>
+                        <div class="removeLi pa c-999"><span>2017-01-01 18:20</span></div>
+                        <div class="bom clearfix">
+                            <div class="left-img sc-fl">
+                                <img src="images/sc_t_11.png" alt="">
+                            </div>
+                            <div class="right sc-fl">
+                                <div class="right-top">
+                                    <p class="text-overflow-much c-333">这部课程讲的很详细,这部课程讲的很详细,这部课程讲的很详细,这部课程讲的很详细,这部课程讲的很详细</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 学生评论 -->
+    <div class="student-comment">
+        <h2 class="c-333">学生评论</h2>
+        <ul>
+            <li class="pr">
+                <div class="user pa"><img src="img/per2.png" alt=""></div>
+                <p class="c-333"><span class="c-999">周亚弄：</span>这个阶段的孩子有强烈的表达欲，但不具备写句的能力。选词填句是孩子借助词库来填写一个有意义的句子</p>
+                <span class="d-block c-999">01-2 17:25</span>
+            </li>
+            <li class="pr">
+                <div class="user pa"><img src="img/per.png" alt=""></div>
+                <p class="c-333"><span class="c-999">周亚弄：</span>孩子有强烈的选词填句是孩子借助词库来填写一个有意义的句子</p>
+                <span class="d-block c-999">01-2 17:25</span>
+            </li>
+            <li class="pr">
+                <div class="user pa"><img src="img/per1.png" alt=""></div>
+                <p class="c-333"><span class="c-999">周亚弄：</span>这个阶段的孩子有强烈的表达欲，但不具备写句的能力</p>
+                <span class="d-block c-999">01-2 17:25</span>
+            </li>
+        </ul>
+    </div>
+    <!--  -->
+    <div class="empty-tf"></div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#">
+           <img src="images/ft01.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+           <img src="images/ft03.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script type="text/javascript">
+$('.sc-matter ul li .right .t-g .img').click(function() {
+    if ($(this).attr('src') == 'img/xin1.png') {
+        $(this).attr('src', 'img/xin.png');
+    } else {
+        $(this).attr('src', 'img/xin1.png');
+    }
+})
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-用户端-添加地址</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/zyadd_adress.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="">
+<header class="clearfix">
+  <div class="back">
+    <a href="#"><img src="images/s_back.png" alt=""></a>
+  </div>
+  <div class="middle">
+    <p>添加地址</p>
+  </div>
+  <div class="header_right">
+	<button>保存</button>
+  </div>
+</header>
+<div class="add_adress_box">
+	<ul class="add_adress_list">
+		<li>
+			<span>收货人</span>
+			<input type="text" name="" placeholder="刘先生">
+		</li>
+		<li>
+			<span>联系电话</span>
+			<input type="text" name="" placeholder="126 5455 2164">
+		</li>
+		<li>
+			<span>地区</span>
+			<input type="text" name="" placeholder="北京 北京 昌平区">
+		</li>
+		<li>
+			<span>地址</span>
+			<input type="text" name="" placeholder="昌平区 沙河地铁站">
+		</li>
+		<li>
+			<span>邮编</span>
+			<input type="text" name="" placeholder="102200">
+		</li>
+	</ul>
+	<div class="setting_default_box">
+		<div class="select_button">
+			<img src="img/select.png">
+			<img src="img/selecta.png" style="display: block;">
+			<input type="checkbox" name="">
+		</div>
+		<span class="select_text">设置成默认收货地址</span>
+	</div>
+</div>
+
+</form>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$('.select_button').click(function(){
+		$(this).find('img').toggle();
+	})
+	</script>
+</body>
+</html>

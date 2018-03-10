@@ -1,0 +1,1600 @@
+.study-header .search {
+	margin-left: 3.34375rem;
+}
+.header .search input.text {
+	text-align: left;
+}
+.study-header p.text {
+	color: #000000 ;
+}
+.teacher-class-main {
+	margin-top: 0.9375rem;
+}
+.teacher-class-main .lists {
+	width:21.3125rem;
+	height: 7.0625rem;
+	box-shadow: 0 0.0675rem 0.24125rem #b8b8b8;
+	margin: 0 auto 0.375rem;
+	border-radius: 0.1875rem;
+}
+.list-top-ban {
+	float: left;
+	padding: 0.625rem 0 0 0.625rem;
+}
+.list-top-ban .list-top-banNum {
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: 100%;
+	background-color: #33a9f9;
+	line-height: 3.125rem;
+	text-align: center;
+	font-size: 1.2875rem;
+	color: #fff;
+	float: left;
+	display: inline-block;
+}
+.list-top-ban  .list-top-msg {
+	display: inline-block;
+	padding-left: 0.6875rem;
+}
+.list-top-msg p:first-child {
+	font-size: 1.0rem;
+	line-height: 1rem;
+	color: #333333;
+	padding: 0.5625rem 0 0.5rem 0;
+}
+.teacher-class-main  .lists .list-top{
+	width: 100%;
+	height: 4.4375rem;
+	padding-left: 0.625rem;
+	background: url("../img/line.png") repeat-x left bottom;
+}
+.teacher-class-main  .lists .list-top img {
+	width: 0.375rem;
+	height: 0.75rem;
+	float: right;
+	margin: 1.71875rem 1.5rem;
+}
+.list-bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.list-bottom-lists {
+	position: relative;
+	flex: 1;
+}
+.list-bottom-lists:before {
+	content: "";
+	width: 0.0625rem;
+	height: 0.625rem;
+	background: url("../img/list_lists_line.png");
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+.list-bottom-lists img {
+	display: inline-block;
+}
+.list-bottom-lists p {
+	display: inline-block;
+}
+.list-bottom img {
+	width: 1.4375rem;
+	height: 1.4375rem;
+	margin-top: 0.59375rem;
+	margin-left: 0.9375rem;
+}
+.list-bottom p{
+	font-size: 0.75rem;
+	color: #999999;
+	line-height: 2.675rem;
+	padding-left: 0.375rem;
+}
+
+/* 管理班级 */
+.management-wrap {
+	margin-top: 0.96875rem;
+}
+.management-wrap .user-authority .user-authority-h4,.managements-student   .user-authority-h4{
+	height: 2.84375rem;
+	line-height: 2.84375rem;
+	font-size: 1.0rem;
+	color: #333333;
+	padding-left: 1.0625rem;
+	background: url("../img/line.png") repeat-x left bottom;
+}
+.user-authority {
+	margin-bottom: 0.9375rem;
+	background-color: #fff;
+}
+.authority-add {
+	width: 4rem;
+	margin-right: 0.25rem;
+	display: inline-block;
+	margin-bottom: 0.375rem;
+}
+.authority-add:nth-of-type(5n) {
+	margin-right: 0;
+}
+.authority-add:last-child {
+	margin-right: 0;
+}
+.authority-add .authority-add-img {
+	width: 3.125rem;
+	height: 3.125rem;
+	background-size: 100%;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+.authority-add .user-name {
+	text-align: center;
+	font-size: 0.875rem;
+	color: #333333;
+	padding-top: 0.3125rem;
+}
+.user-authority-add li.add .user-name {
+	color: #999999;
+}
+.user-authority-add {
+	padding: 0 1.09375rem;
+	padding-top: 0.9375rem;
+}
+
+.managements-student {
+	background-color: #fff;
+}
+.user-authority-edit {
+	width: 1.0625rem;
+	height: 1.0625rem;
+	display: block;
+	position: absolute;
+	top: 0.9375rem;
+	right: 1.0625rem;
+}
+.managements-student .user-authority-h4 {
+	position: relative;
+}
+.user-authority-edit img {
+	width: 100%;
+	display: block;
+}
+.students-wrap .students-lists {
+	width: 3.4375rem;
+    float: left;
+    padding-right: 0.9375rem;
+    padding-bottom: 0.625rem;
+    box-sizing: initial;
+}
+.students-wrap ol {
+	padding: 0 1.09375rem;
+}
+.students-lists .children-img {
+	width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.students-lists  .children-p {
+	color: #333333;
+    font-size: 0.75rem;
+    text-align: center;
+
+}
+
+.students-wrap .students-lists:nth-of-type(5n) {
+    padding-right: 0px;
+}
+.students-wrap-title {
+	padding: 0.9375rem  1.09375rem 0.875rem; 
+}
+.students-wrap-title span {
+	font-size: 1.0625rem;
+    color: #333333;
+    display: inline-block;
+    padding-left: 0.40625rem;
+}
+.students-wrap-title .children-p{
+	font-size: 1.0625rem;
+    color: #333333;
+    display: inline-block;
+}
+.students-wrap-title img {
+	    width: 1.25rem;
+    display: inline-block;
+    margin-top: 0.335rem;
+}
+/* 创建班级 */
+.create-tab {
+	background-color: #fff;
+	border-top: 0.9375rem solid #f7f7f7;
+	padding: 0 1.09375rem;
+}
+.create-lists {
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.none .create-lists:last-child {
+	background: none;
+}
+.create-lists label {
+	display: block;
+}
+.create-lists .create-lists-h4 {
+	font-size: 1.0rem;
+	color: #333333;
+	font-weight: 200;
+	display: inline-block;
+}
+.create-lists-select {
+	display: inline-block;
+	float: right;
+	font-size: 1.0rem;
+	color: #999999;
+	font-weight: 200;
+}
+.create-lists input {
+	font-weight: 200;
+	text-align: right;
+	height: 2.5rem;
+}
+.create-lists .file {
+	display: none;
+}
+.create-class-btn {
+	width: 18.125rem;
+	height: 2.75rem;
+	margin: 2.1875rem auto;
+	display: block;
+	border-radius: 3.75rem;
+	background-color: #33a9f9;
+	text-align: center;
+	color: #fff;
+	font-weight: 900;
+}
+.create-more {
+	padding-right: 1.06875rem;
+	position: relative;
+}
+.create-more:before {
+	content: "";
+	width: 0.375rem;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url("../img/create_more.png") no-repeat center;
+	background-size: 0.375rem;
+}
+/* 学习报告 */
+.report-authority-wrap {
+	border-top: 0.9375rem solid #f7f7f7;
+}
+.report-student-h4 {
+	font-size: 1.0rem;
+	color: #333333;
+	padding-top: 0.875rem;
+}
+.report-authority {
+	padding: 0 1.03125rem;
+	background:  #fff url("../img/line.png") repeat-x bottom;
+}
+.report-authority p {
+	color: #999999;
+	font-size: 0.75rem;
+	padding-top: 0.4375rem;
+	padding-bottom: 0.875rem;
+}
+.student-report .student-report-tab {
+	height: 2.8125rem;
+	padding: 0.84375rem 1.03125rem 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background-color: #fff;
+	font-size: 1.0rem;
+	color: #999999;
+	background:  #fff url("../img/line.png") repeat-x bottom;
+}
+.report-tab-list {
+	flex: 1;
+	text-align: center;
+}
+.student-report-ol {
+	padding: 0 1.03125rem;
+	background-color: #fff;
+}
+.student-report-ol .report-tab-lists {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 3.03125rem;
+	background:  #fff url("../img/line.png") repeat-x bottom;
+}
+.student-report-ol .report-tab-lists .tab-lists-div:last-child {
+	color: #33a9f9;
+}
+.student-report-ol .tab-lists-div {
+	line-height: 3.03125rem;
+	flex: 1;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #333333;
+}
+.report-tab-btn {
+	width: 18.125rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.875rem;
+	border-radius: 3.75rem;
+	display: block;
+	margin: 3.59375rem auto 0;
+	background-color: #33a9f9;
+	clear: both;
+	overflow: hidden;
+}
+.report-tab-select {
+	float: right;
+	font-size: 0.875rem;
+	color: 3333333;
+	padding-top: 0.9375rem;
+	margin-right: 1.1875rem;
+}
+.report-tab-select img {
+	width: 0.875rem;
+	height: 0.875rem;
+	display: inline-block;
+	margin-top: 0.1625rem;
+	margin-right: 0.625rem;
+}
+/* 发布通知 */
+.teacher-notice-textarea {
+	width: 21.625rem;
+	height: 11.21875rem;
+	border-radius: 0.3125rem;
+	box-shadow: 0 0.11625rem 0.3125rem #c8c8c8;
+	margin: 0.59375rem auto 1.4375rem;
+	padding: 0.625rem;
+	display: block;
+	resize:none;
+}
+.notice-student-main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.09375rem;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.notice-student-main p {
+	line-height: 2.03125rem;
+}
+.notice-student-main p:first-child {
+	font-size: 1.0rem;
+	color: #333333;
+}
+.notice-student-main p:last-child {
+	font-size: 0.875rem;
+	color: #999999;
+}
+.notice-student-main p:last-child img {
+	width: 0.375rem;
+	height: 0.75rem;
+	display: inline-block;
+	margin: 0.625rem 0 0 0.625rem;
+}
+.teacher-notice-wrap .all-select {
+	float: right;
+	color: #333333;
+	font-size: 0.875rem;
+	margin: 0.53125rem 1.8125rem 0.53125rem 0;
+}
+.teacher-notice-wrap .all-select  img {
+	display: inline-block;
+	width: 0.875rem;
+	height: 0.875rem;
+	margin: 0.2rem .3rem 0 0;
+}
+
+.teacher-notice-wrap ol {
+	overflow: hidden;
+	clear: both;
+}
+.teacher-notice-wrap .students-lists {
+	position: relative;
+}
+.teacher-notice-wrap .students-lists.active:before {
+	content: "";
+	width: 0.875rem;
+	height: 0.875rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 0;
+	background: url("../img/report_select_hs.png") no-repeat;
+	background-size: 100%;
+}
+.teacher-notice-wrap .students-lists:nth-of-type(5n).active:before {
+	right: 0.3rem;
+}
+/* 通知历史 */
+.notice-history-wrap {
+	padding-bottom: 3.0625rem;
+}
+.notice-history-lists {
+	width: 21.3125rem;
+	height: 8.84375rem;
+	box-shadow: 0 0.08625rem 0.3125rem #bcbcbc;
+	margin: 0 auto 0.3125rem;
+	border-radius: 0.25rem;
+}
+.notice-history .notice-history-title {
+	margin: 1.25rem 0 0.9375rem 1.09375rem;
+	color: #333333;
+	line-height: 1.0rem;
+	font-size: 1.0rem;
+	font-weight: 700;
+}
+.notice-history .notice-history-title span {
+	display: inline-block;
+	line-height: 0.9375rem;
+	font-size: 0.75rem;
+	color: #999999;
+	padding-left: 0.625rem;
+}
+.notice-history .notice-history-title  .notice-radius {
+	width: 0.9375rem;
+	height: 0.9375rem;
+	background-color: #33a9f9;
+	border-radius: 100%;
+	display: inline-block;
+	margin-top: .2rem;
+	float: left;
+}
+.history-lists-main {
+	height: 1.09375rem;
+	font-size: 0.75rem;
+	color: #333333;
+	display: inline-block;
+	overflow: hidden;
+}
+.notice-history-lists .history-top {
+	padding: 1.25rem 1.09375rem 0.90625rem;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.class_num {
+	height: 2.0rem;
+	margin-left: 0.625rem;
+	background: url("../img/line.png") repeat-x bottom;
+	position: relative;
+}
+.class_num:last-child {
+	background: none;
+}
+.class_num .class_num-p {
+	font-size: 0.75rem;
+	color: #999999;
+	line-height: 2rem;
+}
+.class_num .mores-btn-icon {
+	width: 0.375rem;
+	height: 0.75rem;
+	position: absolute;
+	top: 0.625rem;
+	right: 1.25rem;
+	background: url("../img/create_more.png") no-repeat;
+	background-size: 100%;
+}
+/* 创建课件 */
+.create-courseware-wrap {
+	padding-bottom: 3.0625rem;
+}
+.create-courseware-top {
+	padding: 0 1.09375rem;
+	border-top: 0.9375rem solid #f7f7f7;
+}
+.create-courseware-lists {
+	height: 2.65625rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: url("../img/line.png") repeat-x bottom;
+	position: relative;
+}
+.create-courseware-lists:last-child {
+	background: none;
+}
+.create-courseware-lists .courseware-name {
+	font-size: 1.0rem;
+	line-height: 2.5625rem;
+	color: #333333;
+}
+.create-courseware-lists .courseware-p {
+	position: relative;
+	color: #999999;
+	font-size: 0.875rem;
+	padding-right: 1.25rem;
+	line-height: 2.5625rem;
+}
+.create-courseware-lists  .more-btn{
+	position: absolute;
+	right: 0.3125rem;
+	top: 0.95rem;
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/create_more.png");
+	background-size: 100%;
+}
+.up-courseware .create-courseware-lists:last-child {
+	height: 6.375rem;
+}
+.create-courseware-lists .label-btn {
+	width: 5.25rem;
+	height: 5.25rem;
+	background: #f3f5f8 url("../img/camera.png") no-repeat center;
+	background-size: 1.6875rem;
+	margin: 0.625rem 0 0.46875rem;
+}
+.create-courseware-lists input {
+	display: none;
+}
+.create-courseware-bottom {
+	background: url("../img/line.png") repeat-x bottom;
+}
+.create-courseware-btn {
+	width: 18.125rem;
+	height: 2.75rem;
+	background-color: #33a9f9;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #fff;
+	border-radius: 1.375rem;
+	margin: 2.1875rem auto 0;
+	display: block;
+	line-height: 2.75rem;
+
+}
+/* 课件管理 */
+.courseware-tab-main {
+	padding-bottom: 3.2625rem;
+}
+.courseware-tab {
+	width: 100%;
+	height: 2.59375rem;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.courseware-tab ol {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+}
+.courseware-tab .courseware-tab-lists {
+	flex: 1;
+	height: 100%;
+	position: relative;
+	padding: 0.875rem 0 0 1.5625rem;
+	color: #999999;
+	background: url("../img/courseware_tab_line.png") no-repeat right center;
+	background-size: 0.0625rem;
+}
+.courseware-tab .courseware-tab-lists:last-child {
+	background: none;
+}
+.courseware-tab .courseware-tab-lists:before {
+	content: "";
+	width: 0.75rem;
+	height: 0.375rem;
+	background: url("../img/tab_down.png") no-repeat;
+	position: absolute;
+	top: 1.3rem;
+	right: 1.5rem;
+	background-size: 100%;
+}
+.courseware-tab-main .courseware-tab-lists {
+	width: 21.3125rem;
+	height: 9.625rem;
+	border-radius: 0.25rem;
+	box-shadow: 0 0.0825rem 0.3125rem #c1c1c1;
+	margin: 0.84375rem auto;
+	padding: 1.25rem 0.9375rem 0;
+}
+.tab-lists-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.tab-lists-top .lists-top-title {
+	color: #333333;
+	font-size: 1.0rem;
+}
+.tab-lists-top img {
+	width: 1.125rem;
+	height: 1.125rem;
+}
+.lists-top-msg {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.9375rem;
+}
+.lists-top-msg .msg-img {
+	width: 5.25rem;
+	height: 5.25rem;
+	overflow: hidden;
+	display: block;
+}
+.lists-top-msg .msg-img img {
+	width: 100%;
+	height: 100%;
+}
+.lists-top-msg-right {
+	width: 13.0rem;
+}
+.lists-top-msg  .lists-msg-p {
+	height: 2.1875rem;
+	overflow: hidden;
+	font-size: 0.75rem;
+	color: #999999;
+}
+.fabulous-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding-left: 4.0rem;
+}
+.lists-top-msg-right  .price {
+	font-size: 0.875rem;
+	color: #f44e52;
+	padding: 0.375rem 0 0.1875rem;
+}
+.fabulous-wrap img {
+	width: 1.0rem;
+	display: inline-block;
+}
+.fabulous img {
+	margin-right: 0.625rem;
+	float: left;
+}
+.comment {
+	margin-left: 1.6rem;
+}
+.comment span ,.fabulous  span{
+	display: inline-block;
+	width: 2.275rem;
+	line-height: 1.0rem;
+	color: #999999;
+	font-size: 0.75rem;
+}
+.comment img {
+	margin-right: 0.2125rem;
+}
+/* 布置作业 */
+.assignment-wrap .courseware-tab-lists:before {
+	display: none;
+}
+.assignment-wrap .courseware-tab-lists {
+	padding: 0;
+	text-align: center;
+	line-height: 2.59375rem;
+}
+.assignment-wrap .courseware-tab-lists.active {
+	color: #33a9f9;
+}
+.assignment-tab-main {
+	border-top: 0.9375rem solid #f7f7f7;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.assignment-tab-main .assignment-lists {
+	margin: 0 1.09375rem;
+	height: 3.1875rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	line-height: 3.1875rem;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.assignment-tab-main .assignment-lists:last-child {
+	background: none;
+}
+.assignment-tab-main .assignment-lists .assignment-lists-select {
+	font-size: 1.0rem;
+	color: #333333;
+}
+.assignment-tab-main .assignment-lists .select-msg {
+	color: #999999;
+	font-size: 0.875rem;
+	position: relative;
+	padding-right: 1.3125rem;
+}
+.assignment-tab-main .assignment-lists .select-msg:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/teacher_more.png");
+	background-size: 0.375rem;
+	position: absolute;
+	top: 1.25rem;
+	right: 0.3125rem;
+}
+.assignment-wrap .topic-content {
+	width: 21.3125rem;
+	margin: 0.625rem auto 0;
+	padding: 0 0.9375rem 1.375rem;
+	box-shadow: 0 .06rem 0.3125rem #a8a8a8;
+	border-radius: 0.25rem;
+}
+.assignment-wrap .topic-msg {
+	background-color: #eeeeee;
+	padding: 0.4625rem;
+}
+.assignment-wrap .topic-title {
+	color: #999999;
+	font-size: 1.0rem;
+	padding: 0.9375rem 0 0.625rem;
+}
+.assignment-wrap .topic-msg pre {
+	width: 100%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.assignment-tabs {
+	display: none;
+}
+.assignment-tabs.active{
+	display: block;
+}
+.assignment-tabs .assignment-tab-main:last-child {
+	border-top: none;
+	background: none;
+}
+.assignment-subTabs {
+	height: 1.625rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.assignment-subTabs-lists {
+	color: #333333;
+	line-height: 1.625rem;
+	flex: 1;
+	text-align: center;
+	font-size: 0.75rem;
+	position: relative;
+}
+.assignment-subTabs-lists:before {
+	content: "";
+	width: 0.75rem;
+	height: 0.375rem;
+	background: url("../img/tab_down.png");
+	background-size: 0.75rem;
+	position: absolute;
+	top: 0.65625rem;
+	left: 7.125rem;
+}
+.assignment-subTabs-title {
+	padding-left: 1.09375rem;
+	margin: 1.25rem 0 0.9375rem;
+}
+.assignment-subTabs-title .assignment-subTabs-i {
+	width: 0.9375rem;
+	height: 0.9375rem;
+	background-color: #33a9f9;
+	border-radius: 100%;
+	display: inline-block;
+	float: left;
+	margin-top: .13rem;
+}
+.assignment-subTabs-title span {
+	color: #999999;
+	font-size: 0.75rem;
+	display: inline-block;
+	padding-left: 0.625rem;
+}
+.subTabs-lists {
+	width: 21.3125rem;
+	height: 5.75rem;
+	border-radius: 0.25rem;
+	padding: 0.9375rem 0.625rem 0;
+	box-shadow: 0 .08rem 0.3125rem #c1c1c1;
+	margin: 0 auto 0.3125rem;
+	position: relative;
+}
+.subTabs-lists:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/teacher_more.png") ;
+	background-size: 0.375rem;
+	position: absolute;
+	bottom: 0.9375rem;
+	right: 0.625rem;
+}
+.subTabs-lists-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.subTabs-lists-top-h4 {
+	font-size: 1.0rem;
+	color: #333333;
+}
+.subTabs-lists-top-p {
+	color: #999999;
+	font-size: 1.0rem;
+}
+.subTabs-lists-top .subTabs-lists-red {
+	color: #f44e52;
+}
+/* 审阅作业 */
+.study-user {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 3.75rem;
+	background: url("../img/line.png") repeat-x bottom;
+	padding-left: 1.0625rem;
+	position: relative;
+}
+.study-user:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/create_more.png");
+	background-size: 0.375rem;
+	position: absolute;
+	right: 1.375rem;
+	top: 1.46875rem;
+}
+.study-user-img {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	background-size: 100%;
+	margin-top: 0.625rem;
+}
+.study-user .study-user-name {
+	line-height: 3.75rem;
+	font-size: 1.0rem;
+	color: #333333;
+	padding-left: 0.625rem;
+}
+.title-card-wrap {
+	width: 21.3125rem;
+	background-color: #fff;
+	border-radius: 0.3125rem;
+	box-shadow: 0 0.105rem 0.4125rem #b3b3b3;
+	margin: 0.625rem auto 0;
+	padding: 0.9375rem;
+	padding-bottom: 1.15625rem;
+}
+.title-card-h3 {
+	font-size: 1.0rem;
+	line-height: 1.0rem;
+	color: #333333;
+	padding-bottom: 0.8125rem;
+}
+.topic-msg pre {
+	color: #999999;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.answer-main .confirm-answer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.confirm-answer a {
+	display: inline-block;
+	width: 8.53125rem;
+	height: 1.75rem;
+	line-height: 1.75rem;
+	border-radius: 3.75rem;
+	border: 1px solid #33a9f9;
+	text-align: center;
+}
+.confirm-answer .confirm-blue {
+	border-color: #33a9f9;
+}
+.confirm-answer .confirm-red {
+	border-color: #f44e51;
+	color: #f44e51;
+}
+.answer-main .answer-text {
+	color: #999999;
+	font-size: 1.0rem;
+	padding-bottom: 1rem;
+	padding-top: 1.125rem;
+}
+.answer-main .answer-text span {
+	color: #333333;
+}
+.evaluating-msg {
+	padding: 1.1875rem 1.03125rem 2.5625rem;
+}
+.evaluating-lists {
+	height: 2.28125rem;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: url("../img/line.png") repeat-x bottom;
+}
+.evaluating-lists .evaluating-lists-msg {
+	color: #999999;
+	font-size: 0.875rem;
+	line-height: 2.28125rem;;
+	padding-right: 1.28125rem;
+	padding-bottom: 0.53125rem;
+}
+.evaluating-lists .evaluating-lists-title {
+	color: #333333;
+	line-height: 2.28125rem;;
+	font-size: 1.0rem;
+}
+.evaluating-lists:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/create_more.png");
+	background-size: 100%;
+	position: absolute;
+	right: 0.3125rem;
+	top: 0.75rem;
+}
+.evaluating-lists:last-child {
+	display: block;
+	height: auto;
+}
+.evaluating-lists:last-child:before {
+	display: none;
+}
+.evaluating-lists:last-child .evaluating-lists-msg {
+	height: 2.3rem;
+	resize:none;
+	width: 100%;
+	min-height: .2rem;
+	padding: 0;
+	color: #000;
+}
+/* 班级报告 */
+.table-main-top {
+    padding: 0 1.09375rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #f9f9f9;
+}
+.table-main-top ul, .table-main-bottom ol {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.table-main-top .table-top-lists {
+    /* flex: 1; */
+    width: 6.625rem;
+    text-align: center;
+    color: #999999;
+    font-size: 0.75rem;
+}
+.table-main-bottom ol {
+    margin: 0 1.09375rem;
+    line-height: 3.125rem;
+    border-bottom: 1px solid #f9f9f9;
+}
+.table-main-bottom .table-bottom-lists {
+    width: 6rem;
+    text-align: center;
+}
+.main-report {
+	height: 4.125rem;
+	background: url("../img/line.png") repeat-x bottom;
+	padding-left: 1.09375rem;
+}
+.main-report .main-report-h3 {
+	font-size: 1.0rem;
+	color: #333333;
+	padding-top: 0.875rem;
+	padding-bottom: 0.625rem;
+}
+.main-report .main-report-p {
+	font-size: 0.75rem;
+	color: #999999;
+}
+.table-main-bottom .good_blue {
+	color: #33a9f9;
+}
+/* 我的报告 */
+.class-view_banenr {
+    width: 100%;
+    height: 8.75rem;
+}
+.my-report-wrap {
+	padding: 0 1.09375rem;
+}
+.my-report-wrap .my-report-lists {
+	height: 4.125rem;
+	background: url("../img/line.png") repeat-x bottom;
+	position: relative;
+}
+.my-report-lists .report-lists-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 0.78125rem;
+}
+.my-report-lists .report-lists-top  .report-lists-h4 {
+	font-size: 1.0rem;
+	color: #333333;
+}
+.my-report-lists .report-lists-top .report-lists-p {
+	font-size: 0.6875rem;
+	color: #999999;
+}
+.my-report-lists  .report-msg {
+ 	color: #999999;
+ 	margin-top: 0.625rem;
+ }
+.my-report-lists:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/create_more.png");
+	background-size: 100%;
+	position: absolute;
+	bottom: 0.875rem;
+	right: 0.0625rem;
+}
+/* 我的 */
+.teacher-my-main {
+	height: 6.4375rem;
+}
+.teacher-my-top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 1.0625rem 0 0 1.03125rem;
+}
+.teacher-my-top .teacher-my-userImg {
+	width: 5.0rem;
+	height: 5rem;
+	border-radius: 100%;
+	background-size: 100%;
+}
+.my-userImg-right {
+	padding-left: 1.125rem;
+	padding-top: 0.625rem;
+}
+.my-userImg-right .userName {
+	font-size: 1.3125rem;
+	color: #333333;
+	padding-bottom: 0.3125rem;
+}
+.my-userImg-right  .userName-id {
+ 	color: #999999;
+ }
+.teacher-my-top .authentication {
+	font-size: 1.0rem;
+	color: #33a9f9;
+	padding-top: 1.9375rem;
+	padding-left: 0.1875rem;
+}
+.teacherMy-lists {
+	width: 6.6875rem;
+	height: 4.375rem;
+	border-radius: 0.3125rem;
+	background: #fff;
+	box-shadow: 0 0.075rem 0.275rem #d5d5d5;
+}
+.teacher-my-ol {
+	padding: 0 1.09375rem;
+}
+.teacher-my-ol .teacherMy-lists {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-right: 0.625rem;
+	padding: 1.03125rem 0 0 0.71875rem;
+}
+.teacher-my-ol ol {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.teacher-my-ol .teacherMy-lists:last-child {
+	margin-right: 0;
+}
+.teacher-my-ol .teacherMy-lists:first-child img {
+	width: 2.1875rem;
+	height: 2.3125rem;
+}
+.teacher-my-ol .teacherMy-lists:nth-of-type(2) img {
+	width: 2.125rem;
+	height: 2.34375rem;
+}
+.teacher-my-ol .teacherMy-lists:last-child img {
+	width: 2.125rem;
+	height: 2.28125rem;
+}
+.teacherMy-lists-r {
+	padding-left: 0.6875rem;
+}
+.teacherMy-lists-r .teacherMy-lists-p {
+	font-size: 1.0rem;
+	color: #333333;
+}
+.teacherMy-lists-r .teacherMy-lists-p:first-child {
+	padding-bottom: 0.125rem;
+}
+.teacherMy-ul {
+	margin: 0.75rem 1.09375rem 0;
+}
+.teacherMy-ul .teacherMy-ul-lists {
+	background: url("../img//line.png") repeat-x bottom;
+	position: relative;
+}
+.teacherMy-ul  .teacherMy-ul-lists:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	background: url("../img/teacher_more.png");
+	background-size: 100%;
+	position: absolute;
+	right: 0.3125rem;
+	bottom: 1.15625rem;
+}
+.teacherMy-ul .teacherMy-ul-lists a {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 3.1875rem;
+
+}
+.teacherMy-ul .teacherMy-ul-lists img {
+	width: 1.4375rem;
+	height: 1.4375rem;
+	margin: auto 0;
+}
+.teacherMy-ul .teacherMy-ul-lists span {
+	font-size: 1.0rem;
+	margin: auto 0;
+	color: #333333;
+	padding-left: 0.9375rem;
+}
+
+/* 设置 */
+.setting-main {
+	padding-bottom: 3.0625rem;
+	border-top: 0.9375rem solid #f7f7f7;
+	
+}
+.setting-main .setting-tui {
+	height: 3.375rem; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.setting-main .setting-tui p {
+	font-size: 1.0rem;
+	color: #333333;
+	line-height: 3.375rem;
+	padding-left: 1.25remv;
+}
+.setting-main .prompt {
+	height: 2.375rem;
+	font-size: 0.75rem;
+	padding-left: 1.03125rem;
+	background: #f7f7f7;
+	color: #999;
+	padding-top: 0.4375rem;
+}
+.setting-main .setting-tui-btn {
+	width: 3.125rem;
+	height: 1.875rem;
+	background: #33a9f9;
+	border-radius: 3.75rem;
+	position: relative;
+	padding: 0.125rem;
+	margin: 0.65625rem;
+}
+.setting-tui-btn .tui-btn {
+	width: 1.625rem;
+	height: 1.625rem;
+	position: absolute;
+	left: .2rem;
+	right: 0;
+	margin: auto 0;
+	background: #fff;
+	border-radius: 100%;
+	transition: all .51s;
+}
+.setting-more {
+	padding: 0 1.09375rem;
+}
+.setting-more .setting-lists {
+	height: 3.125rem;
+	background: url("../img/line.png") repeat-x bottom;
+	position: relative;
+}
+.setting-more .setting-lists a {
+	color: #333333;
+	font-size: 1.0rem;
+	line-height: 3.15625rem;
+}
+.setting-more .setting-lists:before {
+	content: "";
+	width: 0.375rem;
+	height: 0.75rem;
+	position: absolute;
+	top: 1.25rem;
+	right: 0.3125rem;
+	background: url("../img/create_more.png");
+	background-size: 100%;
+}
+.setting-tui p {
+	padding-left: 1.09375rem;
+}
+/* 银行卡 */
+.bank-card-main {
+	padding-top: 0.9375rem;
+}
+.bank-card-lists {
+	width: 21.3125rem;
+	height: 7.1875rem;
+	box-shadow: 0 0.05625rem 0.3125rem #b3b3b3;
+	border-radius: 0.3125rem;
+	margin: 0 auto 0.625rem;
+	padding: 0.9375rem 0 0 0.9375rem;
+}
+.bank-card-lists img {
+	width: 2.125rem;
+	display: inline-block;
+}
+.bank-card-lists .bank-card-div .bank-card-msg {
+	display: inline-block;
+}
+.bank-card-num {
+	padding-top: 1.38125rem;
+	float: right;
+	padding-right: 0.625rem;
+}
+.bank-card-num span {
+	display: inline-block;
+	line-height: 1.55rem;
+	font-size: 1.55rem;
+}
+.bank-card-num img {
+	width: 2.59375rem;
+	padding-top: 0.25625rem;
+	margin-right: 0.9375rem;
+}
+.bank-card-num  .qian {
+	width: 3.75rem;
+}
+.bank-card-add {
+	width: 21.3125rem;
+	height: 3.125rem;
+	box-shadow: 0 0.09625rem 0.3125rem #bababa;
+	border-radius: 0.3125rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+	color: #999999;
+	line-height: 3.125rem;
+	text-align: center;
+
+}
+/* 个人信息 */
+.information-wrap .information-user {
+	border-top: 1.3125rem solid #f7f7f7;
+	border-bottom: 1.3125rem solid #f7f7f7;
+	height: 3.125rem;
+	position: relative;
+	box-sizing: initial;
+}
+.information-wrap .information-user:before {
+	content: "";
+    width: 0.375rem;
+    height: 0.75rem;
+    background: url(../img/teacher_more.png);
+    background-size: 100%;
+    position: absolute;
+    right: 1.4125rem;
+    bottom: 1.15625rem;
+}
+.information-user .information-user-img {
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 100%;
+	background-size: 100%;
+	margin: 0.4375rem 2.53125rem;
+}
+.information-user span {
+	font-size: 1.0rem;
+	color: #000000;
+	line-height: 3.125rem;
+}
+.information-user a {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 1.0625rem;
+}
+.information-wrap .teacherMy-ul {
+	margin-top: 0;
+}
+/* 老师登录 */
+.teacher-sign-form {
+	width: 18.125rem;
+	margin: 4.78125rem auto 0;
+}
+.teacher-sign-form .sign-lists {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 1.96875rem;
+	background: url("../img/line.png") repeat-x bottom;
+	margin-bottom: 1.34375rem;
+	position: relative;
+}
+.teacher-sign-form .sign-lists input {
+	margin-left: 1.1875rem;
+	width: 100%;
+}
+.teacher-sign-form .sign-lists > img {
+	margin-top: 0.34375rem;
+}
+.teacher-sign-form .sign-lists:first-child img {
+	width: 1.1875rem;
+	height: 1.34375rem;
+	display: inline-block;
+}
+.teacher-sign-form .sign-lists:nth-of-type(2) img {
+	width: 1.3125rem;
+	height: 1.3125rem;
+}
+.teacher-sign-form .sign-lists:last-child img {
+	width: 1.1875rem;
+	height: 1.375rem;
+}
+.teacher-sign-form .sign-lists:last-child input {
+	width: 55.8%;
+}
+.teacher-sign-form .sign-lists:last-child .verification-code {
+	width: 36.6%;
+	position: absolute;
+	right: 0;
+}
+.teacher-sign-form .sign-lists:last-child .verification-code img {
+	width: 3.53125rem;
+	height: 1.4375rem;
+	display: inline-block;
+}
+.verification-code .span {
+	font-size: 0.75rem;
+	color: #f44e51;
+	display: inline-block;
+	line-height: 1.7rem;
+}
+.teacher-sign-wrap .submit-btn {
+	width: 18.125rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	text-align: center;
+	color: #fff;
+	display: block;
+	margin: 4.375rem auto 0;
+	border-radius: 3.75rem;
+	background-color: #33a9f9;
+}
+.teacher-sign-wrap  .submit-red {
+	font-size: 0.75rem;
+	color: #f44e51;
+	float: right;
+	margin-top: 0.625rem;
+	padding-right: 3.375rem;
+}
+.third-party-ul {
+	width: 21.3125rem;
+	margin: 0 auto;
+}
+.third-party {
+	margin: 0 1.09375rem;
+	margin-top: 4.9375rem;
+}
+.third-party .third-party-top {
+	text-align: center;
+}
+.third-party .third-party-top:before,.third-party .third-party-top:after {
+	content: "";
+	width: 7.9375rem;
+	height: 0.0625rem;
+	background: url("../img/third_party_line.png");
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	display: inline-block;
+	margin-top: 0.6rem;
+}
+.third-party .third-party-top:before {
+	float: left;
+}
+.third-party .third-party-top:after {
+	float: right;
+}
+.third-party-ul {
+	margin-top: 1.125rem;
+}
+.third-party-ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+/* 注册 */
+.teacher-register .teacherMy-ul-lists{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 3.1875rem;
+    position: relative;
+}
+.teacher-register .teacherMy-ul-lists:before {
+	display: none;
+}
+.teacher-register .teacherMy-ul-lists span {
+	width: 5.75rem;
+	padding-left: 0;
+	font-size: 0.875rem;
+	color: #000000;
+	display: block;
+}
+.teacher-register .teacherMy-ul-lists input {
+	width: 72.7%;
+}
+.teacher-register .teacherMy-ul-lists:last-child input {
+	width: 49.1%;
+}
+.teacher-register .teacherMy-ul-lists .verifying {
+	position: absolute;
+	right: 0;
+	line-height: 3.1875rem;
+	font-size: 0.875rem;
+	color: #33a9f9;
+}
+.teacher-register .submit-btn {
+	    width: 18.125rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 4.375rem auto 0;
+    border-radius: 3.75rem;
+    background-color: #33a9f9;
+}
+
+/* 联系人 */
+
+.contact-sort {
+  position: fixed;
+  right: 0;
+  top: 2.75rem;
+  margin-top: 0.5rem;
+}
+.contact-sort .active {
+  width: 1.2825rem;
+  height: 1.2825rem;
+  background: #ff0167;
+  color: #fff;
+}
+.contact-sort span {
+  width: 1.2825rem;
+  height: 1.2825rem;
+  line-height: 1.2825rem;
+  text-align: center;
+  display: block;
+  color: #999999;
+  font-size: 0.9rem;
+  border-radius: 100%
+}
+.contact-wrap .contact-group .contact-h4 {
+  font-size: 1.0rem;
+  height: 1.4375rem;
+  line-height: 1.4375rem;
+  color: #999999;
+  background-color: #f7f7f7;
+  padding-left: 1.9375rem;
+}
+.contact-wrap .contact-group ul {
+  padding: 0 1.09375rem;
+}
+.contact-lists {
+  height: 3.75rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  line-height: 3.75rem;
+}
+.contact-lists .contact-lists-p {
+  background: url("../img/line.png") repeat-x bottom;
+  width: 82.9%;
+}
+.contact-lists img {
+  width: 2.4375rem;
+  height: 2.4375rem;
+  margin-top: 0.625rem;
+}
+.contact-lists .contact-lists-p {
+  margin-left: 0.5625rem;
+  padding-left: 0.375rem;
+}

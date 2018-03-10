@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-代我买文字下单</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+		header .middle{
+			width:80%;
+		}
+		header .middle p{
+			    padding-left: 1.8rem;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>代我买</p>
+	</div>
+	<div class="right"><a href="rule_description.html"><img src="images/wenhao.png" alt=""></a></div>
+</header>
+<div class="textOrders">
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_56.png" alt=""></span>
+			<span class="span2">物品名</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入购买的商品名称"></div>
+	</div>
+	<div class="box2 box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_55.png" alt=""></span>
+			<span class="span2">门店数</span>
+		</div>
+		<div class="right">
+			<span class="num-minus"><img src="images/xia.png" alt=""></span>
+			<input type="number" value="2">
+			<span class="num-plus"><img src="images/shang.png" alt=""></span>
+		</div>		
+	</div>
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_57.png" alt=""></span>
+			<span class="span2">购买地址</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入购买地址"></div>
+		<a href="buy_site.html" class="r-right"><img src="images/right_select_icon.png" alt=""></a>
+	</div>
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_58.png" alt=""></span>
+			<span class="span2">收货地址</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入收货地址"></div>
+		<a href="receive_site.html" class="r-right"><img src="images/right_select_icon.png" alt=""></a>
+	</div>
+
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_59.png" alt=""></span>
+			<span class="span2">收货人</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入收货人姓名"></div>
+		<a href="buy_site.html" class="r-right"><img src="images/right_select_icon.png" alt=""></a>
+	</div>
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_60.png" alt=""></span>
+			<span class="span2">手机号</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入收货人手机号"></div>
+		<a href="receive_site.html" class="r-right"><img src="images/right_select_icon.png" alt=""></a>
+	</div>
+
+	<!--  -->
+	<div class="box1 box3 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_61.png" alt=""></span>
+			<span class="span2">跑腿费</span>
+		</div>
+		<div class="right"><input type="text" placeholder="￥78" readonly="readonly"></div>
+		<a href="#" class="r-right">附近跑腿</a>
+	</div>
+	<div class="box1 box3 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_61.png" alt=""></span>
+			<span class="span2">商品费</span>
+		</div>
+		<div class="right"><input type="text" placeholder="填入"></div>
+		<a href="#" class="r-right">不知道价格</a>
+	</div>
+	<!--  -->
+
+	<div class="box1 clearfix">
+		<div class="left clearfix">
+			<span class="span1"><img src="images/my_62.png" alt=""></span>
+			<span class="span2">备注</span>
+		</div>
+		<div class="right"><input type="text" placeholder="请输入收货人手机号"></div>
+		<a href="fill_remark.html" class="r-right"><img src="images/right_select_icon.png" alt=""></a>
+	</div>
+
+	<footer class="clearfix">
+		<div class="footer-left clearfix">
+			
+			<div class="f-l-r">
+				<p>￥15</p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p>去支付</p>
+		</div>
+	</footer>
+</div>
+
+<!-- 弹窗 -->
+<div class="Purchase-shade">
+	<div class="shadePay">
+		<div class="select-top clearfix">
+			<p>请选择支付方式</p>
+			<span class="Purchase-shade-close"><img src="images/guanbi.png" alt=""></span>
+		</div>
+		<div class="select-manner">
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_48.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">账户余额</p>
+					<p class="p2">0.00元</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class="manner-span-bg"></span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_49.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">支付宝</p>
+					<p class="p2">推荐有支付宝账户的用户使用</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class=""></span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_50.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">微信</p>
+					<p class="p2">推荐安装微信5.0及以上版本用户使用</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class=""></span>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="Purchase-site clearfix">
+			<a href="#" class="clearfix">
+				<div class="left"><img src="images/my_51.png" alt=""></div>
+				<div class="middle">抵金券</div>
+				<div class="right"><img src="images/right_select_icon.png" alt=""></div>
+			</a>
+		</div>
+	
+		<!-- 订单总价 -->
+		<div class="order-valued-at">
+			<div class="title clearfix">
+				<span class="span1">订单总价</span>
+				<span class="span2">78.9元</span>
+			</div>
+			<div class="Details">
+				<div class="box clearfix">
+					<span class="span1">商品费</span>
+					<span class="span2">0.0元</span>
+				</div>
+				<div class="box clearfix">
+					<span class="span1">跑腿费</span>
+					<span class="span2">78.9元</span>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="affirm-pay">
+				<a href="#">确认支付</a>
+		</div>
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+		$('.num-minus').on('click',function(){
+			var value = $(this).next().val();
+			value--;
+			if(value < 1){
+				value = 1;
+			}
+			$(this).next().val(value);
+		});
+		$('.num-plus').on('click',function(){
+			var value = $(this).prev().val();
+			value++;
+			$(this).prev().val(value);
+		});
+	$('.box1').eq(4).css({'marginTop':'0.625rem'});
+	$('.box1').eq(6).css({'marginTop':'0.625rem'});
+	$('.box1').eq(8).css({'marginTop':'0.625rem'});
+
+
+		$('.manner-right span').on('click',function(){
+			$(this).addClass('manner-span-bg').parents('.clearfix').siblings().find('.manner-right').find('span').removeClass('manner-span-bg');
+	 
+			$(this).siblings('input').attr('checked',true).parents('.clearfix').siblings().find('.manner-right').find('input').removeAttr('checked');
+		});
+
+		$('.footer-right').on('click',function(){
+			$('.Purchase-shade').show();
+		});
+		$('.Purchase-shade-close').on('click',function(){
+			$('.Purchase-shade').hide();
+		});
+
+});
+</script>
+</body>
+</html>

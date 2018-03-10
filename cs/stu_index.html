@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/sc_t.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <style>
+    .header .search {
+        width: 11rem;
+    }
+
+    .header .message {
+        width: 22%;
+        height: 100%;
+        line-height: 2.75rem;
+        margin-top: 0;
+    }
+
+    .header .message a {
+        color: #666;
+        font-size: 0.9375rem;
+    }
+
+    .header .message .a-login {
+        float: right;
+    }
+
+    .header .message .a-register {
+        float: left;
+    }
+
+    .header .search .text {
+        width: 78%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="area">
+            <select>
+                <option>北京</option>
+            </select>
+        </div>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <div class="message">
+            <a href="javascript:;" class="a-register registerClick">注册</a>
+            <a href="login.html" class="a-login">登录</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner1.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner2.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner3.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/banner4.png">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="nav-box">
+        <ul class="list">
+            <li>
+                <a href="#">
+                    <img src="img/li1.png">
+                    <p>ESL</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_course.html">
+                    <img src="img/li2.png">
+                    <p>课程</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_live.html">
+                    <img src="img/li3.png">
+                    <p>直播课</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/li4.png">
+                    <p>公开课</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_teacherclass.html">
+                    <img src="img/li5.png">
+                    <p>报名</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="zy-container">
+        <div class="time-box">
+            <span class="data">2018/05/06</span>
+            <span class="week">星期一</span>
+            <span class="time">下午第<span>2</span>节</span>
+        </div>
+        <div class="live-preview">
+            <div class="title-box">
+                <p class="text">直播预告</p>
+                <a href="stu_liveList.html" class="more">
+                    <span>更多</span>
+                    <img src="img/more.png">
+                </a>
+            </div>
+            <div class="matter">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="stu_playDetails.html">
+                                <img src="img/live.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_playDetails.html">
+                                <img src="img/live.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_playDetails.html">
+                                <img src="img/live.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="public-class">
+            <div class="title-box">
+                <p class="text">最新公开课</p>
+                <a href="stu_liveList.html" class="more">
+                    <span>更多</span>
+                    <img src="img/more.png">
+                </a>
+            </div>
+            <div class="matter">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc1.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc2.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc1.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc2.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc1.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="stu_videoDeatils.html">
+                                <img src="img/pc2.jpg">
+                                <p>There Was A Crooo</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-class">
+            <div class="title-box">
+                <p class="text">热门课程</p>
+                <a href="stu_liveList.html" class="more">
+                    <span>更多</span>
+                    <img src="img/more.png">
+                </a>
+            </div>
+            <div class="matter">
+                <ul>
+                    <li>
+                        <a class="img" href="stu_videoDeatils.html">
+                           <img src="img/c1.png">
+                       </a>
+                        <div class="bottom">
+                            <div class="num">
+                                <img src="img/stu.png">
+                                <span>99</span>
+                            </div>
+                            <a href="stu_videoDeatils.html" class="join">立即加入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="img" href="stu_videoDeatils.html">
+                           <img src="img/c2.png">
+                       </a>
+                        <div class="bottom">
+                            <div class="num">
+                                <img src="img/stu.png">
+                                <span>99</span>
+                            </div>
+                            <a href="stu_videoDeatils.html" class="join">立即加入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="img" href="stu_videoDeatils.html">
+                           <img src="img/c3.png">
+                       </a>
+                        <div class="bottom">
+                            <div class="num">
+                                <img src="img/stu.png">
+                                <span>99</span>
+                            </div>
+                            <a href="stu_videoDeatils.html" class="join">立即加入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="img" href="stu_videoDeatils.html">
+                           <img src="img/c4.png">
+                       </a>
+                        <div class="bottom">
+                            <div class="num">
+                                <img src="img/stu.png">
+                                <span>99</span>
+                            </div>
+                            <a href="stu_videoDeatils.html" class="join">立即加入</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sale-class">
+            <div class="title-box">
+                <p class="text">特卖</p>
+                <a href="stu_menue.html" class="more">
+                    <span>更多</span>
+                    <img src="img/more.png">
+                </a>
+            </div>
+            <div class="matter">
+                <ul>
+                    <li>
+                        <a href="stu_videoDeatils.html" class="left">
+                           <img src="img/tm1.png">
+                       </a>
+                        <div class="right">
+                            <a href="stu_videoDeatils.html" class='title'>英语学习课件  基础级</a>
+                            <div class="p-n">
+                                <span class="price">¥248</span>
+                                <span class="num">159人付款</span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="add-car">
+                           <img src="img/car.png">
+                       </a>
+                    </li>
+                    <li>
+                        <a href="stu_videoDeatils.html" class="left">
+                           <img src="img/tm2.png">
+                       </a>
+                        <div class="right">
+                            <a href="stu_videoDeatils.html" class='title'>英语学习课件  基础级</a>
+                            <div class="p-n">
+                                <span class="price">¥248</span>
+                                <span class="num">159人付款</span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="add-car">
+                           <img src="img/car.png">
+                       </a>
+                    </li>
+                    <li>
+                        <a href="stu_videoDeatils.html" class="left">
+                           <img src="img/tm3.png">
+                       </a>
+                        <div class="right">
+                            <a href="stu_videoDeatils.html" class='title'>英语学习课件  基础级</a>
+                            <div class="p-n">
+                                <span class="price">¥248</span>
+                                <span class="num">159人付款</span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="add-car">
+                           <img src="img/car.png">
+                       </a>
+                    </li>
+                    <li>
+                        <a href="stu_videoDeatils.html" class="left">
+                           <img src="img/tm4.png">
+                       </a>
+                        <div class="right">
+                            <a href="stu_videoDeatils.html" class='title'>英语学习课件  基础级</a>
+                            <div class="p-n">
+                                <span class="price">¥248</span>
+                                <span class="num">159人付款</span>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="add-car">
+                           <img src="img/car.png">
+                       </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-empty"></div>
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="stu_index.html" class="active">
+                    <img src="img/f1.png">
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_homework.html">
+                    <img src="img/f2.png">
+                    <p>作业</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_sns.html">
+                    <img src="img/f3.png">
+                    <p>社区</p>
+                </a>
+            </li>
+            <li>
+                <a href="stu_mine.html">
+                    <img src="img/f4.png">
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="winningOk Lucky-draw-mask">
+        <div class="box-rectangle m-auto bg-fff">
+            <div class="rectangle-top pr">
+                <img src="./images/close.png" alt="" class="close-img pa">
+                <h3 class="c-f44e51 sc-center">请选择注册方式</h3>
+                <a href="./register.html" class="submitBtn c-fff m-auto sc-center m-top-60">注册学生/家长会员</a>
+                <a href="./register.html" class="submitBtnT c-333 m-auto sc-center m-top-60">注册老师会员</a>
+            </div>
+        </div>
+    </div>
+    <div class="winningNo Lucky-draw-mask">
+        <div class="box-rectangle m-auto bg-fff">
+            <div class="rectangle-top pr">
+                <img src="./images/csws.png" alt="" class="close-img2 pa">
+                <h3 class="c-f44e51 sc-center">请完善您的信息</h3>
+                <a href="javascript:;" class="submitBtnI c-fff m-auto sc-center">去完善</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.banner .swiper-container', {
+    spaceBetween: 0,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.banner .swiper-pagination',
+        clickable: true,
+    },
+});
+var swiper1 = new Swiper('.live-preview .matter .swiper-container', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.live-preview .matter .swiper-pagination',
+        clickable: true,
+    },
+});
+var swiper2 = new Swiper('.public-class .matter .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+});
+$(function() {
+    $('.close-img').on('click', function() {
+
+        $('.winningOk').fadeOut();
+    });
+    $('.registerClick').on('click', function() {
+
+        $('.winningOk').fadeIn();
+    });
+})
+</script>
+
+</html>

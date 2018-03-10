@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-我的-学习进度</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+	<style>
+		.mianS>div {
+			width:100%!important;
+			margin:0;
+		
+		}
+		.mianS {
+				height: 200px;
+				width: 100%;
+				padding: 0.5rem 0;
+				margin: 0 auto;
+			}
+	</style>
+	
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <p class="text">学习进度</p>
+        <a href="#" class="edit">编辑</a>
+    </div>
+    <div class="learn_progress">
+        <div class="clearfix outTime" style="position:relative;">
+            <div class="TimeLong">
+                <p class="time1">9.6小时</p>
+                <p class="time2">学习时长</p>
+            </div>
+            <div class="TimeLong">
+                <p class="time1">4天</p>
+                <p class="time2">连续学习</p>
+            </div>
+            <span class="fenge"></span>
+        </div>
+        <div id="main" class="mianS"></div>
+    </div>
+    <div class="study-box">
+        <div class="study-item">
+            <p class="time">3月21日 周一</p>
+            <ul>
+                <li class="no clearfix">
+                    <a href="stu_videoDeatils.html" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="progress-box">
+                            <div class="matter">
+                                <span class="progress-box-bar" style="width:10%;"></span>
+                            </div>
+                        </div>
+                        <a href="stu_videoDeatils.html" class="title">英语课程名称</a>
+                        <p class="pro">已看至10%</p>
+                        <p class="state">未完成课后作业</p>
+                        <a href="stu_videoDeatils.html" class="teacher">
+                        <img src="img/r1.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                    </div>
+                </li>
+                <li class="yes clearfix">
+                    <a href="stu_videoDeatils.html" class="left">
+                      <img src="img/sl2.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="progress-box">
+                            <div class="matter">
+                                <span class="progress-box-bar" style="width:100%;"></span>
+                            </div>
+                        </div>
+                        <a href="stu_videoDeatils.html" class="title">教你编写小故事</a>
+                        <img src="img/fin.png" class="complete">
+                        <a href="stu_videoDeatils.html" class="teacher">
+                        <img src="img/r2.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                    </div>
+                </li>
+                <li class="no clearfix">
+                    <a href="sstu_videoDeatils.html" class="left">
+                      <img src="img/sl3.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="progress-box">
+                            <div class="matter">
+                                <span class="progress-box-bar" style="width:50%;"></span>
+                            </div>
+                        </div>
+                        <a href="stu_videoDeatils.htmll" class="title">小熊买菜</a>
+                        <p class="pro">已看至50%</p>
+                        <p class="state">未完成课后作业</p>
+                        <a href="sstu_videoDeatils.html" class="teacher">
+                        <img src="img/r3.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="study-item">
+            <p class="signItem">3月18日 周五</p>
+            <ul>
+                <li class="yes clearfix">
+                    <a href="stu_videoDeatils.html" class="left">
+                      <img src="img/sl2.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="progress-box">
+                            <div class="matter">
+                                <span class="progress-box-bar" style="width:100%;"></span>
+                            </div>
+                        </div>
+                        <a href="stu_videoDeatils.html" class="title">教你编写小故事</a>
+                        <img src="img/fin.png" class="complete">
+                        <a href="stu_videoDeatils.html" class="teacher">
+                        <img src="img/r2.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="js/echarts.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+$(function() {
+    $("#ban").on("click", "li", function() {
+
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+})
+
+
+
+var myChart = echarts.init(document.getElementById('main'));
+var symbolSize = 20;
+var data = [
+    [21, "01.12"],
+    [238, " 01.13"],
+    [0, "01.14"],
+    [38, "01.15"],
+    [100, "01.16"],
+    [100, "01.17"],
+    [100, "今天"]
+];
+var points = [];
+// 指定图表的配置项和数据
+var option = {
+    title: {
+        text: '最近7天的学习时长/单位：分钟',
+        textStyle: {
+            color: "#999999",
+            fontSize: 6,
+            fontWeight: 400,
+        },
+        top: '5%',
+		left:30
+    },
+    tooltip: {
+
+    },
+    toolbox: {
+
+    },
+    grid: {
+        containLabel: true,
+		x:30,
+		y:60,
+		x2:30,
+		y2:0
+    },
+    xAxis: {
+        data: ['01.12', '01.13', '01.14', '01.15', '01.16', '01.17', '今天'],
+        type: 'category',
+        boundaryGap: false,
+        axisLabel: {
+            color: '#777777',
+            interval: 0,
+            textStyle: {
+                fontSize: 10,
+            }
+        },
+        axisLine: {
+            onZero: false,
+            lineStyle: {
+                color: '#feeded',
+                width: 2,
+            }
+
+        },
+        axisTick: {
+            show: false,
+			length:600
+        }
+    },
+    yAxis: {
+        type: 'value',
+
+        axisLine: {
+            onZero: false,
+            lineStyle: {
+                color: '#feeded',
+                width: 2,
+            }
+        },
+        splitLine: {
+            show: false,
+        },
+        axisLabel: {
+            color: "#777777",
+            formatter: function() {
+                return "";
+            }
+        },
+        axisTick: {
+            show: false
+        }
+    },
+    series: [{
+        id: 'a',
+        type: 'line',
+        smooth: true,
+        label: {
+            normal: {
+                show: true,
+                position: 'top'
+            }
+        },
+        itemStyle: {
+            normal: {
+                lineStyle: {
+                    color: '#fbb8b9'
+                }
+            }
+        },
+        symbolSize: 8,
+        data: [100, 0, 400, 45, 300, 56, 100]
+    }]
+};
+
+myChart.setOption(option);
+</script>
+
+</html>

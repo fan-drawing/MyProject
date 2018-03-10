@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学习报告</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-pie-loader.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/f_index.css">
+    <link rel="stylesheet" type="text/css" href="css/parent.css">
+    <style type="text/css">
+    .progress-states-bg .states-num {
+        background: #f7f8f8;
+        border: 1px solid #e8eae9;
+        border-radius: 100%;
+    }
+
+    .progress-states-bg .progress-states-num {
+        background: #f7f8f8;
+        border: 1px solid #e8eae9;
+        border-radius: 100%;
+    }
+
+    .progress-states-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -2.59rem;
+        margin-left: -2.59rem;
+    }
+
+    .progress-states-num {}
+
+    .study-progress-wrap .progress-states {
+        width: 5.75rem;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+          <img src="img/back.png">
+        </a>
+        <p class="text">成绩查看</p>
+    </div>
+    <div class="study-report-wrap">
+        <div class="study-report-top clearfix">
+            <div class="study-top-list">
+                <p class="class_num">四年级2班</p>
+                <p class="learning-class">英语课程</p>
+            </div>
+            <div class="study-top-list">
+                <div class="study-top-listImg" style="background: url('img/122112.png') no-repeat center;background-size:cover;"></div>
+                <div class="user-name">
+                    <p>安安</p>
+                    <p class="really-name">实名：安安</p>
+                </div>
+            </div>
+            <div class="study-top-list">
+                <img src="img/317c140ceea33d93632093c15acca0c1.png">
+                <div class="ranking-text">
+                    <p>排名</p>
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <!-- 进度 -->
+        <div class="block_progress">
+            <div class="ceil one">
+                <div class="progress-state">
+                    <div class="progress-states">
+                        <div id="pie"></div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="progress-title">学习进度</div>
+                    <div class="progress-title-p">已经看完：3 未看完：<span>3</span>
+                    </div>
+                    <a href="#" class="view-details-btn">
+                            查看详情
+                        </a>
+                </div>
+            </div>
+            <div class="ceil two">
+                <div class="progress-state">
+                    <div class="progress-states">
+                        <div id="pie3"></div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="progress-title">综合评价</div>
+                </div>
+            </div>
+            <div class="ceil three">
+                <div class="progress-state">
+                    <div class="progress-states">
+                        <div id="pie4"></div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="progress-title">学习进度</div>
+                    <div class="progress-title-p">已经看完：3 未看完：<span>3</span>
+                    </div>
+                    <a href="#" class="view-details-btn">
+                            查看详情
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="jindu">
+        </div>
+        <!-- 老师评语 -->
+        <div class="teacher-comments">
+            <h4 class="teacher-comments-h4">教师评语</h4>
+            <p class="teacher-comments-p">你学习比较认真，老师觉得批阅你的作业是一种美好的享受。在这里老师真诚地送你一句话：学习如逆水行舟，不进则退，要达到自己理想境界，必须持之以恒，不懈努力才行。</p>
+            <h4 class="teacher-comments-h4">班级排行</h4>
+            <ol class="teacher-comments-ol">
+                <li class="comments-lists clearfix">
+                    <div class="lists-sort-num">1</div>
+                    <div class="lists-sort-img" style="background-image: url('images/OYZzLHOXjUqswGBz.jpg');"></div>
+                    <div class="lists-sort-name">
+                        <span>晓晓</span>
+                        <p class="yes-p">实名：周晓晓</p>
+                    </div>
+                    <div class="all-evaluate">综合评价 A+</div>
+                </li>
+                <li class="comments-lists clearfix">
+                    <div class="lists-sort-num">2</div>
+                    <div class="lists-sort-img" style="background-image: url('images/OYZzLHOXjUqswGBz.jpg');"></div>
+                    <div class="lists-sort-name">
+                        <span>晓晓</span>
+                        <p class="yes-p">实名：周晓晓</p>
+                    </div>
+                    <div class="all-evaluate">综合评价 A+</div>
+                </li>
+                <li class="comments-lists clearfix">
+                    <div class="lists-sort-num">3</div>
+                    <div class="lists-sort-img" style="background-image: url('images/OYZzLHOXjUqswGBz.jpg');"></div>
+                    <div class="lists-sort-name">
+                        <span>晓晓</span>
+                        <p class="yes-p">实名：周晓晓</p>
+                    </div>
+                    <div class="all-evaluate">综合评价 A+</div>
+                </li>
+                <li class="comments-lists clearfix">
+                    <div class="lists-sort-num">4</div>
+                    <div class="lists-sort-img" style="background-image: url('images/OYZzLHOXjUqswGBz.jpg');"></div>
+                    <div class="lists-sort-name">
+                        <span>晓晓</span>
+                        <p class="yes-p">实名：周晓晓</p>
+                    </div>
+                    <div class="all-evaluate">综合评价 A+</div>
+                </li>
+                <li class="comments-lists clearfix">
+                    <div class="lists-sort-num">5</div>
+                    <div class="lists-sort-img" style="background-image: url('images/OYZzLHOXjUqswGBz.jpg');"></div>
+                    <div class="lists-sort-name">
+                        <span>晓晓</span>
+                        <p class="yes-p">实名：周晓晓</p>
+                    </div>
+                    <div class="all-evaluate">综合评价 A-</div>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-pie-loader.js"></script>
+<script type="text/javascript">
+var width = $(document).width();
+$(".progress-state").css({ "height": width / 3 + "px" });
+
+
+$(function() {
+    $("#pie").svgPie({ percentage: 25 });
+    $("#pie3").svgPie({ percentage: 30 });
+    $("#pie4").svgPie({ percentage: 60 });
+})
+</script>
+
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学习报告</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <style type="text/css">
+    .main {
+        border-top: 0.9375rem solid #f7f7f7;
+        padding-bottom: 3.0625rem;
+    }
+
+    .all-select {
+        float: right;
+        padding-right: 1.125rem;
+        margin-top: 0.9375rem;
+    }
+
+    .all-select:before {
+        content: "";
+        width: 0.875rem;
+        height: 0.875rem;
+        border: 1px solid #ccc;
+        display: inline-block;
+        border-radius: 100%;
+        margin-top: .15rem;
+        float: left;
+        margin-right: .3rem;
+    }
+
+    .all-select.active:before {
+        border: none;
+        background: url("img/report_tab_select.png");
+        background-size: 100%;
+    }
+
+    .generate-btn {
+        width: 18.125rem;
+        height: 2.75rem;
+        line-height: 2.75rem;
+        margin: 3.5625rem auto 0;
+        display: block;
+        border-radius: 3.75rem;
+        background: #33a9f9;
+        font-size: 0.875rem;
+        color: #ffffff;
+        overflow: hidden;
+        clear: both;
+        text-align: center;
+    }
+
+    .table-main-bottom ol .table-bottom-lists:first-child:before {
+        content: "";
+        width: 0.875rem;
+        height: 0.875rem;
+        border: 1px solid #ccc;
+        display: inline-block;
+        border-radius: 100%;
+        float: left;
+        margin-top: 1rem;
+    }
+
+    .table-main-bottom .active .table-bottom-lists:first-child:before {
+        content: "";
+        border: none;
+        background: url(img/report_tab_select.png);
+        background-size: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="#" class="back">
+          <img src="img/back.png">
+        </a>
+        <p class="text">我的班级</p>
+    </div>
+    <div class="main">
+        <div class="main-report">
+            <h3 class="main-report-h3">三年级2班学习报告</h3>
+            <p class="main-report-p">2017-12-12 周天</p>
+        </div>
+        <div class="class-table">
+            <div class="table-main-top">
+                <ul>
+                    <li class="table-top-lists">姓名</li>
+                    <li class="table-top-lists">作业次数</li>
+                    <li class="table-top-lists">作业完成</li>
+                    <li class="table-top-lists">成绩</li>
+                </ul>
+            </div>
+            <div class="table-main-bottom">
+                <ol>
+                    <li class="table-bottom-lists">学生1</li>
+                    <li class="table-bottom-lists">1</li>
+                    <li class="table-bottom-lists">10/10</li>
+                    <li class="table-bottom-lists good_blue">A+</li>
+                </ol>
+                <ol>
+                    <li class="table-bottom-lists">学生2</li>
+                    <li class="table-bottom-lists">1</li>
+                    <li class="table-bottom-lists">10/10</li>
+                    <li class="table-bottom-lists good_blue">A+</li>
+                </ol>
+                <ol>
+                    <li class="table-bottom-lists">学生3</li>
+                    <li class="table-bottom-lists">1</li>
+                    <li class="table-bottom-lists">10/10</li>
+                    <li class="table-bottom-lists good_blue">B-</li>
+                </ol>
+            </div>
+            <div class="all-select">
+                批量操作
+            </div>
+            <div class="generate-btn">
+                发布学习报告
+            </div>
+        </div>
+    </div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#" class="active">
+         <img src="img/ft1.png">
+         <p>首页</p>
+       </a>
+            </li>
+            <li>
+                <a href="#">
+         <img src="img/ft2.png">
+         <p>学生</p>
+       </a>
+            </li>
+            <li>
+                <a href="#">
+         <img src="img/ft3.png">
+         <p>我的</p>
+       </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var i = 1;
+    $(".table-main-bottom ol").click(function() {
+        $(this).toggleClass("active");
+        var ss = $(this).parents(".table-main-bottom");
+        if (ss.find(".active").length != ss.find("ol").length) {
+            $(".all-select").removeClass("active");
+            i = 1;
+        } else {
+            $(".all-select").addClass("active");
+            i = 0;
+        }
+    })
+    $(".all-select").click(function() {
+        if (i % 2) {
+            $(".table-main-bottom ol").addClass("active");
+        } else {
+            $(".table-main-bottom ol").removeClass("active");
+        }
+        $(this).toggleClass("active");
+        i++;
+    })
+})
+</script>
+
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-错题练习</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style type="text/css">
+    .header .search {
+        position: absolute;
+        float: none!important;
+        left: 50%;
+        margin-left: -7.3rem;
+        margin-top: 0.465rem;
+    }
+
+    .header .search .text {
+        line-height: 1.8rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message">
+            <img src="img/mess.png">
+        </a>
+    </div>
+    <div class="errorTest-box">
+        <div class="menueBlock">
+            <ul class="errorMenue clearfix">
+                <li class="mleft">
+                    <span class="tobottomCommon">作业</span>
+                </li>
+                <li class="mmiddle">
+                    <span class="tobottomCommon">科目</span>
+                </li>
+                <li class="mright">
+                    <span class="tobottomCommon">类型</span>
+                </li>
+            </ul>
+        </div>
+        <div class="list_errorTest">
+            <div class="limit border_bottom">
+                <div class="header_Test clearfix">
+                    <div>时间</div>
+                    <div>编号</div>
+                    <div>解析</div>
+                    <div>练习</div>
+                </div>
+            </div>
+            <div class="">
+                <ul class="clearfix list_errors">
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                    <li class="limit ">
+                        <div class="clearfix item_errorTest">
+                            <div>2018-11-25</div>
+                            <div>08</div>
+                            <div>答案</div>
+                            <div><a class="testing" href="#">练习</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$(".nav_homework li").click(function() {
+
+    var index = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+})
+</script>
+
+</html>

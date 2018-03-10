@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>教师端-我要发布</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" href="css/sc_t.css">
+    <style>
+    body {
+        /*background: #f7f7f7;*/
+    }
+
+    form {
+
+        padding: 0;
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        min-height: 1rem;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="study-header">
+            <a href="javascript:history.go(-1);" class="back">
+         <img src="images/sc_t_1.png">
+        </a>
+            <p class="text black">动态</p>
+            <a href="javascript:;" class="edit">
+                <button class="c-999">完成</button>
+            </a>
+        </div>
+        <!--  -->
+        <div class="creCourse bg-fff">
+            <div class="creCourse-write clearfix c-333">
+                <input type="text" placeholder="请输入标题..." class="sc-fl">
+            </div>
+        </div>
+        <div class="creCourse bg-fff">
+            <div class="creCourse-write clearfix c-333">
+                <textarea type="text" placeholder="请输入内容..." class="sc-fl"></textarea>
+                <div class="creCourse-queryImg clearfix">
+                    <div id="imgShowBox" class="imgShowBox sc-fl clearfix"></div>
+                    <div class="inputClickBox sc-fl pr">
+                        <input type="file" class="pa" name="file" id="doc" multiple="multiple" onchange="javascript:setImagePreviews('imgShowBox');" accept="image/*" />
+                        <img src="images/sc_t_4.png" alt="" class="pa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--  -->
+    <div class="creCourse-queryImg clearfix" style="display:none">
+        <div id="imgShowBox2" class="imgShowBox sc-fl clearfix"></div>
+        <div class="inputClickBox sc-fl pr">
+            <input type="file" class="pa" name="file" id="doc2" multiple="multiple" onchange="javascript:setImagePreviews('imgShowBox2');" accept="image/*" />
+            <img src="images/sc_t_4.png" alt="" class="pa">
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sc_t.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script>
+</script>
+
+</html>

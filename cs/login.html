@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/z_index.css">
+    <link rel="stylesheet" href="./css/sc_t.css">
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+         <img src="./images/sc_t_1.png">
+        </a>
+        <p class="text c-f44e51">登录</p>
+    </div>
+    <form action="" method="Post">
+        <div class="forms-group">
+            <div class="group-box clearfix">
+                <label for="" class="sc-fl">用户名</label>
+                <input type="text" class="sc-fl" placeholder="请输入用户名/手机号">
+            </div>
+            <div class="group-box clearfix">
+                <label for="" class="sc-fl">密码</label>
+                <input type="password" class="sc-fl" placeholder="请输入登录密码">
+            </div>
+            <div class="group-box clearfix pr">
+                <label for="" class="sc-fl">验证码</label>
+                <input type="text" class="sc-fl" placeholder="请输入图形码">
+                <div class="pa img-code"><img src="./images/code.png" alt=""></div>
+                <div class="set-code c-f44e51 pa">换一张</div>
+            </div>
+            <button class="m-top-160 c-fff submitBtn sc-center m-auto">登录</button>
+        </div>
+    </form>
+    <div class="a-link sc-center">
+        <a href="javascript:;" class="c-68a5e1 registerClick">注册账号</a>
+        <span>｜</span>
+        <a href="./forget_password.html" class="c-f44e51">忘记密码?</a>
+    </div>
+    <!-- 其他登录方式 -->
+    <div class="other-login pa">
+        <div class="other-login-title">
+            <span></span>
+            <b class="c-000">其它登录方式</b>
+            <span></span>
+        </div>
+        <div class="other-login-query">
+            <a href="javascript:;"><img src="./images/qq.png" alt=""></a>
+            <a href="javascript:;"><img src="./images/weixin.png" alt=""></a>
+            <a href="javascript:;"><img src="./images/weibo.png" alt=""></a>
+        </div>
+    </div>
+    <div class="winningOk Lucky-draw-mask">
+        <div class="box-rectangle m-auto bg-fff">
+            <div class="rectangle-top pr">
+                <img src="./images/close.png" alt="" class="close-img pa">
+                <h3 class="c-f44e51 sc-center">请选择注册方式</h3>
+                <a href="./register.html" class="submitBtn c-fff m-auto sc-center m-top-60">注册学生/家长会员</a>
+                <a href="./register.html" class="submitBtnT c-333 m-auto sc-center m-top-60">注册老师会员</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/rem.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script src="./js/sc_t.js"></script>
+<script>
+$(function() {
+    $('.close-img').on('click', function() {
+
+        $('.winningOk').fadeOut();
+    });
+    $('.registerClick').on('click', function() {
+
+        $('.winningOk').fadeIn();
+    });
+})
+</script>
+
+</html>

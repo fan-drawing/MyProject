@@ -1,0 +1,21 @@
+faq.html   常见问题
+Terms_of_Service.html   服务条款
+
+Withdraw.html     提现申请
+withdra.html     提现审核中
+rule_description.html   规则说明
+
+About_us.html 关于我们
+
+change_password.html  修改密码
+
+
+set 设置
+
+system_ to_notify.html  系统通知
+account_details.html   账户明细
+
+my_Earnings.html 我的收入
+option_city.html  城市选择
+
+index.html 首页

@@ -1,0 +1,144 @@
+/*上传图片插件的样式*/
+.img-box .up-p{
+	font-size: 0.6875rem;
+	color: #999999;
+}
+ .img-section{
+	padding-bottom: 0.5625rem;
+	/*padding: 18px;*/
+}
+.z_photo .z_file{
+	position: relative;
+}
+.z_file  .file{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+.z_photo .up-section{
+	position: relative;
+	margin-right: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+.up-section .close-upimg{
+	position: absolute;
+	top: -0.1875rem;
+	right: -0.25rem;
+	z-index: 10;
+	width:0.9375rem;
+	height:0.9375rem;
+}
+.up-section .up-span{
+	display: block;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+	background: rgba(0,0,0,.5);
+}
+/*.up-section:hover{
+	border: 0.0625rem solid #f15134;
+}
+.up-section:hover .close-upimg{
+	display: block;
+}*/
+.up-section:hover .up-span{
+	visibility: visible;
+}
+.z_photo .up-img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius:0.3rem;
+
+}
+.loading{
+    border: 1px solid #D1D1D1;
+	background:url(../img/loading.gif) no-repeat center;
+}
+.up-opcity{
+	opacity: 0;
+}
+.img-name-p{
+	display: none;
+}
+.upimg-div .up-section {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    display: block;float: left;
+}
+.img-box .upimg-div .z_file {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    float: left;
+}
+.z_file .add-img {
+    display: block;
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
+/*遮罩层样式*/
+.mask{
+	z-index: 10;
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+.mask .mask-content{
+	 width: 15.625rem;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin-left: -7.8125rem;
+	 margin-top: -2.5rem;
+	 background: white;
+	 height: 5.0rem;
+	 text-align: center;
+	 border-radius:0.3rem;
+}
+.mask .mask-content .del-p{
+	color: #555;
+	height: 2.9375rem;
+	line-height: 2.9375rem;
+	font-size: 0.5625rem;
+	border-bottom: 1px solid #D1D1D1;
+}
+.mask-content .check-p{
+	height: 2.0625rem;
+	line-height: 2.0625rem;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.mask-content .check-p span{
+	width: 49%;
+	display:block;
+	float: left;
+	text-align: center;
+	color:#fd8a3a ;
+	font-size: 0.5625rem;
+}
+.check-p .del-com{
+	border-right: 1px solid #D1D1D1;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-商家登录</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		body{
+			background:#fffefe;     
+		}
+		.C-password{
+			background:#fff;
+		 padding-bottom: 14rem;
+
+		}
+		.C-password .input-box{
+			border:none;
+		}
+		.C-password .input-box .box{
+			margin-bottom:1.03125rem;
+
+			    border: 1px solid #e0e0e0;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="set.html"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>登录</p>
+	</div>
+</header>
+<div class="Login">
+	<ul class="login-tab clearfix">
+		<li>
+			<a href="login_user.html">
+				用户登录
+			</a>
+		</li>
+		<li>
+			<a href="login_distribution.html">
+				跑腿登录
+			</a>
+		</li>
+		<li class="login-li-active">
+			<a href="login_merchant.html">
+				商家登录
+			</a>
+		</li>
+	</ul>
+	<div class="log_in">
+		<div class="login-sms clearfix">
+			<p class="login-sms-p">短信登录</p>	
+			<p>密码登录</p>
+		</div>
+		<div class="login-box">
+			<div class="login-password">
+			<form action="" method="post">
+				<div class="input-box">
+					<input type="text" placeholder="请输入手机号">
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="请输入验证码">
+					<span>发送</span>
+				</div>
+				<button class="login-button">登录</button>
+			</form>
+			</div>
+			<!--  -->
+			<div class="login-password" style="display:none;">
+			<form action="" method="post">
+				<div class="input-box">
+					<input type="text" placeholder="请输入手机号">
+				</div>
+				<div class="input-box">
+					<input type="text" placeholder="请输入密码">
+					
+				</div>
+				<button class="login-button">登录</button>
+			</form>	
+			</div>
+		</div>		
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+		$('.login-sms p').on('click',function(){
+			$(this).addClass('login-sms-p').siblings().removeClass('login-sms-p');
+			$('.login-box .login-password').eq($(this).index()).show().siblings().hide();
+		})
+	});
+</script>
+</body>
+</html>

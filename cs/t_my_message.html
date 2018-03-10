@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>教师端-我的消息</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" href="css/sc_t.css">
+    <style>
+    .study-header .edit img {
+        width: 1.1875rem;
+        height: 1.375rem;
+        margin-top: 0.7rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+         <img src="images/sc_t_1.png">
+        </a>
+        <p class="text black">我的消息</p>
+        <!-- <a href="javascript:;" class="edit"><img src="images/sc_t_22.png" alt=""></a> -->
+    </div>
+    <ul class="myMessage">
+        <li class="clearfix">
+            <a href="student_message.html">
+                <div class="left-img sc-fl pr">
+                    <img src="images/sc_t_24.png" alt="" class="pa">
+                    <span class="sc-center c-fff pa">1</span>
+                </div>
+                <div class="right-content sc-fr">
+                    <p class="p1 c-333">学生消息</p>
+                    <p class="p2 c-999">三年级2班有同学发来3条消息</p>
+                    <p class="p3 c-999">2017-01-25</p>
+                </div>
+            </a>
+        </li>
+        <li class="clearfix">
+            <a href="stu_Tdetails.html">
+                <div class="left-img sc-fl pr">
+                    <img src="images/sc_t_25.png" alt="" class="pa">
+                    <!-- <span class="sc-center c-fff pa"></span> -->
+                </div>
+                <div class="right-content sc-fr">
+                    <p class="p1 c-333">系统通知</p>
+                    <p class="p2 c-999">三年级2班有同学发来3条消息</p>
+                    <p class="p3 c-999">2017-01-25</p>
+                </div>
+            </a>
+        </li>
+        <li class="clearfix">
+            <a href="comment_message.html">
+                <div class="left-img sc-fl pr">
+                    <img src="images/sc_t_26.png" alt="" class="pa">
+                    <!-- <span class="sc-center c-fff pa"></span> -->
+                </div>
+                <div class="right-content sc-fr">
+                    <p class="p1 c-333">评论消息</p>
+                    <p class="p2 c-999">三年级2班有同学发来3条消息</p>
+                    <p class="p3 c-999">2017-01-25</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <!--  -->
+    <div class="empty-tf"></div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#">
+           <img src="images/ft01.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+           <img src="images/ft03.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script type="text/javascript">
+$('.sc-matter ul li .right .t-g .img').click(function() {
+    if ($(this).attr('src') == 'img/xin1.png') {
+        $(this).attr('src', 'img/xin.png');
+    } else {
+        $(this).attr('src', 'img/xin1.png');
+    }
+})
+</script>
+
+</html>

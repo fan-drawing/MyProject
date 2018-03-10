@@ -1,0 +1,894 @@
+.learning-time-wrap {
+    height: 2.8125rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 0.5625rem;
+    margin-bottom: 0.65625rem;
+}
+
+.learning-time-wrap .learning-time-left {
+    padding-left: 6.0rem;
+    position: relative;
+}
+
+.learning-time-wrap .learning-time-left:before {
+    content: "";
+    width: 0px;
+    height: 1.09375rem;
+    position: absolute;
+    right: 0;
+    top: 0.875rem;
+    border-right: 1px solid #e5e5e5;
+}
+
+.learning-time-wrap .learning-time-left,
+.learning-time-wrap .learning-time-right {
+    flex: 1;
+}
+
+.learning-time-wrap .learning-time-right {
+    padding-left: 2.5rem;
+}
+
+.learning-time-wrap .learning-times-top {
+    font-size: 0.9375rem;
+    font-weight: 900;
+    color: #333333;
+}
+
+.learning-time-wrap .learning-times-bottom {
+    font-size: 0.625rem;
+    color: #999999;
+}
+
+.statistics_progress {
+    width: 22.5rem;
+    height: 14.6875rem;
+    margin: 0 auto;
+    border-radius: 0.225rem;
+    box-shadow: 0px 0.05625rem 0.3125rem #c1c1c1;
+}
+
+.progress-study {
+    margin-top: 0.875rem;
+    padding: 0 1.09375rem;
+}
+
+.study-lists-img {
+    width: 7.0rem;
+    height: 5.625rem;
+    border-radius: 0.3125rem;
+    float: left;
+    position: relative;
+    box-shadow: 0.125rem 0.115rem 0.4375rem #9a9a9a;
+}
+
+.study-lists-img:before {
+    content: "";
+    width: 1.5625rem;
+    height: 1.5625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("../img/bf.png") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.progress-study-title {
+    font-size: 1.0625rem;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 0.8125rem;
+}
+
+.progress-study-lists {
+    padding-bottom: 0.84375rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.study-lists-right {
+    width: 12.875rem;
+    height: 5.6875rem;
+    float: right;
+}
+
+.study-lists-right-jin {
+    width: 12.6875rem;
+    height: 1.1875rem;
+    border-radius: 0.3125rem;
+    box-shadow: -0.175rem 0.175rem 0.375rem #b2b2b2;
+}
+
+.study-lists-right-drs {
+    width: 11.0rem;
+    height: 0.40625rem;
+    background-color: #feeded;
+    border-radius: 2.375rem;
+    float: left;
+    overflow: hidden;
+    margin: 0.375rem 0 0 0.46875rem;
+}
+
+.study-lists-right .state-red {
+    background-color: #f44e51;
+}
+
+.progress-lists-left .state-red {
+    color: #f44e51;
+    background: none;
+}
+
+.progress-state {
+    display: block;
+    width: 10%;
+    height: 100%;
+}
+
+.progress-lists-left .progress-lists-h4 {
+    font-size: 0.875rem;
+    color: #333333;
+    padding-top: 0.6875rem;
+}
+
+.study-lists-right .progress-unfinished {
+    font-size: 0.6875rem;
+}
+
+.progress-lists-left .state-green {
+    width: 3.03125rem;
+    height: 2.53125rem;
+    display: none;
+    margin-top: .2rem;
+}
+
+.study-lists-right-drs .state-green {
+    width: 100%;
+    background: #3dbb2b;
+}
+
+.progress-lists-left .state-green img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.progress-lists-state {
+    height: 1.90625rem;
+    padding-top: 0.21875rem;
+    color: #777777;
+}
+
+.state-progress-bottom {
+    position: relative;
+}
+
+.state-user-img {
+    width: 2.125rem;
+    height: 2.125rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0.46875rem auto 0;
+}
+
+.state-user {
+    width: 7.0625rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.state-user-name {
+    color: #999999;
+    font-size: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+/* 查看班级 */
+
+.class-view_banenr {
+    width: 100%;
+    height: 8.75rem;
+}
+
+.table-main-top {
+    padding: 0 1.09375rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.table-main-top ul,
+.table-main-bottom ol {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.table-main-top .table-top-lists {
+    /*flex: 1;*/
+    width: 4.625rem;
+    text-align: center;
+    color: #999999;
+    font-size: 0.75rem;
+}
+
+.table-main-top .table-top-lists:last-child {
+    width: 6rem;
+}
+
+.table-main-bottom ol {
+    padding-left: 1.09375rem;
+    line-height: 3.125rem;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.table-main-bottom .table-bottom-lists {
+    width: 4rem;
+    text-align: center;
+}
+
+.class-table .table-main-bottom .table-bottom-lists:last-child {
+    width: 6rem;
+}
+
+.table-main-bottom .good_red {
+    color: #f44e51;
+}
+
+.table-main-bottom .good_green {
+    color: #3dbb2b;
+}
+
+
+
+
+
+
+
+
+
+/* 班级详情 */
+
+.calss_details_h3 {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: initial;
+    font-size: 1.0625rem;
+    border-bottom: 10px solid #f6f6f6;
+}
+
+.class-title .fl {
+    float: left;
+}
+
+.class-title .fr {
+    float: right;
+}
+
+.class-title {
+    padding: 0.9375rem 1.09375rem;
+}
+
+.class-title .fl img {
+    width: 1.03125rem;
+    display: inline-block;
+    margin-top: 0.15625rem;
+}
+
+.class-title .fl p {
+    height: 1.25rem;
+    display: inline-block;
+    font-weight: 900;
+    padding-left: 0.625rem;
+    font-size: 1.0625rem;
+}
+
+.class-title .fr img {
+    width: 1.25rem;
+    float: left;
+    margin-top: 0.09375rem;
+}
+
+.class-title .fr p {
+    float: left;
+    display: block;
+    height: 1.25rem;
+    font-size: 1.0625rem;
+    color: #333333;
+    font-weight: 900;
+    padding-left: 0.625rem;
+}
+
+.class_details_type {
+    padding: 0 1.09375rem;
+}
+
+.class_details_types {
+    width: 6.6875rem;
+    height: 2.5rem;
+    background-color: #fee9ed;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #333333;
+    line-height: 2.5rem;
+    border-radius: 0.3125rem;
+}
+
+.class_details_types:first-child {
+    float: left;
+}
+
+.class_details_types:last-child {
+    float: right;
+}
+
+.childrens {
+    padding: 0 1.09375rem;
+}
+
+.children_title {
+    padding: 0.9375rem 0 0.875rem;
+}
+
+.children_title img {
+    width: 1.25rem;
+    display: inline-block;
+    margin-top: 0.335rem;
+}
+
+.children_title p {
+    font-size: 1.0625rem;
+    color: #333333;
+    display: inline-block;
+}
+
+.children_class-wrap .childrens-lists {
+    width: 3.4375rem;
+    float: left;
+    padding-right: 0.9375rem;
+    padding-bottom: 0.625rem;
+    box-sizing: initial;
+}
+
+.children_class-wrap .childrens-lists:nth-of-type(5n) {
+    padding-right: 0px;
+}
+
+.children_class-wrap .childrens-lists .children-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.children_class-wrap .childrens-lists .children-p {
+    color: #333333;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* 成绩查看 */
+
+.result-view-tar {
+    height: 2.625rem;
+    border-bottom: 1px solid #eee;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.result-view-tar .result-view-tars {
+    line-height: 2.625rem;
+    flex: 1;
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.result-view-tar .active:before {
+    content: "";
+    width: 4.4375rem;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: url("../img/result_tars_active.png");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.result-view .result-view-title {
+    line-height: 2.8125rem;
+    font-size: 1.0625rem;
+    color: #333333;
+    padding-left: 1.09375rem;
+    font-weight: 700;
+}
+
+.result-view-main .result-view .lists {
+    height: 4.6875rem;
+    box-shadow: 0 0.04rem 0.275rem #c7c7c7;
+    padding: 0 1.09375rem;
+}
+
+.result-view .lists .lists-sate {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    color: #f44e51;
+    text-align: right;
+    padding-top: 0.625rem;
+}
+
+.result-view .lists .lists-title {
+    color: #333333;
+    padding-bottom: 0.2rem;
+}
+
+.result-view .lists .lists-title img {
+    width: 1.09375rem;
+    height: 0.84375rem;
+    display: inline-block;
+    margin-top: 0.1375rem;
+}
+
+.result-view .lists .lists-title span {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+}
+
+.result-view .lists .lists-dot {
+    height: 0.9125rem;
+    overflow: hidden;
+    line-height: 0.8125rem;
+    color: #777777;
+    font-size: 0.8125rem;
+}
+
+.result-view-main .result-view:frist-child {
+    display: block;
+}
+
+.result-view-main .result-view:last-child {
+    display: none;
+}
+
+.result-view .lists .lists-sate.lists-sate_blue {
+    color: #34ace4;
+}
+
+
+
+
+
+
+
+
+
+/* 学习报告 */
+
+.study-report-wrap .study-report-top {
+    height: 6.625rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.625rem 1.09375rem 0;
+}
+
+.study-report-top .study-top-list {
+    float: left;
+}
+
+.study-report-top .study-top-list:first-child {
+    padding-left: 1.4375rem;
+}
+
+.study-report-top .study-top-list:nth-of-type(2) {
+    width: 10.28125rem;
+}
+
+.study-report-top .study-top-list .class_num {
+    font-size: 0.9375rem;
+    line-height: 0.9375rem;
+    color: #333333;
+    margin-top: 1.125rem;
+}
+
+.study-report-top .study-top-list .learning-class {
+    line-height: 0.9375rem;
+    margin-top: 0.625rem;
+}
+
+.study-top-list .study-top-listImg {
+    width: 3.8125rem;
+    height: 3.8125rem;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.study-top-list .user-name {
+    text-align: center;
+}
+
+.study-top-list .user-name p {
+    display: inline-block;
+}
+
+.study-top-list .user-name p:first-child {
+    color: #333333;
+    font-size: 0.9375rem;
+}
+
+.study-top-list .user-name p:last-child {
+    color: #f44e51;
+    font-size: 0.75rem;
+}
+
+.study-top-list .user-name p:last-child:before {
+    content: "（";
+    color: #666666;
+}
+
+.study-top-list .user-name p:last-child:after {
+    content: "）";
+    color: #666666;
+}
+
+.study-top-list:last-child {
+    padding-top: 0.96875rem;
+    padding-right: 0.275rem;
+}
+
+.study-top-list:last-child img {
+    width: 1.96875rem;
+    height: 2.4375rem;
+    display: inline-block;
+    margin-right: 0.65625rem;
+}
+
+.study-top-list:last-child .ranking-text {
+    display: inline-block;
+}
+
+.study-top-list:last-child .ranking-text p {
+    font-size: 0.9375rem;
+    color: #333333;
+    text-align: center;
+}
+
+.study-progress-wrap {
+    padding: 0 1.09375rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-top: 0.9375rem;
+}
+
+.progress-state {
+    flex: 1;
+}
+
+.study-progress-wrap .progress-states {
+    width: 5.75rem;
+    height: 5.75rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.progress-states-bg {
+    width: 5.1875rem;
+    height: 5.1875rem;
+    border-radius: 100%;
+    background: url("../img/progress_state_bg.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999999999;
+}
+
+.progress-state .progress-states .progress-states-num {
+    color: #7b4697;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 5.1875rem;
+}
+
+.progress-state:last-child .progress-states .progress-states-num {
+    color: #28a7e1;
+}
+
+.progress-state:nth-of-type(2) .progress-states .progress-states-num {
+    color: #f44e51;
+}
+
+.progress-state .rendered circle:nth-child(1) {
+    fill: #ffffff !important;
+}
+
+.progress-state:nth-of-type(1) .rendered circle:nth-child(2) {
+    fill: #7b4697 !important;
+    stroke: #7b4697 !important;
+}
+
+.study-progress-wrap .msg {
+    text-align: center;
+}
+
+.progress-state:nth-of-type(2n) .progress-title {
+    margin-top: 1.6875rem;
+}
+
+.progress-title {
+    color: #333333;
+    font-size: 0.9375rem;
+}
+
+.progress-title-p {
+    color: #999999;
+    font-size: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.progress-title-p span {
+    color: #f44e51;
+}
+
+.view-details-btn {
+    width: 4.75rem;
+    height: 1.25rem;
+    background-color: #fff;
+    border-radius: 1.375rem;
+    box-shadow: 0 0.05625rem 0.3125rem #c3c3c3;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.625rem;
+    color: #999999;
+}
+
+.teacher-comments {
+    padding: 0 1.09375rem;
+}
+
+.teacher-comments-h4 {
+    padding-top: 0.8125rem;
+    font-size: 1.0625rem;
+    color: #333333;
+}
+
+.teacher-comments-p {
+    padding-top: 0.75rem;
+    color: #777777;
+    font-size: 0.75rem;
+}
+
+.teacher-comments-ol {
+    padding-top: 0.96875rem;
+}
+
+.teacher-comments-ol .comments-lists {
+    padding-bottom: 0.25rem;
+}
+
+.teacher-comments-ol .comments-lists .lists-sort-num {
+    width: 1.125rem;
+    height: 1.90625rem;
+    float: left;
+    margin-top: 0.3125rem;
+    line-height: 1.90625rem;
+    font-size: 0.9375rem;
+    color: #333333;
+}
+
+.teacher-comments-ol .comments-lists:first-child .lists-sort-num,
+.teacher-comments-ol .comments-lists:nth-of-type(2) .lists-sort-num,
+.teacher-comments-ol .comments-lists:nth-of-type(3) .lists-sort-num {
+    text-indent: -20000px;
+    background: url("../img/ahead_sort.png") no-repeat left;
+    background-size: 4.34375rem;
+}
+
+.teacher-comments-ol .comments-lists:nth-of-type(2) .lists-sort-num {
+    background-position-x: -1.625rem;
+}
+
+.teacher-comments-ol .comments-lists:nth-of-type(3) .lists-sort-num {
+    background-position-x: -3.21875rem;
+}
+
+.teacher-comments-ol .comments-lists .lists-sort-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    float: left;
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+    margin-left: 0.625rem;
+}
+
+.teacher-comments-ol .comments-lists:nth-of-type(2) .lists-sort-img:before,
+.teacher-comments-ol .comments-lists:nth-of-type(1) .lists-sort-img:before,
+.teacher-comments-ol .comments-lists:nth-of-type(3) .lists-sort-img:before {
+    content: "";
+    position: absolute;
+    top: -0.6875rem;
+    right: -0.4375rem;
+    width: 1.625rem;
+    height: 1.4375rem;
+    background: url("../img/crown.png") no-repeat center;
+    background-size: cover;
+}
+
+.lists-sort-name {
+    line-height: 2.5rem;
+    float: left;
+    padding-left: 1.0rem;
+}
+
+.lists-sort-name span {
+    font-size: 0.875rem;
+    color: #333333;
+}
+
+.lists-sort-name .yes-p {
+    display: inline-block;
+    color: #f44e51;
+    font-size: 0.6875rem;
+}
+
+.lists-sort-name .yes-p:before {
+    content: "（";
+    color: #333;
+}
+
+.lists-sort-name .yes-p:after {
+    content: "）";
+    color: #333;
+}
+
+.all-evaluate {
+    float: right;
+    line-height: 2.5rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+/* 联系人 */
+
+.contact-sort {
+    position: fixed;
+    right: 0.7rem;
+    top: 2.75rem;
+    margin-top: 0.5rem;
+}
+
+.contact-sort .active {
+    width: 1.2825rem;
+    height: 1.2825rem;
+    background: #ff0167;
+    color: #fff;
+}
+
+.contact-sort span {
+    width: 1.2825rem;
+    height: 1.2825rem;
+    line-height: 1.2825rem;
+    text-align: center;
+    display: block;
+    color: #999999;
+    font-size: 0.9rem;
+    border-radius: 100%
+}
+
+.contact-group {
+    background: #f1f1f1;
+}
+
+.contact-wrap .contact-sort-num {
+    color: #333333;
+    font-size: 0.9375rem;
+    padding-left: 1.25rem;
+    line-height: 2.0rem;
+}
+
+.contact-sort-lists {
+    width: 22.09375rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+    padding: 0.9375rem 0 0.9375rem 0.4375rem;
+    margin: 0 auto;
+}
+
+.contact-sort-lists .contact-lists {
+    padding-bottom: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    background: url("../img/line.png") repeat-x bottom;
+}
+
+.contact-sort-lists .contact-lists-msg {
+    width: 17.40625rem;
+}
+
+.contact-lists-msg p {
+    font-size: 1.125rem;
+    color: #333333;
+    background: url("../img/chat_icon.png") no-repeat 10rem 0.275rem;
+    background-size: 1.125rem;
+}
+
+.contact-lists-userName {
+    color: #333333;
+    font-size: 0.8125rem;
+}
+
+.contact-lists-img {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-size: 100%;
+    border-radius: 0.3125rem;
+}
+
+.ttable-main-bottom a {
+    color: #333;
+}
+
+.two .progress-state:nth-of-type(1) .rendered circle:nth-child(2) {
+    fill: #f44e51 !important;
+    stroke: #f44e51 !important;
+}
+
+.three .progress-state:nth-of-type(1) .rendered circle:nth-child(2) {
+    fill: #28a7e1 !important;
+    stroke: #28a7e1 !important;
+}

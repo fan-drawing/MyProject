@@ -1,0 +1,694 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+/*页面的头部样式 -- 开始*/
+#headerTop{
+	width: 100%;
+	height: 26px;
+	padding: 16px 0px;
+	background-color: #e9a820;
+}
+#headerTop .headerTop_main{
+	width: 1140px;
+	height: 26px;
+	margin: 0 auto;
+	position: relative;
+}
+/*头顶部的导航栏 -- 左边*/
+#headerTop .headerTop_main .top_nav_left{
+	width: 380px;
+	height: 26px;
+	/*float: left;*/
+	position: absolute;
+	/*left: 0px;*/
+	left: -1000px;
+}
+
+#headerTop .headerTop_main .top_nav_left ul{
+	width: 380px;
+	height: 26px;
+}
+.top_nav_left ul li h5{
+	color: #FFF;
+	font-size: 15px;
+	font-family: inherit;
+}
+.top_nav_left ul li{
+	margin-right: 19px;
+	float: left;
+}
+.top_nav_left ul li a span{
+	background: url("./images/top-social.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+.top_nav_left ul li a .fb{
+	background-position: 7px 0px;
+}
+.top_nav_left ul li a .fb:hover{
+	background-position: 7px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .tw{
+	background-position: -22px 1px;
+}
+.top_nav_left ul li a .tw:hover{
+	background-position: -22px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .in{
+	background-position: -53px 0px;
+}
+.top_nav_left ul li a .in:hover{
+	background-position: -53px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .gmail{
+	background-position: -82px 0px;
+}
+.top_nav_left ul li a .gmail:hover{
+	background-position: -82px -18px;
+	transition: all .4s;
+}
+
+
+
+
+
+
+
+
+/*头顶部的导航栏 -- 右边*/
+#headerTop .headerTop_main .top_nav_right{
+	width: 760px;
+	height: 23px;
+	/*float: left;*/
+	position: absolute;
+	/*right: 0px;*/
+	right: -1000px;
+}
+#headerTop .headerTop_main .top_nav_right ul{
+	width: 760px;
+	height: 23px;
+}
+.top_nav_right ul li{
+	margin-right: 19px;
+	float: right;
+}
+.top_nav_right ul li .phone{
+	background: url("./images/ph.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: sub;
+}
+.top_nav_right ul li h6{
+	font-size: 15px;
+	line-height: 23px;
+	font-family: inherit;
+	color: #FFF;
+	display: inline-block;
+}
+
+.top_nav_right ul li .email{
+	background: url("./images/email.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top_nav_right ul li h6 a{
+	color: #FFF;
+}
+.top_nav_right ul li h6 a:hover{
+	color: #000;
+}
+/*头底部的导航栏*/
+#headerBottom{
+	width: 100%;
+	height: 72px;
+	background: #FFF;
+	border-bottom: 1px solid #6F6F8C;
+}
+#headerBottom .headerBot{
+	width: 100%;
+	height: 24px;
+	padding: 24px 0px;
+}
+#headerBottom .headerBot .headerBot_main{
+	width: 1140px;
+	height: 24px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+/*头底部的导航栏 -- 左边logo*/
+.headerBot_main_left a img{
+	display: block;
+	float: left;
+	animation:move 3s linear .2s;
+}
+@-webkit-keyframes move{
+	0%{transform:translateX(-1015px);}
+	100%{transform:translateX(-15px);}
+}
+
+/*头底部的导航栏 -- 右边nav*/
+.headerBot_main_right ul{
+	float: right;
+}
+.headerBot_main_right ul li{
+	float: left;
+}
+.headerBot_main_right ul li a{
+	display: inline-block;
+	margin: 0px 15px;
+	font-size: 14px;
+	color: #000;
+	font-family: 'Microsoft Yahei';
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+
+}
+/*默认颜色*/
+.headerBot_main_right ul li:nth-child(4) a{
+	color: #E9A820;
+}
+.headerBot_main_right ul li a::before{
+	color: #E9A820;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,225,225,0.3);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transition: transform 0.3s, opacity 0.3s;	
+}
+.headerBot_main_right ul li a:hover::before{
+	opacity: 1;
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+/*页面主体的第一部分样式 -- 开始*/
+#luxury{
+	width: 100%;
+	min-height: 745px;
+	padding: 80px 0px;
+}
+#luxury .luxu_box{
+	width: 1140px;
+	min-height: 745px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.luxu_box .luxu_header{
+	width: 1140px;
+	height: 52px;
+	margin-bottom: 52px;
+	text-align: center;
+}
+.luxu_box .luxu_header h3{
+	font-size: 44px;
+	line-height: 52px;
+	color: #6F6F8C;
+	
+	font-family: 'Aladin', cursive;
+
+}
+.luxu_box .luxu_inf .inf_one{
+	width: 100%;
+	min-height: 288px;
+	margin-bottom: 64px;
+}
+.luxu_inf .inf_one .inf_one_a{
+	width: 350px;
+	min-height: 207px;
+	padding: 0px 15px;
+	float: left;
+}
+.inf_one_a h2{
+	font-size: 35px;
+	line-height: 35px;
+	margin-bottom: 8px;
+	font-family: 'Aladin', cursive;
+}
+.inf_one_a h2 a{
+	color: #E9A820;
+}
+.inf_one_a p{
+	color: #737373;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'Microsoft Yahei';
+}
+.inf_one_a .btn a{
+	display: inline-block;
+	font-size: 15px;
+	color: #6F6F8C;
+	padding: 8px 9px;
+	border: 4px double #E9A820;
+	margin-top: 9px;
+}
+.inf_one:nth-child(2) .inf_one_a h2 a{
+	color: #6F6F8C;
+}
+.luxu_inf .inf_one .inf_one_b{
+	width: 730px;
+	min-height: 288px;
+	padding: 0px 15px;
+	float: left;
+}
+.inf_one_b a{
+	display: inline-block;
+	width: 730px;
+}
+.inf_one_b a img{
+	width: 100%;
+	height: 100%;
+}
+
+.btn:hover .push{
+	border: 4px double #6F6F8C;
+	transition: all .3s;
+	animation: push .3s linear 0s;
+}
+@keyframes push{
+	50%{transform:scale(.8);}
+	100%{transform:scale(1);}
+}
+
+.luxu_inf .flyleft{
+	animation: flyleft 2s linear 0.1s;
+}
+
+.luxu_inf .flyright{
+	animation: flyright 2s linear 0.1s;
+}
+@keyframes flyleft{
+	0%{transform:translateX(-1500px);}
+	100%{transform:translateX(0px);}
+}
+@keyframes flyright{
+	0%{transform:translateX(1500px);}
+	100%{transform:translateX(0px);}
+}
+
+/*页面的主体第二部分 rooms*/
+
+#rooms{
+	width: 100%;
+	height: 584px;
+	padding-bottom: 48px;
+}
+#rooms .room_box{
+	width: 1140px;
+	height: 584px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.room_box .room_sbox{
+	transform: scale(.4);
+	opacity: 0;
+	transition: all 1.5s linear 0s;
+}
+.room_box .room_sbox .room_header{
+	width: 1140px;
+	height: 52px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.room_header h1{
+	font-size: 48px;
+	color: #E9A820;
+	font-family: 'Aladin', cursive;
+}
+.room_sbox .room_bot{
+	width: 1140px;
+	height: 484px;
+}
+.room_bot .bot_img{
+	width: 350px;
+	height: 210px;
+	padding: 0px 15px 32px;
+	float: left;
+}
+
+.bot_img a{
+	display: block;
+	width: 350px;
+	height: 210px;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.bot_img a img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+}
+.blakall{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	opacity: .8;
+	z-index: 9;
+	opacity: 0;	
+}
+
+ .blakall .blak{
+	position: absolute;
+	
+	top: 30px;
+	left: 30px;
+	width: 288px;
+	height: 148px;
+	z-index: 99;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	transition: all .3s linear 0s;
+	transform:scale(0,1);
+	
+}
+.blakall:hover .blak{
+	transform:scale(1,1);
+	
+}
+.blakall:hover .blak1{
+	transform:scale(1,1);
+	
+}
+ .blakall .blak1{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 286px;
+	height: 150px;
+	z-index: 99;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	transition: all .3s linear 0s;
+	transform:scale(1,0);
+}
+.blakall .wordbox{
+	position: absolute;
+	text-align: center;
+	top: 30px;
+	left: 30px;
+	width: 286px;
+	height: 150px;
+	z-index: 99;
+}
+.wordbox h4{
+	font-size: 28px;
+	transform: translateY(-10px);
+	font-family: 'Aladin', cursive;
+	color: #FFF;
+	transition: all .5s linear 0s;
+}
+.wordbox p{
+	font-size: 14px;
+	line-height: 26px;
+	color: #FFF;
+	opacity: .8;
+	transform: translateY(40px);
+	transition: all .5s linear 0s;
+	font-family: 'Microsoft Yahei';
+}
+.blakall:hover .wordbox h4{
+	transform: translateY(15px);
+}
+.blakall:hover .wordbox p{
+	transform: translateY(30px);
+}
+.bot_img a:hover .blakall{
+	opacity: .8;
+}
+/*轮播图样式 -- 开始*/
+#pop{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background: rgba(0,0,0,.9);
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: none;
+}
+
+#ppt{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 35%;
+	left: 32%;
+	display: none;
+}
+#img_bg{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+}
+#img_bg img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*display: none;*/
+	opacity: 0;
+	z-index: 999;
+	transition: all 1s linear 0s;
+}
+#ppt .x{
+	position: absolute;
+	top: -30px;
+	z-index: 99;
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	background: url("./images/close.png") no-repeat;
+}
+.controller{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 9999;
+	cursor: pointer;
+}
+#ppt .prev{
+	background: url("./images/left.png") no-repeat;
+	top: 40%;
+	left: -80px;
+	z-index: 9999;
+}
+#ppt .next{
+	background: url("./images/right.png") no-repeat;
+	top: 40%;
+	right: -100px;
+	z-index: 9999;
+}
+#ppt #title{
+	position: absolute;
+	bottom: -25px;
+	right: 0px;
+	color: #FFF;
+	font-size: 12px;
+	padding: 5px;
+	z-index: 99;
+}
+#img_bg .block{
+	/*display: block;*/
+	opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*页面的脚部样式 -- 开始*/
+
+#footer{
+	width: 100%;
+	height: 204px;
+	padding: 80px 0px;
+	background: #6F6F8C;
+}
+#footer .footer_box{
+	width: 1140px;
+	height: 204px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	
+}
+#footer .footer_box .footer_inf{
+	width: 1140px;
+	height: 204px;
+
+}
+.footer_box .footer_inf .inf_box{
+	width: 255px;
+	height: auto;
+	padding: 0px 15px;
+	float: left;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+.inf_box .inf_box_logo{
+	margin-bottom: 20px;
+}
+.inf_box p{
+	color: #FFF;
+	font-size: 15px;
+	font-family: 'Microsoft Yahei';
+	line-height: 26px;
+}
+.inf_box a{
+	font-size: 15px;
+	line-height: 26px;
+	color: #E9A820;
+	transition: all .4s;
+}
+.inf_box a:hover{
+	color: #000;
+}
+.inf_box h3{
+	width: 255px;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	color: #e9a820;
+	font-size: 44px;
+	font-family: 'Aladin', cursive;
+
+}
+.inf_box form{
+	width: 255px;
+	height: 39px;
+}
+.inf_box form input:first-child{
+	width: 151px;
+	height: 28px;
+	outline: none;
+	padding: 5px 9px;
+}
+.inf_box form input:nth-child(2){
+	color: #FFF;
+	border: none;
+	font-size: 16px;
+	background: #e9a820;
+	padding: 12px 20px;
+	transition: all .5s;
+	cursor: pointer;
+}
+.inf_box form input:nth-child(2):hover{
+	background: #000;
+}
+.inf_box ul{
+	width: 255px;
+	height: 34px;
+	margin-top: 16px;
+}
+.inf_box ul li{
+	margin-right: 15px;
+	float: left;
+}
+.inf_box ul li a span{
+	background: url("./images/ftr-social.png") no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+.inf_box ul li a span:hover{
+	opacity: .8;
+}
+.inf_box ul li a .fa{
+	background-position: 10px 0px;
+}
+.inf_box ul li a .tw{
+	background-position: -44px 1px;
+}
+.inf_box ul li a .link{
+	background-position: -101px 0px;
+}
+.inf_box ul li a .gmail{
+	background-position: -153px 0px;
+}
+
+.inf_box .nav{
+	width: 255px;
+	height: 140px;
+}
+.inf_box .nav li{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+.inf_box .nav li a{
+	font-size: 16px;
+	color: #FFF;
+	transition: all .4s;
+}
+.inf_box .nav li a:hover{
+	color: #e9a820;
+}
+
+/*页面的脚部 页脚样式 -- 开始*/
+#footer_page{
+	width: 100%;
+	height: 22px;
+	padding: 24px 0px;
+	background: #e9a820;
+	text-align: center;
+}
+#footer_page p{
+	width: 1140px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #FFF;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+#footer_page p a{
+	color: #FFF;
+	transition: all .3s;
+}
+#footer_page p a:hover{
+	color: #6F6F8C;
+}

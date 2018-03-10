@@ -1,0 +1,305 @@
+ <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-订单确认</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+		.lineItem{
+			margin-top:0.78125rem;
+		}
+		footer{
+			width:100%;
+			height:3.0625rem;
+			background:#fff;
+			position:fixed;
+			bottom:0;
+			left:0;
+		}
+		footer .left{
+			float:left;
+			width:71%;
+			height:3.0625rem;
+			line-height: 3.0625rem;
+		}
+		footer .left p{
+			text-align: right;
+			color:#666;
+			font-size:0.875rem;
+		}
+		footer .left p span{
+			color:#ff2f2f;
+			font-size:0.9375rem;
+		}
+		footer .right{
+			float:right;
+			width:6.25rem;
+			height:100%;
+			line-height: 3.0625rem;
+			text-align: center;
+			background:#fe753e;
+
+		}
+		footer .right a{
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>订单确认</p>
+	</div>
+</header>
+<div class="order-identify">
+	<div class="box clearfix">
+		<a href="#">
+			<div class="left left1"><img src="images/my_10.png" alt=""></div>
+			<div class="middle">收货地址</div>
+			<div class="right"><img src="images/rectangle.png" alt=""></div>
+		</a>
+	</div>
+	<div class="box clearfix box1">
+		<a href="#">
+			<div class="left left2"><img src="images/my_11.png" alt=""></div>
+			<div class="middle">立即送出</div>
+			<div class="right"><img src="images/rectangle.png" alt=""></div>
+		</a>
+	</div>
+	<div class="box clearfix">
+		<a href="fill_remark.html">
+			<div class="left left3"><img src="images/my_12.png" alt=""></div>
+			<div class="middle">订单备注</div>
+			<div class="right"><img src="images/rectangle.png" alt=""></div>
+		</a>
+	</div>
+</div>
+<div class="lineItem">
+	<div class="title">
+		<span class="span1"><img src="images/my_13.png" alt=""></span>
+		<span class="span2">店名称</span>
+	</div>
+
+	<div class="clearfix matter-ul">
+			<a href="#" class="clearfix">
+				<div class="left"><img src="images/s_weixin.png" alt=""></div>
+				<div class="middle">
+					<h5>购买的商品</h5>
+					<span>X1</span>
+				</div>
+				<div class="right">
+					<span>￥1</span>
+				</div>
+			</a> 
+	</div>		
+<!--  -->
+	<div class="itemNum">
+		<ul>
+			<li class="clearfix">
+				<span class="span1">包装费</span>
+				<span class="span2">￥9999</span>
+			</li>
+			<li class="clearfix">
+				<span class="span1">配送费</span>
+				<span class="span2">￥9999</span>
+			</li>
+			<li class="clearfix">
+				<span class="span1">优惠减免</span>
+				<span class="span2">￥-9999</span>
+			</li>
+			<li class="clearfix">
+				<span class="span1">红包减免</span>
+				<span class="span2">￥-9999</span>
+			</li>
+			<li class="clearfix">
+				
+				<span class="span2">实付金额</span>
+			</li>
+			<li class="clearfix">
+				
+				<span class="span2">￥9999</span>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<div class="kong"></div>
+<footer>
+	<div class="left">
+		<p>合计：<span>￥9999</span></p>
+	</div>
+	<div class="right footer-right"><a href="#">确认下单</a></div>
+</footer>
+
+<div class="Purchase-shade">
+	<div class="shadePay">
+		<div class="select-top clearfix">
+			<p>请选择支付方式</p>
+			<span class="Purchase-shade-close"><img src="images/guanbi.png" alt=""></span>
+		</div>
+		<div class="select-manner">
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_48.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">账户余额</p>
+					<p class="p2">0.00元</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class="manner-span-bg"></span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_49.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">支付宝</p>
+					<p class="p2">推荐有支付宝账户的用户使用</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class=""></span>
+				</div>
+			</div>
+			<div class="clearfix">
+				<div class="manner-left"><img src="images/my_50.png" alt=""></div>
+				<div class="manner-middle">
+					<p class="p1">微信</p>
+					<p class="p2">推荐安装微信5.0及以上版本用户使用</p>
+				</div>
+				<div class="manner-right">
+					<input type="radio" name="manner" value="">
+					<span class=""></span>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="Purchase-site clearfix">
+			<a href="coupon_list.html" class="clearfix">
+				<div class="left"><img src="images/my_51.png" alt=""></div>
+				<div class="middle">抵金券</div>
+				<div class="right"><img src="images/right_select_icon.png" alt=""></div>
+			</a>
+		</div>
+		<div class="Purchase-site clearfix">
+			<a href="receive_site.html" class="clearfix">
+				<div class="left"><img src="images/my_52.png" alt=""></div>
+				<div class="middle">收货地址</div>
+				<div class="right"><img src="images/right_select_icon.png" alt=""></div>
+			</a>
+		</div>
+		<!-- 订单总价 -->
+		<div class="order-valued-at">
+			<div class="title clearfix">
+				<span class="span1">订单总价</span>
+				<span class="span2">78.9元</span>
+			</div>
+			<div class="Details">
+				<div class="box clearfix">
+					<span class="span1">商品费</span>
+					<span class="span2">0.0元</span>
+				</div>
+				<div class="box clearfix">
+					<span class="span1">跑腿费</span>
+					<span class="span2">78.9元</span>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="affirm-pay">
+				<a href="#">确认支付</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 弹窗 -->
+<div class="shade">
+	<div class="shade-time">
+		<div class="shade-time-count clearfix">
+			<div class="left"><p>今天（周三）</p></div>
+			<div class="right">
+				<ul>
+					<li class="clearfix time-li">
+						<span class="count-span1">12:00</span>
+						<span class="count-span2"><img src="images/my_14.png" alt=""></span>
+					</li>
+					<li class="clearfix time-li count-linum">
+						<span class="count-span1 count-spannum">12:20</span>
+						<span class="count-span2 count-spanimg"><img src="images/my_14.png" alt=""></span>
+					</li>
+					<li class="clearfix time-li">
+						<span class="count-span1">11:00</span>
+						<span class="count-span2"><img src="images/my_14.png" alt=""></span>
+					</li>
+					<li class="clearfix time-li">
+						<span class="count-span1">10:30</span>
+						<span class="count-span2"><img src="images/my_14.png" alt=""></span>
+					</li>
+					<li class="clearfix time-li">
+						<span class="count-span1">10:00</span>
+						<span class="count-span2"><img src="images/my_14.png" alt=""></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="shade-time-close">取消</div>
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+<script>
+	$(function(){
+		$('.time-li').on('click',function(){
+			$(this).addClass('count-linum').siblings().removeClass('count-linum');
+			$(this).find('.count-span2').show().parent().siblings().find('.count-span2').hide();
+		});
+		$('.shade-time-close').on('click',function(){
+			$('.shade').hide();
+		});
+		$('.box1').on('click',function(){
+			$('.shade').show();
+		});
+		// 
+
+		$('.manner-right span').on('click',function(){
+			$(this).addClass('manner-span-bg').parents('.clearfix').siblings().find('.manner-right').find('span').removeClass('manner-span-bg');
+	 
+			$(this).siblings('input').attr('checked',true).parents('.clearfix').siblings().find('.manner-right').find('input').removeAttr('checked');
+		});
+
+		$('.footer-right').on('click',function(){
+			$('.Purchase-shade').show();
+		});
+		$('.Purchase-shade-close').on('click',function(){
+			$('.Purchase-shade').hide();
+		});
+
+
+	});
+</script>
+</body>
+</html>

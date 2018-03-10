@@ -1,0 +1,174 @@
+教师端
+course_management.html   课程管理
+
+create_course.html       创建课程
+
+course_comment.html  课程评论
+
+comment_detail.html   动态详情
+
+t_release   动态-我要发布
+
+
+1.26----------
+dynamic_state.html   动态
+
+comment_message.html  评论消息
+
+student_message.html  学生消息
+
+t_my_message.html  我的消息
+
+
+
+
+
+
+
+
+
+
+
+
+学生端
+
+stu_myClassDetails.html  班级详情
+
+index.html  学生端
+
+stu_message.html  学生端-消息
+
+stu_Tdetails.html  通知详情
+
+stu_course.html  学生端-课程
+
+stu_classlist.html  课程列表
+
+stu_learnProgress.html   学习进度
+
+stu_classDetails.html  课程详情页
+
+stu_sns.html  社区
+
+stu_myActiveDetails.html   动态详情
+
+stu_fabu.html  发布
+
+stu_mine.html  我的
+
+stu_myClass.html  我的班级
+
+stu_collection.html  我的收藏
+
+stu_liveRecord.html 直播记录
+
+stu_myActiveList.html  我的动态
+
+my_active.html    学生端-我的动态  -- 评论详情
+
+stu_grade.html   我的报告
+
+stu_revise.html    修改资料
+
+stu_orderList.html  我的订单
+
+stu_jifenmall.html  积分商城
+
+stu_menue.html  积分兑换   商品分类
+
+stu_live.html  直播
+
+stu_liveList.html   直播列表
+
+stu_playDetails.html   直播详情
+
+
+stu_homework.html   作业
+
+stu_homeworkList.html   已做，未做作业
+
+stu_titleDetails.html  查看题目
+
+stu_errorTest.html  错题练习
+
+stu_questionBank.html  题库练习
+
+stu_questionList.html  题目详情
+
+stu_questionList.html  做题
+
+stu_productDetails.html   商品详情
+
+stu_newAddress.html  新增地址
+
+
+stu_teacherclass.html   名师详情2
+
+stu_takePartIn.html  加入班级
+
+
+stu_paySure.html  确认支付
+
+stu_Tdetails.html  通知详情
+
+stu_productDetails.html  商品详情
+
+家长端
+
+
+
+
+
+
+
+
+
+===================== 家长端 ========================
+learning_progress.html 学习进度
+class_view.html 查看班级
+children_report.html 孩子报告
+class_details.html 班级详情
+result_view.html 成绩查看
+study_report.html 学习报告
+contact_teacher.html 好友-名师页
+
+======================= 教师端 ========================
+
+teacher_class.html 班级
+class_management.html  班级管理
+create_class.html 创建班级
+teacher_report.html 学习报告
+
+-------------------------------------------------
+teacher_notice.html 发布通知    需要修改
+--------------------------------------
+
+
+notice_history.html 通知历史
+create_courseware.html 创建课件
+courseware_management.html 课件管理
+assignment.html 布置作业、题库选题、全部动态
+review_operation.html 审阅作业
+
+我的部分
+
+my_class.html 我的班级
+class_details.html 班级详情
+class_report.html 班级报告
+my_report.html 我的报告
+generate_report.html 生成报告
+teacher_my.html 我的
+teacher_setting.html 设置
+bank_card.html 绑定银行卡
+information.html 个人信息（修改资料）
+teacher_sign.html 老师登录
+teacher_register.html 老师注册
+student_list.html 学生列表
+
+
+t_class_details.html    教师端---个人中心--我的班级
+
+
+
+
+

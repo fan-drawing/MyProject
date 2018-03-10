@@ -1,0 +1,870 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+
+}
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+/*页面的头部样式 -- 开始*/
+#headerTop{
+	width: 100%;
+	height: 26px;
+	padding: 16px 0px;
+	background-color: #e9a820;
+}
+#headerTop .headerTop_main{
+	width: 1140px;
+	height: 26px;
+	margin: 0 auto;
+	position: relative;
+}
+/*头顶部的导航栏 -- 左边*/
+#headerTop .headerTop_main .top_nav_left{
+	width: 380px;
+	height: 26px;
+	/*float: left;*/
+	position: absolute;
+	/*left: 0px;*/
+	left: -1000px;
+}
+
+#headerTop .headerTop_main .top_nav_left ul{
+	width: 380px;
+	height: 26px;
+}
+.top_nav_left ul li h5{
+	color: #FFF;
+	font-size: 15px;
+	font-family: inherit;
+	font-weight: normal;
+}
+.top_nav_left ul li{
+	margin-right: 19px;
+	float: left;
+}
+.top_nav_left ul li a span{
+	background: url("./images/top-social.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+.top_nav_left ul li a .fb{
+	background-position: 7px 0px;
+}
+.top_nav_left ul li a .fb:hover{
+	background-position: 7px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .tw{
+	background-position: -22px 1px;
+}
+.top_nav_left ul li a .tw:hover{
+	background-position: -22px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .in{
+	background-position: -53px 0px;
+}
+.top_nav_left ul li a .in:hover{
+	background-position: -53px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .gmail{
+	background-position: -82px 0px;
+}
+.top_nav_left ul li a .gmail:hover{
+	background-position: -82px -18px;
+	transition: all .4s;
+}
+
+
+
+
+
+
+
+
+/*头顶部的导航栏 -- 右边*/
+#headerTop .headerTop_main .top_nav_right{
+	width: 760px;
+	height: 23px;
+	/*float: left;*/
+	position: absolute;
+	/*right: 0px;*/
+	right: -1000px;
+}
+#headerTop .headerTop_main .top_nav_right ul{
+	width: 760px;
+	height: 23px;
+}
+.top_nav_right ul li{
+	margin-right: 19px;
+	float: right;
+}
+.top_nav_right ul li .phone{
+	background: url("./images/ph.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: sub;
+}
+.top_nav_right ul li h6{
+	font-size: 15px;
+	line-height: 23px;
+	font-family: inherit;
+	color: #FFF;
+	display: inline-block;
+	font-weight: normal;
+}
+
+.top_nav_right ul li .email{
+	background: url("./images/email.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top_nav_right ul li h6 a{
+	color: #FFF;
+}
+.top_nav_right ul li h6 a:hover{
+	color: #000;
+}
+/*头底部的导航栏*/
+#headerBottom{
+	width: 100%;
+	height: 73px;
+	background: #FFF;
+}
+#headerBottom .headerBot{
+	width: 100%;
+	height: 24px;
+	padding: 24px 0px;
+}
+#headerBottom .headerBot .headerBot_main{
+	width: 1140px;
+	height: 24px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+/*头底部的导航栏 -- 左边logo*/
+.headerBot_main_left a img{
+	display: block;
+	float: left;
+	animation:move 3s linear .2s;
+}
+@-webkit-keyframes move{
+	0%{transform:translateX(-1015px);}
+	100%{transform:translateX(-15px);}
+}
+
+/*头底部的导航栏 -- 右边nav*/
+.headerBot_main_right ul{
+	float: right;
+}
+.headerBot_main_right ul li{
+	float: left;
+}
+.headerBot_main_right ul li a{
+	display: inline-block;
+	margin: 0px 15px;
+	font-size: 14px;
+	color: #000;
+	font-family: 'Microsoft Yahei';
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+
+}
+/*让第一个home一开始默认颜色*/
+.headerBot_main_right ul li:first-child a{
+	color: #E9A820;
+}
+.headerBot_main_right ul li a::before{
+	color: #E9A820;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,225,225,0.3);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transition: transform 0.3s, opacity 0.3s;	
+}
+.headerBot_main_right ul li a:hover::before{
+	opacity: 1;
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+
+/*页面的主体第一部分大图*/
+#content_banner{
+	width: 100%;
+	height: 660px;
+	background: url("./images/banner.jpg") no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+/*大图里的小图样式*/
+#content_banner .ban_box{
+	width: 1140px;
+	min-height: 480px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+#content_banner .ban_box .ban_sbox{
+	width: 506px;
+	min-height: 192px;
+	padding: 32px;
+	margin: 224px auto 0px;
+	text-align: center;
+	color: #FFF;
+	background-color: rgba(0,0,0,.74);
+	animation: active 3s linear 0s;
+}
+.ban_sbox h2{
+	font-family: 'Aladin', cursive;
+	font-size: 52px;
+	font-weight: normal;
+}
+.ban_sbox h6{
+	font-size: 21px;
+	letter-spacing: 7px;
+	font-weight: normal;
+	font-family: 'Microsoft Yahei';
+	margin: 12px 0px;
+}
+.ban_sbox p{
+	font-size: 16px;
+	line-height: 26px;
+	font-family: 'Hind', sans-serif;
+}
+/*大图里的小图出现样式*/
+@-webkit-keyframes active{
+	0%{opacity:0;transform:scale(.3);}
+	100%{opacity:1;transform:scale(1);}
+}
+
+/*页面的主体第二部分样式 -- 开始*/
+#content_second{
+	width: 100%;
+	min-height: 300px;
+	padding: 80px 0px;
+}
+#content_second .sec_box{
+	width: 1140px;
+	min-height: 300px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+#content_second .sec_box .sec_box_up{
+	width: 100%;
+	min-height: 119px;
+	padding-bottom: 64px;
+	transition: transform 3s linear 0s;
+	transform:translateX(-2000px);
+	/*animation: boxone 3s linear 0s;*/
+}
+/*@-webkit-keyframes boxone{
+	0%{transform:translateX(-2000px)}
+	100%{transform:translateX(0px)}
+}*/
+
+#content_second .sec_box .sec_box_down{
+	width: 100%;
+	min-height: 119px;
+	transition: transform 3s linear 0s;
+	transform:translateX(2000px);
+	/*animation: boxtwo 3s linear 0s;*/
+}
+/*@-webkit-keyframes boxtwo{
+	0%{transform:translateX(2000px)}
+	100%{transform:translateX(0px)}
+}*/
+
+.inf{
+	width: 350px;
+	min-height: 119px;
+	padding: 0px 15px;
+	float: left;
+}
+.inf .inf_img{
+	width: 70px;
+	height: 60px;
+	float: left;
+}
+.inf .inf_right{
+	width: 280px;
+	min-height: 119px;
+	float: left;
+}
+.inf .inf_right h4{
+	font-size: 26px;
+	color: #E9A820;
+	font-family: 'Aladin', cursive;
+	margin-bottom: 9px;
+}
+.inf .inf_right p{
+	font-size: 15px;
+	color: #737373;
+	line-height: 22px;
+	font-family: 'Microsoft Yahei';
+}
+
+/*页面的主体第三部分样式 -- 开始*/
+#content_third{
+	width: 100%;
+	min-height: 214px;
+	padding: 80px 0px;
+	background: #696A88;
+}
+#content_third .thi_box{
+	width: 1140px;
+	min-height: 214px;
+	padding: 0 14px;
+	margin: 0 auto;
+}
+#content_third .thi_box .thi_sbox{
+	width: 1140px;
+	min-height: 214px;
+	text-align: center;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all 3s linear .3s;
+}
+.thi_sbox h1{
+	width: 100%;
+	font-size: 52px;
+	color: #FFF;
+	font-family: 'Aladin', cursive;
+	font-weight: normal;
+}
+.thi_sbox h6{
+	color: #e9a820;
+	font-size: 16px;
+	margin: 9px 0px;
+	font-weight: normal;
+}
+.thi_sbox p{
+	width: 60%;
+	margin: 0px 228px;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: 'Microsoft Yahei';
+}
+.thi_sbox a{
+	background: #e9a820;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 16px;
+	font-size: 14px;
+	padding: 18px 34px;
+	
+}
+@-webkit-keyframes btn{
+	0%{transform:scale(1)}
+	50%{transform:scale(.8);}
+	100%{transform:scale(1)}
+}
+.thi_sbox a:hover{
+	color: #000;
+	background: #FFF;
+	animation: btn .4s linear 0s;
+}
+
+/*页面的主体第四部分样式 -- 开始*/
+
+#content_fourth{
+	width: 100%;
+	padding-top: 80px;
+	height: auto;
+	overflow: hidden;
+}
+#content_fourth .four_box{
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	transform: scale(.2);
+	transition: all 3s linear .3s;
+}
+.four_box .four_box_header{
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+.four_box .four_box_header h3{
+	color: #E9A820;
+	font-size: 52px;
+	font-family: 'Aladin', cursive;
+	font-weight: normal;
+}
+.four_box .four_inf_one{
+	width: 24.6%;
+	min-height: 430px;
+	padding-right: 5px;
+	float: left;	
+}
+.four_box .four_inf_one .four_inf{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.four_inf_one .four_inf a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.four_inf a img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.four_inf .inf_one{
+	width: 100%;
+	height: auto;	
+}
+.four_inf .inf_one a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.four_inf .inf_one a img{
+	display: block;
+}
+.four_inf_one .gap{
+	margin-bottom: 6px;
+}
+
+.shade{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	z-index: 5;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+}
+.shade span{
+	display: block;
+	position: absolute;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	border: 5px solid #FFF;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #FFF;
+	font-size: 30px;
+	top: 40%;
+	left: 42%;
+	display: none;
+}
+.four_inf:hover .shade{
+	transition: all .3s linear 0s;
+	opacity: 1;
+}
+.four_inf:hover .shade span{
+	display: block;
+}
+
+/*页面的主体第五部分 -- 开始*/
+
+#content_fifth{
+	width: 100%;
+	height: 224px;
+	padding: 64px 0px 80px 0px;
+}
+#content_fifth .fifth_box{
+	width: 1140px;
+	height: 224px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+.fifth_box .quota{
+	display: block;
+	background: url("./images/quota.png") no-repeat;
+	width: 50px;
+	height: 40px;
+	margin: 0px auto 24px;
+}
+.fifth_box p{
+	font-size: 20px;
+	color: #333;
+	line-height: 38px;
+	font-family: 'Microsoft Yahei';
+}
+
+/*页面的主体第六部分 -- 开始*/
+
+#content_sixth{
+	width: 100%;
+	height: 290px;
+	padding: 80px 0px;
+	background: url("./images/bann.jpg") no-repeat;
+}
+#content_sixth .sixth_box{
+	width: 1140px;
+	height: 266px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+#content_sixth .sixth_box .sixth_sbox{
+	width: 1140px;
+	height: 266px;
+	opacity: 0;
+	transform: scale(.1);
+	transition: all 3s linear .5s;
+}
+.sixth_sbox .sbox_header{
+	width: 100%;
+	height: 52px;
+	margin-bottom: 64px;
+	text-align: center;
+}
+.sixth_sbox .sbox_header h3{
+	color: #FFF;
+	font-family: 'Aladin', cursive;
+	font-size: 52px;
+	font-weight: normal;
+}
+.sixth_sbox .sbox_inf{
+	width: 100%;
+	height: 150px;
+}
+.sbox_inf .inf_one{
+	width: 255px;
+	height: 150px;
+	padding: 0px 15px;
+	text-align: center;
+	float: left;
+}
+.sbox_inf .inf_one h4{
+	font-size: 22px;
+	color: #FFF;
+	font-family: 'Microsoft Yahei';
+	line-height: 26px;
+	font-weight: normal;
+}
+.sbox_inf .inf_one span{
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	margin: 16px 0px;
+}
+.sbox_inf .inf_one h5{
+	color: #FFF;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+	font-weight: normal;
+}
+.sbox_inf .inf_one .icon1{
+	background: url("./images/s7.png") no-repeat;
+}
+.sbox_inf .inf_one .icon2{
+	background: url("./images/s8.png") no-repeat;
+}
+
+.sbox_inf .inf_one .icon3{
+	background: url("./images/s9.png") no-repeat;
+}
+
+.sbox_inf .inf_one .icon4{
+	background: url("./images/s10.png") no-repeat;
+}
+
+/*页面的主体第七部分 -- 开始*/
+
+#content_seventh{
+	width: 100%;
+	height: 304px;
+	padding: 80px 0px;
+}
+#content_seventh .seventh_box{
+	width: 1140px;
+	height: 304px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+#content_seventh .seventh_box .seventh_sbox{
+	width: 1140px;
+	height: 304px;
+	text-align: center;
+	position: relative;
+}
+.seventh_sbox .sev_header{
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 32px;
+}
+.seventh_sbox .sev_header h3{
+	font-size: 48px;
+	font-weight: normal;
+	color: #6F6F8C;
+	font-family: 'Aladin', cursive;
+}
+.seventh_sbox .sev_inf{
+	width: 1140px;
+	height: 220px;
+	transition: all 0.5 linear 0s;
+	position: absolute;
+	left: -1500px;
+}
+.seventh_sbox .sev_inf .inf_two{
+	width: 350px;
+	height: 220px;
+	padding: 0px 15px;
+	float: left;
+}
+.sev_inf .inf_two .inf_two_a{
+	width: 350px;
+	height: 210px;
+	margin: 5px;
+	position: relative;
+
+}
+.inf_two .inf_two_a a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+}
+.inf_two .inf_two_a .inf_img{
+	width: 350px;
+	height: 210px;
+	position: absolute;
+}
+.inf_two_a .inf_img img{
+	width: 100%;
+	height: 100%;
+}
+.inf_two_a a .mask{
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 210px;
+	background: #000;
+	opacity: 0;
+
+}
+.inf_two_a a .top{
+	position: absolute;
+	width: 55%;
+	font-size: 18px;
+	z-index: 10;
+	top: 10px;
+	color: #FFF;
+	font-family: 'Aladin', cursive;
+	margin: 0 auto;
+	padding: 0 10px;
+	left: 22%;
+	opacity: 0;
+}
+.inf_two_a a .line{
+	width: 85%;
+	height: 1px;
+	background: #FFF;
+	margin: 2px auto 0 auto;
+
+}
+.inf_two_a a .down{
+	position: absolute;
+	z-index: 10;
+	font-size: 12px;
+	font-family: 'Aladin', cursive;
+	color: #FFF;
+	font-style: italic;
+	bottom: 10px;
+	width: 55%;
+	left: 22%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 10px;
+	opacity: 0;
+}
+
+.inf_two_a a:hover .mask{
+	transition: all .3s ease 0s;
+	opacity: 0.5;
+}
+.inf_two_a a:hover .top{
+	transition: all .4s ease 0s;
+	opacity: 1;
+	top: 80px;
+}
+.inf_two_a a:hover .down{
+	transition: all .4s ease 0s;
+	opacity: 1;
+	bottom: 80px;
+}
+
+
+/*页面的脚部样式 -- 开始*/
+
+#footer{
+	width: 100%;
+	height: 204px;
+	padding: 80px 0px;
+	background: #6F6F8C;
+}
+#footer .footer_box{
+	width: 1140px;
+	height: 204px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	
+}
+#footer .footer_box .footer_inf{
+	width: 1140px;
+	height: 204px;
+
+}
+.footer_box .footer_inf .inf_box{
+	width: 255px;
+	height: auto;
+	padding: 0px 15px;
+	float: left;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+.inf_box .inf_box_logo{
+	margin-bottom: 20px;
+}
+.inf_box p{
+	color: #FFF;
+	font-size: 15px;
+	font-family: 'Microsoft Yahei';
+	line-height: 26px;
+}
+.inf_box a{
+	font-size: 15px;
+	line-height: 26px;
+	color: #E9A820;
+	transition: all .4s;
+}
+.inf_box a:hover{
+	color: #000;
+}
+.inf_box h3{
+	width: 255px;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	color: #e9a820;
+	font-size: 44px;
+	font-family: 'Aladin', cursive;
+
+}
+.inf_box form{
+	width: 255px;
+	height: 39px;
+}
+.inf_box form input:first-child{
+	width: 151px;
+	height: 28px;
+	outline: none;
+	padding: 5px 9px;
+}
+.inf_box form input:nth-child(2){
+	color: #FFF;
+	border: none;
+	font-size: 16px;
+	background: #e9a820;
+	padding: 12px 20px;
+	transition: all .5s;
+	cursor: pointer;
+}
+.inf_box form input:nth-child(2):hover{
+	background: #000;
+}
+.inf_box ul{
+	width: 255px;
+	height: 34px;
+	margin-top: 16px;
+}
+.inf_box ul li{
+	margin-right: 15px;
+	float: left;
+}
+.inf_box ul li a span{
+	background: url("./images/ftr-social.png") no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+.inf_box ul li a span:hover{
+	opacity: .8;
+}
+.inf_box ul li a .fa{
+	background-position: 10px 0px;
+}
+.inf_box ul li a .tw{
+	background-position: -44px 1px;
+}
+.inf_box ul li a .link{
+	background-position: -101px 0px;
+}
+.inf_box ul li a .gmail{
+	background-position: -153px 0px;
+}
+
+.inf_box .nav{
+	width: 255px;
+	height: 140px;
+}
+.inf_box .nav li{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+.inf_box .nav li a{
+	font-size: 16px;
+	color: #FFF;
+	transition: all .4s;
+}
+.inf_box .nav li a:hover{
+	color: #e9a820;
+}
+
+/*页面的脚部 页脚样式 -- 开始*/
+#footer_page{
+	width: 100%;
+	height: 22px;
+	padding: 24px 0px;
+	background: #e9a820;
+	text-align: center;
+}
+#footer_page p{
+	width: 1140px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #FFF;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+#footer_page p a{
+	color: #FFF;
+	transition: all .3s;
+}
+#footer_page p a:hover{
+	color: #6F6F8C;
+}

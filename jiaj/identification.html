@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>个人中心教员-上传文章</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/instructor.css">
+    <style>.common{position: relative;padding-left:0.9rem;padding-right: 0.9rem;}</style>
+</head>
+<body class="all-color-one">
+  <header>
+    <a class="left-img" href="javascript:history.go(-1);"><img src="./img/back-left.png"></a>
+    <h4>上传文章</h4>
+    <a class="right-text" href="index.html">家教网</a>
+  </header>
+  <div class="identification">
+    <div class="select-navs common">
+      <ul class="navs clearfix">
+          <li data-type="1"  class="active"><a href="javascript:;">上传文章 </a></li>
+          <li data-type="2"> <a href="javascript:;">已审核</a> </li>
+          <li data-type="3"> <a href="javascript:;">未审核 </a></li>
+          <li data-type="4"> <a href="javascript:;">审核不通过</a> </li>
+      </ul>
+    </div>
+    <div class="select-show">
+        <ul class="clearfix list-details ">
+            <li data-type="2" class="common common2">   <!--  data-type="2" 筛选条件 -->
+                <div class="details">
+                    <p class="date">上传日期2017-11-10 <span class="alreadyApply">已审核</span></p>
+                    <p class="details-text">文章标题:巧记成语1</p>
+                </div>
+            </li>
+            <li data-type="3" class="common common3">
+                <div class="details">
+                    <p class="date">上传日期2017-11-10 <span class="alreadyApply">已审核</span></p>
+                    <p class="details-text">文章标题:巧记成语2</p>
+                </div>
+            </li>
+            <li data-type="3" class="common common3">
+                <div class="details">
+                    <p class="date">上传日期2017-11-10 <span class="alreadyApply">已审核</span></p>
+                    <p class="details-text">文章标题:巧记成语3</p>
+                </div>
+            </li>
+            <li data-type="4" class="common common4">
+                <div class="details">
+                    <p class="date">上传日期2017-11-10 <span class="alreadyApply">已审核</span></p>
+                    <p class="details-text">文章标题:巧记成语4</p>
+                </div>
+            </li>
+            <li class="common">
+                <div class="details">
+                    <p class="date">上传日期2017-11-10 <span class="alreadyApply">已审核</span></p>
+                    <p class="details-text">文章标题:巧记成语</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<!-- <script src="js/layer.js"></script> -->
+<script type="text/javascript">
+$(function(){
+  $(".navs li").click(function(){
+    var type=$(this).attr("data-type");
+    if(parseInt(type)==1){
+      $(".list-details li").show();
+    }else{
+      $(".list-details .common").hide()
+      $(".list-details .common"+type).show();
+    }
+    $(this).addClass("active").siblings().removeClass("active");
+    var type=$(this).attr("type");
+
+  })
+
+})
+</script>
+</html>

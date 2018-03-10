@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body style="">
+	<div class="study-header">
+		<a href="javascript:history.go(-1);" class="back">
+			<img src="img/back.png">
+		</a>
+		<p class="text">购物车</p>
+	</div>
+
+
+  <div class="sc-matter pay special">
+  <div class="topAll">
+  <div class=" clearfix">
+      <label class="left-all"><input type="checkbox" class="hideRadio"><i></i><span>全选</span></label>
+      <span class="right-edit">编辑</span></div>
+    </div>
+      <ul>
+        <li class="clearfix">
+          <div class="select_input">
+            
+            <div class="out_select">
+              <input class="hideRadio" data-price="248" type="checkbox" value="" name="payS">
+              <i class="ss_set"></i>
+            </div>
+
+          </div>
+          <a href="#" class="left">
+              <img src="img/sl1.png" class="img">
+              <img src="img/bf.png" class="play-img">
+            </a>
+            <div class="right">
+              <div class="t-g">
+                <a href="#" class="title">英语课程名称</a>
+                
+              </div>
+              <p class="price_out">
+                  <span><em>￥</em>248</span>
+                </p>
+              <div class="numberSet">
+                <i data-type="-" class="delete_one"></i>
+                <span>1</span>
+                <i data-type="+" class="add_one"></i>
+              </div>
+            </div>
+        </li>
+         <li class="clearfix">
+          <div class="select_input">
+            
+            <div class="out_select">
+              <input class="hideRadio" type="checkbox" data-price="248" value="" name="payS">
+              <i class="ss_set"></i>
+            </div>
+
+          </div>
+          <a href="#" class="left">
+              <img src="img/sl1.png" class="img">
+              <img src="img/bf.png" class="play-img">
+            </a>
+            <div class="right">
+              <div class="t-g">
+                <a href="#" class="title">英语课程名称</a>
+                
+              </div>
+              <p class="price_out">
+                  <span><em>￥</em>248</span>
+                </p>
+              <div class="numberSet">
+                <i data-type="-" class="delete_one"></i>
+                <span>1</span>
+                <i data-type="+" class="add_one"></i>
+              </div>
+            </div>
+        </li>
+         <li class="clearfix">
+          <div class="select_input">
+            
+            <div class="out_select">
+              <input class="hideRadio" data-price="248" type="checkbox" value="" name="payS">
+              <i class="ss_set"></i>
+            </div>
+
+          </div>
+          <a href="#" class="left">
+              <img src="img/sl1.png" class="img">
+              <img src="img/bf.png" class="play-img">
+            </a>
+            <div class="right">
+              <div class="t-g">
+                <a href="#" class="title">英语课程名称</a>
+                
+              </div>
+              <p class="price_out">
+                  <span><em>￥</em>248</span>
+                </p>
+              <div class="numberSet">
+                <i data-type="-" class="delete_one"></i>
+                <span>1</span>
+                <i data-type="+" class="add_one"></i>
+              </div>
+            </div>
+        </li>
+      </ul>
+  </div>
+    
+
+  
+<div class="box_floor">
+  <div class="clearfix left_floot">
+    <div class="left">
+       <label class="left-all"><input type="checkbox" class="hideRadio"><i></i><span style="width:auto;line-height:1;">全选</span></label>
+       <span class="right_price" style="line-height:1;"><i class="title">合计：</i><i class="price">￥</i><em class="num">0</em></span>
+    </div>
+    <div class="right">
+      <button onclick="location.href='stu_paySure.html'">去结算(<span>3</span>)</button>
+    </div>
+  </div>
+</div>
+  
+
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<script>
+
+
+
+/*选中代码*/
+  /*全选*/
+  var selectBool = true;
+  function selectAll(){
+    $(".out_select input").prop("checked","checked");
+  }
+  function selectPan(selectBool){
+    console.log(selectBool);
+      if(selectBool){
+        $(".left-all input").prop("checked",true);
+
+      }else{
+        $(".left-all input").prop("checked",false);
+      }
+  }
+
+  function priceSet(){
+    $(".out_select input:ckecked").each(function(index,item){
+
+    })
+  }
+
+
+  $(function(){
+    $(".out_select").click(function(){
+      var x = true;
+      $(".out_select input").each(function(index,item){
+          //console.log($(item).prop('checked'))
+          if($(item).prop('checked')){
+
+          }else{
+            x = false;
+          }
+      })
+     selectPan(x);
+
+    })
+  })
+  $(".left-all").click(function(){
+
+    if(selectBool){
+      selectAll();
+      $(".left-all").find("input").prop("checked",true);
+      selectBool = false;
+    }else{
+        $(".out_select input").prop("checked",false);
+        $(".left-all").find("input").prop("checked",false);
+        selectBool = true;
+    }
+  })
+
+$(".numberSet i").click(function(){
+  var x =parseInt($(this).siblings("span").text());
+ 
+  if($(this).attr("data-type") == "+"){
+    x+=1;
+    $(this).siblings("span").text(x);
+  }else{
+    if( x=="1"){
+      alert("数量不能为0");
+    }else{
+       x-=1;
+      $(this).siblings("span").text(x--);
+    }
+    
+  }
+}) 
+
+</script>
+</html>

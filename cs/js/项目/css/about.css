@@ -1,0 +1,692 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+/*页面的头部样式 -- 开始*/
+#headerTop{
+	width: 100%;
+	height: 26px;
+	padding: 16px 0px;
+	background-color: #e9a820;
+}
+#headerTop .headerTop_main{
+	width: 1140px;
+	height: 26px;
+	margin: 0 auto;
+	position: relative;
+}
+/*头顶部的导航栏 -- 左边*/
+#headerTop .headerTop_main .top_nav_left{
+	width: 380px;
+	height: 26px;
+	/*float: left;*/
+	position: absolute;
+	/*left: 0px;*/
+	left: -1000px;
+}
+
+#headerTop .headerTop_main .top_nav_left ul{
+	width: 380px;
+	height: 26px;
+}
+.top_nav_left ul li h5{
+	color: #FFF;
+	font-size: 15px;
+	font-family: inherit;
+}
+.top_nav_left ul li{
+	margin-right: 19px;
+	float: left;
+}
+.top_nav_left ul li a span{
+	background: url("./images/top-social.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+.top_nav_left ul li a .fb{
+	background-position: 7px 0px;
+}
+.top_nav_left ul li a .fb:hover{
+	background-position: 7px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .tw{
+	background-position: -22px 1px;
+}
+.top_nav_left ul li a .tw:hover{
+	background-position: -22px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .in{
+	background-position: -53px 0px;
+}
+.top_nav_left ul li a .in:hover{
+	background-position: -53px -18px;
+	transition: all .4s;
+}
+.top_nav_left ul li a .gmail{
+	background-position: -82px 0px;
+}
+.top_nav_left ul li a .gmail:hover{
+	background-position: -82px -18px;
+	transition: all .4s;
+}
+
+
+
+
+
+
+
+
+/*头顶部的导航栏 -- 右边*/
+#headerTop .headerTop_main .top_nav_right{
+	width: 760px;
+	height: 23px;
+	/*float: left;*/
+	position: absolute;
+	/*right: 0px;*/
+	right: -1000px;
+}
+#headerTop .headerTop_main .top_nav_right ul{
+	width: 760px;
+	height: 23px;
+}
+.top_nav_right ul li{
+	margin-right: 19px;
+	float: right;
+}
+.top_nav_right ul li .phone{
+	background: url("./images/ph.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: sub;
+}
+.top_nav_right ul li h6{
+	font-size: 15px;
+	line-height: 23px;
+	font-family: inherit;
+	color: #FFF;
+	display: inline-block;
+}
+
+.top_nav_right ul li .email{
+	background: url("./images/email.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.top_nav_right ul li h6 a{
+	color: #FFF;
+}
+.top_nav_right ul li h6 a:hover{
+	color: #000;
+}
+/*头底部的导航栏*/
+#headerBottom{
+	width: 100%;
+	height: 72px;
+	background: #FFF;
+	border-bottom: 1px solid #6F6F8C;
+}
+#headerBottom .headerBot{
+	width: 100%;
+	height: 24px;
+	padding: 24px 0px;
+}
+#headerBottom .headerBot .headerBot_main{
+	width: 1140px;
+	height: 24px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+/*头底部的导航栏 -- 左边logo*/
+.headerBot_main_left a img{
+	display: block;
+	float: left;
+	animation:move 3s linear .2s;
+}
+@-webkit-keyframes move{
+	0%{transform:translateX(-1015px);}
+	100%{transform:translateX(-15px);}
+}
+
+/*头底部的导航栏 -- 右边nav*/
+.headerBot_main_right ul{
+	float: right;
+}
+.headerBot_main_right ul li{
+	float: left;
+}
+.headerBot_main_right ul li a{
+	display: inline-block;
+	margin: 0px 15px;
+	font-size: 14px;
+	color: #000;
+	font-family: 'Microsoft Yahei';
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+
+}
+/*让第二个about一开始默认颜色*/
+.headerBot_main_right ul li:nth-child(2) a{
+	color: #E9A820;
+}
+.headerBot_main_right ul li a::before{
+	color: #E9A820;
+	content: attr(data-hover);
+	position: absolute;
+	opacity: 0;
+	text-shadow: 0 0 1px rgba(255,225,225,0.3);
+	transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+	transition: transform 0.3s, opacity 0.3s;	
+}
+.headerBot_main_right ul li a:hover::before{
+	opacity: 1;
+	transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+/*页面主体的第一部分about样式 -- 开始*/
+#content_first{
+	width: 100%;
+	height: 500px;
+	padding: 80px 0px;
+}
+#content_first .first_box{
+	width: 1140px;
+	height: 500px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+#content_first .first_box .fir_sbox{
+	width: 1140px;
+	height: 500px;
+	
+}
+.fir_sbox .fir_header{
+	width: 100%;
+	height: 52px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.fir_sbox .fir_header h1{
+	font-size: 52px;
+	color: #6F6F8C;
+	font-family: 'Aladin', cursive;
+	margin-bottom: 14px;
+}
+.fir_sbox .fir_inf{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.fir_inf .fir_inf_left{
+	width: 445px;
+	height: 400px;
+	padding: 0px 15px;
+	/*float: left;*/
+	position: absolute;
+	left: -1000px;
+}
+.fir_inf .fir_inf_right{
+	width: 635px;
+	height: auto;
+	padding: 0px 15px;
+	/*float: left;*/
+	position: absolute;
+	right: -1000px;
+}
+.fir_inf .fir_inf_right h4{
+	width: 635px;
+	height: 28px;
+	margin-bottom: 7px;
+	font-size: 24px;
+	line-height: 22px;
+	color: #E9A820;
+	font-weight: normal;
+	font-family: 'Aladin', cursive;
+}
+.fir_inf .fir_inf_right p{
+	font-size: 15px;
+	color: #737373;
+	line-height: 28px;
+	font-family: 'Microsoft Yahei';
+}
+.fir_inf .fir_inf_right .about_list{
+	width: 635px;
+	min-height: 84px;
+	padding-top: 24px;
+}
+.about_list .about_img{
+	float: left;
+	width: 11%;
+}
+.about_list .about_text{
+	float: right;
+	width: 85%;
+}
+
+.fir_inf_right .about_list .about_img span{
+	display: inline-block;
+	width: 64px;
+	height: 64px;	
+}
+
+.fir_inf_right .about_list .about_img .img_bg1{
+	background: url("./images/keys.png") no-repeat;
+}
+.fir_inf_right .about_list .about_img .img_bg2{
+	background: url("./images/summer.png") no-repeat;
+}
+.about_list .about_text h5{
+	color: #000;
+	font-size: 20px;
+	margin-bottom: 6px;
+	font-family: 'Aladin', cursive;
+}
+
+/*页面主体的第二部分样式 -- 开始*/
+
+#content_second{
+	width: 100%;
+	height: 352px;
+	padding: 80px 0px;
+	background: url("./images/ab-bann.jpg") no-repeat;
+	background-size: cover;
+}
+#content_second .second_box{
+	width: 1140px;
+	height: 352px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+#content_second .second_box .sec_sbox{
+	width: 1140px;
+	height: 352px;
+	
+}
+.sec_sbox .sec_header{
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.sec_sbox .sec_header h2{
+	color: #FFF;
+	font-size: 46px;
+	font-family: 'Aladin', cursive;
+}
+.sec_sbox .sec_inf{
+	width: 100%;
+	height: 252px;
+	position: relative;
+}
+.sec_inf .box1{
+	position: absolute;
+	left: -1000px;
+}
+.sec_inf .box2{
+	position: absolute;
+	left: 380px;
+	transform: scale(.2);
+	opacity: 0;
+	transition: all 1.5s;
+}
+.sec_inf .box3{
+	position: absolute;
+	right: -1000px;
+}
+
+
+.sec_inf .sec_inf_box{
+	width: 350px;
+	height: 252px;
+	padding: 0px 15px;
+	text-align: center;
+}
+.sec_inf .sec_inf_box .sec_inf_sbox{
+	width: 276px;
+	height: 178px;
+	padding: 32px;
+	border: 5px solid #6F6F8C;
+	background: rgba(233,168,32,.67);
+	transition: all .5s;
+}
+.sec_inf_box .sec_inf_sbox h3{
+	font-family: 'Aladin', cursive;
+	font-size: 38px;
+	color: #FFF;
+}
+.sec_inf_box .sec_inf_sbox h4{
+	font-family: 'Aladin', cursive;
+	font-size: 24px;
+	color: #FFF;
+	padding: 12px 0px;
+}
+.sec_inf_box .sec_inf_sbox p{
+	font-family: 'Microsoft Yahei';
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFF;
+}
+.sec_inf_box .sec_inf_sbox:hover{
+	background: rgba(111, 111, 140, 0.71);
+}
+
+/*页面主体的第三部分样式 -- 开始*/
+#content_third{
+	width: 100%;
+	min-height: 434px;
+	padding: 80px 0px;
+}
+#content_third .third_box{
+	width: 1140px;
+	height: auto;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.third_box .thi_header{
+	width: 100%;
+	height: 52px;
+	text-align: center;
+	margin-bottom: 62px;
+}
+.third_box .thi_header h3{
+
+	font-size: 48px;
+	line-height: 52px;
+	color: #000;
+	font-family: 'Aladin', cursive;
+	
+}
+
+.third_box .thi_inf{
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 100px;
+	opacity: 0;
+	transition: all 1.5s ease-in-out;
+}
+.third_box .thi_inf .thi_inf_box{
+	width: 255px;
+	height: 320px;
+	padding: 0px 15px;
+	float: left;
+}
+.thi_inf_box .inf_img_box{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.thi_inf_box .inf_img_box span{
+	display: block;
+	
+	box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+}
+.thi_inf_box .inf_img_box .img1{
+	background: url("./images/t1.jpg") no-repeat;
+}
+.thi_inf_box .inf_img_box .img2{
+	background: url("./images/t2.jpg") no-repeat;
+}
+.thi_inf_box .inf_img_box .img3{
+	background: url("./images/t3.jpg") no-repeat;
+}
+.thi_inf_box .inf_img_box .img4{
+	background: url("./images/t4.jpg") no-repeat;
+}
+.thi_inf_box .inf_img_box .bak{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.6);
+	transform: rotateY(-80deg);
+	transition: all .3s;
+	opacity: 0;
+}
+.inf_img_box .bak h3{
+	font-size: 18px;
+	font-family: 'Aladin', cursive;
+	position: absolute;
+	color: #FFF;
+	top: 100px;
+	left: 80px;
+}
+.thi_inf_box .inf_img_box:hover .bak{
+	opacity: 1;
+	transform: rotateY(0deg);
+}
+
+.thi_inf_box .inf_text{
+	width: 255px;
+	height: 84px;
+	margin-top: 16px;
+	text-align: center;
+}
+.thi_inf_box .inf_text p{
+	color: #333;
+	font-size: 16px;
+}
+.thi_inf_box .inf_text ul{
+	width: 255px;
+	height: 32px;
+	margin-top: 8px;
+}
+.thi_inf_box .inf_text ul li{
+	margin-right: 3px;
+	display: inline-block;
+}
+.thi_inf_box .inf_text ul li a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url("./images/t-icn.png") no-repeat;
+}
+.thi_inf_box .inf_text ul li a:hover{
+	opacity: .8;
+}
+.thi_inf_box .inf_text ul li .fa{
+	background-position: 0px 0px;
+}
+.thi_inf_box .inf_text ul li .tw{
+	background-position: -27px 0px;
+}
+.thi_inf_box .inf_text ul li .g{
+	background-position: -53px 0px;
+}
+/*页面的脚部样式 -- 开始*/
+
+#footer{
+	width: 100%;
+	height: 204px;
+	padding: 80px 0px;
+	background: #6F6F8C;
+}
+#footer .footer_box{
+	width: 1140px;
+	height: 204px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	
+}
+#footer .footer_box .footer_inf{
+	width: 1140px;
+	height: 204px;
+
+}
+.footer_box .footer_inf .inf_box{
+	width: 255px;
+	height: auto;
+	padding: 0px 15px;
+	float: left;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+.inf_box .inf_box_logo{
+	margin-bottom: 20px;
+}
+.inf_box p{
+	color: #FFF;
+	font-size: 15px;
+	font-family: 'Microsoft Yahei';
+	line-height: 26px;
+}
+.inf_box a{
+	font-size: 15px;
+	line-height: 26px;
+	color: #E9A820;
+	transition: all .4s;
+}
+.inf_box a:hover{
+	color: #000;
+}
+.inf_box h3{
+	width: 255px;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	color: #e9a820;
+	font-size: 44px;
+	font-family: 'Aladin', cursive;
+
+}
+.inf_box form{
+	width: 255px;
+	height: 39px;
+}
+.inf_box form input:first-child{
+	width: 151px;
+	height: 28px;
+	outline: none;
+	padding: 5px 9px;
+}
+.inf_box form input:nth-child(2){
+	color: #FFF;
+	border: none;
+	font-size: 16px;
+	background: #e9a820;
+	padding: 12px 20px;
+	transition: all .5s;
+	cursor: pointer;
+}
+.inf_box form input:nth-child(2):hover{
+	background: #000;
+}
+.inf_box ul{
+	width: 255px;
+	height: 34px;
+	margin-top: 16px;
+}
+.inf_box ul li{
+	margin-right: 15px;
+	float: left;
+}
+.inf_box ul li a span{
+	background: url("./images/ftr-social.png") no-repeat;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+.inf_box ul li a span:hover{
+	opacity: .8;
+}
+.inf_box ul li a .fa{
+	background-position: 10px 0px;
+}
+.inf_box ul li a .tw{
+	background-position: -44px 1px;
+}
+.inf_box ul li a .link{
+	background-position: -101px 0px;
+}
+.inf_box ul li a .gmail{
+	background-position: -153px 0px;
+}
+
+.inf_box .nav{
+	width: 255px;
+	height: 140px;
+}
+.inf_box .nav li{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+}
+.inf_box .nav li a{
+	font-size: 16px;
+	color: #FFF;
+	transition: all .4s;
+}
+.inf_box .nav li a:hover{
+	color: #e9a820;
+}
+
+/*页面的脚部 页脚样式 -- 开始*/
+#footer_page{
+	width: 100%;
+	height: 22px;
+	padding: 24px 0px;
+	background: #e9a820;
+	text-align: center;
+}
+#footer_page p{
+	width: 1140px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #FFF;
+	opacity: 0;
+	transform: scale(.3);
+	transition: all .7s ease 0s;
+}
+#footer_page p a{
+	color: #FFF;
+	transition: all .3s;
+}
+#footer_page p a:hover{
+	color: #6F6F8C;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,473 @@
+.sc-center {
+  text-align: center;
+}
+.sc-fl {
+  float: left;
+}
+.sc-fr {
+  float: right;
+}
+.f-weight {
+  font-weight: 600;
+}
+.b-radius {
+  border-radius: 50%;
+}
+.sc-header {
+  width: 100%;
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+.text-overflow-one {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-overflow-much {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.d-block {
+  display: block;
+}
+.m-auto {
+  margin: 0 auto;
+  display: block;
+}
+.of {
+  overflow: hidden;
+}
+.c-fff {
+  color: #fff;
+}
+.c-666 {
+  color: #666;
+}
+.c-333 {
+  color: #333;
+}
+.c-999 {
+  color: #999;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.bg-fff {
+  background-color: #fff;
+}
+header {
+  width: 100%;
+  height: 12.875rem;
+  background: -webkit-linear-gradient(#37cb76, #36a98e);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#37cb76, #36a98e);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#37cb76, #36a98e);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#37cb76, #36a98e);
+  /* 标准的语法 */
+}
+header .head-top {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.46875rem 0.625rem;
+  padding-right: 0;
+}
+header .first-a {
+  width: 24%;
+}
+header .first-a img {
+  margin-top: .28rem;
+  width: 4.1875rem;
+  height: 0.875rem;
+}
+header .head-serach {
+  width: 14.09375rem;
+  height: 1.3125rem;
+  background-color: #fff;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+header .head-serach button {
+  float: left;
+  width: 17%;
+  height: 100%;
+  background: url(../images/sc_2.png) center no-repeat;
+  background-size: 0.8125rem 0.8125rem;
+}
+header .head-serach input {
+  float: left;
+  width: 73%;
+  height: 100%;
+}
+header .last-a {
+  width: 14%;
+}
+header .last-a img {
+  margin: 0 auto;
+  display: block;
+  width: 1.1875rem;
+  height: 1.4375rem;
+}
+header .head-bom {
+  width: 100%;
+  height: 10.34375rem;
+}
+header .head-bom > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.click-consulting {
+  position: absolute;
+  bottom: 2.1875rem;
+  left: 4.25rem;
+  z-index: 30;
+  padding: 0.375rem 0.9375rem;
+  background: #fff;
+  color: #37aa8c;
+  font-size: 0.75rem;
+  border-radius: .3rem;
+}
+.classify-ul {
+  width: 100%;
+  padding: 0.625rem 0;
+  background-color: #fff;
+}
+.classify-ul li {
+  width: 20%;
+  float: left;
+}
+.classify-ul li img {
+  margin: 0 auto;
+  display: block;
+  width: 3.21875rem;
+  height: 3.21875rem;
+}
+.classify-ul li p {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #3e3e3e;
+  line-height: 1.4375rem;
+}
+.classify {
+  width: 100%;
+}
+.classify .box {
+  background-color: #fff;
+  float: left;
+  width: 11.5625rem;
+  height: 3.0625rem;
+  line-height: 3.0625rem;
+  box-shadow: 0 0 .4rem 1px #E8E8E8;
+  margin-top: 0.3125rem;
+}
+.classify .box span {
+  font-size: 0.75rem;
+  color: #3e3e3e;
+  float: left;
+}
+.classify .box span img {
+  width: 1.5rem;
+  height: 1.46875rem;
+  margin: 0.71875rem 0.71875rem 0 0.71875rem;
+}
+.classify .box:nth-child(2n) {
+  float: right;
+}
+.tutoring-title {
+  width: 100%;
+  padding: 0 0.625rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  color: #7e7e7e;
+  font-size: 0.625rem;
+}
+.tutoring-box {
+  width: 100%;
+}
+.tutoring-box .title {
+  background-color: #fff;
+  height: 1.96875rem;
+  padding: 0.3125rem 0.625rem;
+}
+.tutoring-box .title b {
+  width: 0.40625rem;
+  float: left;
+  height: 100%;
+  background: #39ae8c;
+}
+.tutoring-box .title span {
+  float: left;
+  line-height: 1.34375rem;
+  font-size: 0.75rem;
+  color: #3e3e3e;
+  margin-left: 0.3125rem;
+}
+.tutoring-box .ify {
+  width: 100%;
+  margin: 0.21875rem 0;
+}
+.tutoring-box .ify a {
+  float: left;
+  margin-right: 0.21875rem;
+  background-color: #fff;
+  width: 3.15625rem;
+  height: 3.1875rem;
+  padding-top: 0.375rem;
+}
+.tutoring-box .ify a img {
+  margin: 0 auto;
+  display: block;
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+.tutoring-box .ify a p {
+  text-align: center;
+  font-size: 0.625rem;
+  color: #3e3e3e;
+  line-height: 1.4375rem;
+}
+.tutoring-box .ify a:last-child {
+  margin-right: 0;
+}
+.teacher-recommended .teacher {
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  padding: 0.5625rem 0.625rem;
+  margin-bottom: 0.46875rem;
+}
+.teacher-recommended .teacher > img {
+  width: 4.5625rem;
+  height: 4.5625rem;
+  float: left;
+}
+.teacher-recommended .teacher .middle {
+  float: left;
+  width: 50%;
+  padding-left: 1.5625rem;
+}
+.teacher-recommended .teacher .middle p {
+  color: #7f7d7d;
+  font-size: 0.625rem;
+}
+.teacher-recommended .teacher .middle h4 {
+  color: #232323;
+  font-size: 0.75rem;
+  margin-bottom: 0.46875rem;
+}
+.teacher-recommended .teacher .middle h4 span {
+  float: left;
+  margin-right: 0.375rem;
+}
+.teacher-recommended .teacher .middle h4 img {
+  float: left;
+  width: 1.4375rem;
+  height: 0.875rem;
+}
+.teacher-recommended .teacher .right {
+  float: right;
+  width: 16%;
+  position: absolute;
+  bottom: 0.78125rem;
+  right: 0;
+}
+.teacher-recommended .teacher .right img {
+  float: left;
+  width: 0.59375rem;
+  height: 0.90625rem;
+  margin-top: 0.09375rem;
+}
+.teacher-recommended .teacher .right span {
+  color: #7f7d7d;
+  font-size: 0.625rem;
+  float: left;
+  margin-left: 0.46875rem;
+}
+.commonage {
+  height: 2.78125rem;
+  border-top: 1px solid #d1d1d1;
+  padding: 0.84375rem;
+}
+.commonage .left {
+  height: 100%;
+}
+.commonage b {
+  height: 100%;
+  background: #39ae8c;
+  width: 0.34375rem;
+  float: left;
+}
+.commonage span {
+  color: #7e7e7e;
+  font-size: 0.75rem;
+  float: left;
+  line-height: 1.03125rem;
+  margin-left: 0.3125rem;
+}
+.commonage .right img {
+  width: 0.40625rem;
+  height: 0.75rem;
+}
+.mechanism-tab,
+.school-tab {
+  background-color: #fff;
+}
+.mechanism-tab .tab-t,
+.school-tab .tab-t {
+  border-top: 1px solid #d1d1d1;
+}
+.mechanism-tab .tab-t a,
+.school-tab .tab-t a {
+  float: left;
+  width: 33.3%;
+}
+.mechanism-tab .tab-t p,
+.school-tab .tab-t p {
+  padding: 0.78125rem 0;
+  text-align: center;
+  color: #8b8b8b;
+  font-size: 0.9375rem;
+  width: 44%;
+  margin: 0 auto;
+}
+.mechanism-tab .tab-t .p-current,
+.school-tab .tab-t .p-current {
+  color: #252424;
+  border-bottom: 2px solid #39ae8c;
+}
+.mechanism-tab .tab-b,
+.school-tab .tab-b {
+  width: 100%;
+}
+.mechanism-tab .tab-b ul,
+.school-tab .tab-b ul {
+  width: 100%;
+}
+.mechanism-tab .tab-b ul li,
+.school-tab .tab-b ul li {
+  height: 2.59375rem;
+  line-height: 2.59375rem;
+  border-top: 1px solid #c9c9c9;
+  padding: 0 0.78125rem;
+}
+.mechanism-tab .tab-b ul li a,
+.school-tab .tab-b ul li a {
+  color: #a7a5a5;
+  font-size: 0.6875rem;
+}
+.mechanism-tab .tab-b ul li .span1,
+.school-tab .tab-b ul li .span1 {
+  color: #626262;
+  font-size: 0.75rem;
+  width: 70%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: none;
+}
+.kong {
+  padding-bottom: 3.125rem;
+  height: 0.03125rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 3.09375rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 0.3125rem 1px #e3e3e3;
+}
+footer a {
+  float: left;
+  width: 20%;
+  height: 100%;
+  color: #aca9a6;
+  font-size: 0.625rem;
+  position: relative;
+}
+footer a img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.375rem;
+}
+footer a p {
+  position: absolute;
+  bottom: 0.15625rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+footer .a-fo-current {
+  color: #39ae8c;
+}
+footer .fo-a1 img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+footer .fo-a2 img {
+  width: 1.28125rem;
+  height: 1.34375rem;
+}
+footer .fo-a3 img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+footer .fo-a4 img {
+  width: 1.375rem;
+  height: 1.28125rem;
+}
+footer .fo-a5 img {
+  width: 1.15625rem;
+  height: 1.21875rem;
+}
+.link {
+  padding: 0 0.78125rem;
+  padding-bottom: 0.625rem;
+}
+.link a {
+  float: left;
+  color: #828282;
+  font-size: 0.625rem;
+  width: 25%;
+  text-align: center;
+  margin-top: 0.46875rem;
+}
+.attention {
+  padding: 0.625rem 0.9375rem;
+  color: #828282;
+  font-size: 0.625rem;
+}
+.attention img {
+  width: 2.3125rem;
+  height: 2.3125rem;
+  float: left;
+}
+.attention span {
+  float: right;
+  width: 85%;
+  margin-top: 0.15625rem;
+}
+.attention span b {
+  color: #39ae8c;
+}

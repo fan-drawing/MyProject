@@ -1,0 +1,137 @@
+.header_right{float:right;width:12%;line-height:2.75rem;}
+header .back{width:10%;padding:0;}
+.back a{margin-left:1.09375rem;display:block;float:left;}
+.header_right button{width:100%;font-size: 0.8125rem;color:white;text-align: left;}
+header .middle{width:78%;}
+
+/*收货地址*/
+.add_adress_list{width:100%;padding-left: 0.625rem;padding-right:0.625rem;background:white;}
+.add_adress_list li{border-bottom: 1px solid #c1c1c1;height: 2.4375rem;line-height: 2.4375rem;}
+.add_adress_list li span{margin-left: 0.3125rem;font-size: 0.8125rem;color:#333333;}
+.add_adress_list li input{font-size: 0.75rem;color: #999999;margin-left:0.625rem;height: 2.4375rem;line-height: 2.4375rem;width:15.3125rem;}
+.add_adress_list li:last-child{border-bottom: 0;}
+.setting_default_box{width:100%;overflow: hidden;margin-top:0.46875rem;}
+.select_button{position:relative;width:0.8125rem;height:0.8125rem;float:left;margin-left:0.9375rem;margin-right:0.4375rem;}
+.select_button img{width:0.8125rem;height:0.8125rem;position:absolute;display: none;}
+.select_button input{width:0.8125rem;height:0.8125rem;position:absolute;margin:0;opacity:0;}
+.select_text{float:left;font-size: 0.5625rem;display: block;height:0.8125rem;line-height: 0.8125rem;}
+
+/*充值*/
+.balance_big_box1{width:100%;height:auto;background:white;padding-bottom:0.625rem;}
+.balance_box{width:100%;width:22.1875rem;margin-left:0.625rem;height:2.4375rem;border-bottom: 1px solid #c1c1c1;line-height: 2.4375rem}
+.balance_box span{display: block;float:left;}
+.balance_words{font-size: 0.8125rem;color:#333333;margin-right:1.0625rem;margin-left:0.1875rem;}
+.balance_text{font-size: 0.8125rem;color:#999999;}
+.select_balancemoney{width:100%;overflow: hidden;height:2.5rem;}
+.select_balancemoney_left{float:left;font-size: 0.8125rem;color:#333333;line-height: 2.5rem;margin-left:0.8125rem;}
+.select_balancemoney_right{float:right;border-bottom: 1px solid #d1d1d1;margin-right:0.625rem;margin-top:0.4rem;}
+.select_balancemoney_right input{font-size: 0.625rem;height:0.84375rem;width:6.3rem;}
+.select_balancemoney_right span{font-size: 0.9375rem;color:#666666;}
+
+.balancemoney_list{width:100%;overflow: hidden;padding-left:0.40625rem;padding-right:0.40625rem;}
+.balancemoney_list li{width:33.33%;float:left;height:5.4375rem;padding:0.78125rem;}
+.balancemoney_list li>div{width:100%;height:100%;position:relative;border-radius: 0.3125rem;overflow: hidden;}
+.balancemoney_matter{position:absolute;border:1px solid #bbbbbb;text-align: center;width:100%;height:100%;border-radius: 0.3125rem;overflow: hidden;}
+.balancemoney_list li>div p:nth-child(1){font-size: 1.125rem;color:#999999;line-height: 2.375rem;}
+.balancemoney_list li>div p:nth-child(2){font-size: 0.59375rem;color:#999999;}
+.balancemoney_list li>div>input{width:100%;height:100%;margin:0;position:absolute;opacity:0;border-radius: 0.3125rem;overflow: hidden;}
+.balancemoney_list li>div .balancemoney_matter1{border:1px solid #fe753e;background-image:url(../img/selectdui.png);background-size: 1.0rem 1.0rem; background-position: right top;background-repeat: no-repeat;}
+.balancemoney_list li>div .balancemoney_matter1 p{color:#fe753e;}
+.balancemoney_text{font-size: 0.5rem;color:#fe753e;text-indent:1.125rem;}
+
+.balance_big_box2{width: 100%;padding-left:1.21875rem;padding-right:1.21875rem;background:white;margin-top:0.625rem;height:18.3125rem;}
+.pay_list{width:100%;height:auto;}
+.pay_list li{border-bottom: 1px solid #f4f4f4;overflow: hidden;padding-top:0.625rem;padding-bottom:0.625rem;}
+.pay_list_left{float:left;overflow: hidden;}
+.pay_list_left>img{width:1.875rem;height:1.875rem;display: block;float:left;margin-right: 0.5625rem;margin-top:0.2rem;}
+.pay_list_left>div{float: left;}
+.pay_list_left>div p:nth-child(1){font-size: 0.9375rem;color:#666666;}
+.pay_list_left>div p:nth-child(2){font-size: 0.6875rem;color:#999999;}
+.pay_list li:last-child{border-bottom:0;}
+.pay_list_right{float:right;width:0.9375rem;height:0.9375rem;position:relative;margin-top:0.5625rem;}
+.pay_list_right img{width:0.9375rem;height:0.9375rem;position:absolute;}
+.pay_list_right input{width:0.9375rem;height:0.9375rem;position:absolute;margin:0;opacity: 0;}
+.imma_balance{width:100%;border-radius: 0.3125rem;background:#fe753e;color:white;font-size: 0.9375rem;height:2.6875rem;margin-top:0.90625rem;}
+.agree_balance{width:100%;text-align: center;color:#666666;font-size: 0.8125rem;line-height: 2.5rem;}
+.agree_balance a{color:#fe753e;}
+.add_adress_list1 li{overflow: hidden;}
+.add_adress_list1 li span{display:block;float:left;width:22%;}
+.add_adress_list1 li input{display: block;float:left;margin-left:0;width:76%;}
+.please_take{line-height: 2rem;text-align: center;font-size: 0.625rem;}
+.teke_list{width:19.8125rem;overflow: hidden;margin:0 auto;}
+.teke_list li{width:9.0625rem;height:9.0625rem;border:1px solid #c1c1c1;text-align: center;background:white;margin-bottom:0.625rem;}
+.teke_list li:nth-child(odd){float:left;}
+.teke_list li:nth-child(even){float:right;}
+.teke_list li img{display: inline;}
+.teke_list_left1{width:7.28125rem;height:7.28125rem;background-image:url(../img/sikuang.png); background-repeat:no-repeat;background-size:cover;margin-top:0.9375rem;margin-left:auto;margin-right:auto;}
+.teke_list_left1 img{width:4.84375rem;height:7.03125rem;}
+.file_img{width:100%;height:100%;position:absolute;}
+.file_img img{width:4.4375rem;height:2.96875rem;margin-top:2.3125rem;}
+.file_img p{line-height: 1.6875rem;font-size: 0.8125rem;color:#bbbbbb;}
+.teke_list_right{position: relative;width:100%;height:100%;}
+.teke_list_right input{position:absolute;width:100%;height:100%;opacity:0;}
+.teke_list_left2{width:7.28125rem;height:7.28125rem;background-image:url(../img/sikuang.png); background-repeat:no-repeat;background-size:cover;margin-top:0.9375rem;margin-left:auto;margin-right:auto;}
+.teke_list_left2 img{width:6.71875rem;height:4.4375rem;margin-top:1.4375rem;}
+.teke_list_left3{width:7.28125rem;height:7.28125rem;background-image:url(../img/sikuang.png); background-repeat:no-repeat;background-size:cover;margin-top:0.9375rem;margin-left:auto;margin-right:auto;}
+.teke_list_left3 img{width:6.71875rem;height:4.4375rem;margin-top:1.4375rem;}
+.agree_user1{font-size: 0.8125rem;color:#333333;text-indent: 1.75rem;line-height: 1.625rem;}
+.agree_user1 a{color:#fe753e;}
+.agree_user2{font-size: 0.8125rem;color:#333333;text-indent: 1.75rem;margin-bottom:0.9375rem;}
+.submit_btn{width:21.5625rem;height:2.75rem;background:#fe753e;text-align: center;line-height: 2.75rem;color:white;font-size: 0.9375rem;margin-left:0.84375rem;border-radius: 0.46875rem;-moz-border-radius: 0.46875rem;-webkit-border-radius: 0.46875rem;margin-bottom:0.875rem;}
+.teke_list_left11 img{width:6.59375rem;height:4.875rem;margin-top:1.1125rem;}
+.teke_list_left22 img{width:6.59375rem;height:4.46875rem;}
+
+/*账户余额*/
+.account_balance{width:23.125rem;height:7.5rem;background-image: url(../img/jixing.png);background-repeat: no-repeat;background-size: cover;margin-left:0.15625rem;margin-top:1.125rem;}
+.account_balance_left{float:left;}
+.account_balance_left h3{font-size: 1.125rem;color:#333333;margin-left:1.5625rem;margin-top:1.8625rem;}
+.account_balance_left p{font-size: 0.9375rem;color:#666666;margin-left:1.5625rem;margin-top:0.75rem;}
+.account_balance_right{float:right;width:6.25rem;height:2.125rem;border:1px solid #fe753e;color:#fe753e;font-size: 1.0625rem;text-align: center;line-height:2.125rem;border-radius:0.3125rem;margin-top:2.5625rem;margin-right:1.125rem;display: block;}
+
+/*店铺收藏*/
+.shopcollect_list{width:100%;height:auto;background:white;}
+.shopcollect_list li{padding:0.78125rem 0.0rem 0.78125rem 0.9375rem;border-bottom:1px solid #f2f2f2;width:100%;}
+.shopcollect_list li a{display:block;width:100%;height:100%;overflow: hidden;}
+.shopcollect_list_left{float:left;width:7.21875rem;height:4.34375rem;margin-top: .2rem;}
+.shopcollect_list_right{width:12.75rem;float:left;margin-left:0.625rem;}
+.shop_name{font-size:0.9375rem;color:#333333;line-height: 1.5625rem;}
+.shop_money{font-size: 0.75rem;color:#666666;}
+.reduced_price{width:100%;overflow: hidden;margin-top:0.3625rem;}
+.reduced_price_left{float:left;}
+.reduced_price_left>img{width:1.375rem;height:1.375rem;display: inline;vertical-align: middle;}
+.reduced_price_left>p{font-size: 0.75rem;color:#666666;margin-left:0.3125rem;display: inline;vertical-align: middle; }
+.reduced_price_left>p>span{font-size: 0.9375rem;color:#f03f22;}
+.reduced_price_right{float:right;font-size:0.75rem;color:#666666;line-height:1.375rem;}
+.reduced_price_right>span{color:#f03f22;}
+
+/*地址管理*/
+.zyadress_administer_list{width:100%;height:auto;}
+.zyadress_administer_list li{width:100%;padding-left:0.625rem;padding-right:0.625rem;background:white;margin-bottom:0.3125rem;}
+.zyadress_administer_listmatter{width:100%;height:auto;}
+.zyadress_administer_listmatter_top{width:100%;border-bottom: 1px solid #c1c1c1;}
+.zyadress_administer_listmatter_top p:nth-child(1){color:#333333;line-height: 2.96875rem;}
+.zyadress_administer_listmatter_top p:nth-child(1) span:nth-child(1){font-size: 1.0rem;margin-left:0.9375rem;margin-right:0.9375rem;}
+.zyadress_administer_listmatter_top p:nth-child(1) span:nth-child(2){font-size: 0.75rem;}
+.zyadress_administer_listmatter_top p:nth-child(2){font-size: 0.75rem;color:#999999;margin-bottom:0.875rem;margin-left:0.9375rem;}
+.zyadress_administer_listmatter_bottom{overflow: hidden;padding-bottom:0.625rem;margin-top:0.625rem;}
+.zyadress_administer_listmatter_bottom a{display: block;float:left;width:3.8125rem;height:1.3125rem;border:1px solid #fe753e;color:#fe753e;text-align: center;line-height:1.3125rem;font-size: 0.75rem;border-radius:0.25rem;}
+.zyadress_administer_listmatter_bottom a:nth-child(1){margin-left:13.125rem;margin-right:0.875rem;}
+
+
+
+.select_balancemoney_right ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cdcdcd;
+}
+.select_balancemoney_right :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cdcdcd;
+}
+.select_balancemoney_right ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cdcdcd;
+}
+.select_balancemoney_right :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cdcdcd;
+}

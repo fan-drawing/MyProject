@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-订单明细</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script src="js/datePicker.js"></script>
+
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+		.gearDate{
+			    background-color: rgba(0,0,0,0.5);
+		}
+		.date_btn_box{
+			background:#fff;
+		}
+		.date_ctrl{
+			background:#fff;
+			border-top-left-radius: 0.625rem;
+			border-top-right-radius: 0.625rem;
+
+		}
+		.lcalendar_cancel{
+			font-size:0.9375rem;
+			color:#666666;
+		}
+		.lcalendar_finish{
+			font-size:0.9375rem;
+			color:#fe753e;			
+		}
+		.date_roll>div{
+			font-size:1.125rem;
+		}
+		.tooth{
+			 line-height: 2.1em;
+		}
+		.date_roll{
+			padding: 1rem 0;
+		}
+	</style> 
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="my_Earnings.html"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>订单明细</p>
+	</div>
+</header>
+<div class="Account">
+	
+	<div class="Acc-solar clearfix">
+		<div class="s-left">
+			<input type="text" value="2017/08/20 (今日)" readonly="readonly" id="demo1">
+			<!-- <img src="images/rili.png" alt=""> -->
+		</div>
+		<div class="s-right">
+			<p>今日收入：1999元</p>
+		</div>
+	</div>
+
+	<div class="Acc-slide">
+	    <!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<h5>周三</h5>
+	            	<div class="price">
+	            		<p class="p1">16</p>
+	            		<p class="p2">￥999</p>
+	            	</div>
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周四</h5>
+	            	<div class="price">
+	            		<p class="p1">17</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	            	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周五</h5>
+	            	<div class="price">
+	            		<p class="p1">18</p>
+	            		<p class="p2">￥999</p>
+	            	</div>		            	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周六</h5>
+	            	<div class="price">
+	            		<p class="p1">19</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周日</h5>
+	            	<div class="price">
+	            		<p class="p1">20</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周一</h5>
+	            	<div class="price price-active">
+	            		<p class="p1">21</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周二</h5>
+	            	<div class="price">
+	            		<p class="p1">22</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周三</h5>
+	            	<div class="price">
+	            		<p class="p1">23</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周四</h5>
+	            	<div class="price">
+	            		<p class="p1">24</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	            <div class="swiper-slide">
+	            	<h5>周五</h5>
+	            	<div class="price">
+	            		<p class="p1">25</p>
+	            		<p class="p2">￥999</p>
+	            	</div>	
+	            </div>
+	        </div>
+	    </div>		
+	</div>
+
+	
+	<div class="Account-box">
+		<div class="box clearfix">
+			<div class="left"><img src="./images/bnm.png" alt=""></div>
+			<div class="right clearfix">
+				<span>代我买</span>
+				<span>收入：+999元</span>
+			</div>
+		</div>
+		<div class="box clearfix">
+			<div class="left"><img src="./images/waimai.png" alt=""></div>
+			<div class="right clearfix">
+				<span>外卖</span>
+				<span>收入：+199元</span>
+			</div>
+		</div>
+		<div class="box clearfix">
+			<div class="left"><img src="./images/bns.png" alt=""></div>
+			<div class="right clearfix">
+				<span>代我送</span>
+				<span>收入：+80元</span>
+			</div>
+		</div>
+		<div class="box clearfix">
+			<div class="left"><img src="./images/bnq.png" alt=""></div>
+			<div class="right clearfix">
+				<span>代我取</span>
+				<span>收入：+288元</span>
+			</div>
+		</div>
+		<div class="box clearfix">
+			<div class="left"><img src="./images/stx.png" alt=""></div>
+			<div class="right clearfix">
+				<span>代我办</span>
+				<span>收入：+999元</span>
+			</div>
+		</div>
+		<div class="box clearfix">
+			<div class="left"><img src="./images/shop.png" alt=""></div>
+			<div class="right clearfix">
+				<span>代我买</span>
+				<span>收入：+399元</span>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/swiper-3.4.2.jquery.min.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30,
+        freeMode: true
+    });
+
+    	$(function(){
+    		$('.price').on('click',function(){
+    		
+    			$(this).addClass('price-active').parent().siblings().find('.price').removeClass('price-active');
+    		
+    		})
+    	});
+
+
+    		var calendar = new datePicker();
+			calendar.init({
+				'trigger': '#demo1', /*按钮选择器，用于触发弹出插件*/
+				'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+				'minDate':'1900-1-1',/*最小日期*/
+				'maxDate':'2100-12-31',/*最大日期*/
+				'onSubmit':function(){/*确认时触发事件*/
+					var theSelectData=calendar.value;
+				},
+				'onClose':function(){/*取消时触发事件*/
+				}
+			});
+
+
+
+
+		function huqu(){
+
+		  var date= new Date();
+		  console.log(date);
+		  var year=date.getFullYear();
+		  var month=date.getMonth();
+		  var day=date.getDate();
+		  var hour=date.getHours();
+		  var minute=date.getMinutes();
+		  var second=date.getSeconds();
+		  var seconds=date.getMilliseconds();
+		
+		  console.log(hour);
+		  if(month<10){
+		    month='0'+month;
+		  }
+		  if(day<10){
+		    month='0'+day;
+		  }
+		  var st=year+"/"+month+"/"+day+"T";
+		  return st;
+		}
+    </script>
+</body>
+</html>

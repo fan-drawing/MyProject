@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>个人中心教员-修改手机号</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/instructor.css">
+    <style>.common{position: relative;}</style>
+</head>
+<body class="all-color-one">
+  <header>
+    <a class="left-img" href="javascript:history.go(-1);"><img src="./img/back-left.png"></a>
+    <h4>修改手机号</h4>
+    <a class="right-text" href="index.html">家教网</a>
+  </header>
+  <form action="" type="post" class="common" >
+      <div class="reseze">
+        <input type="text" value="15100899411" class="name-in">
+      </div>
+      <div class="reseze">
+        <input type="text" value="" placeholder="验证码" class="yan-in">
+        <input type="button" onclick="settime(this)" class="fasong" value="发送验证码">
+      </div>
+      <div class="resezeP">
+        <input type="text" value="" placeholder="验证码" class="tu-in">
+        <img class="ggen" src="./img/yanzheng.png"><span class="changeImg">看不清，换一张</span>
+      </div>
+      <div class="reseze">
+        <input type="text"  placeholder="旧密码" class="pass-in">
+      </div>
+      <div class="reseze">
+        <input type="text" placeholder="新密码" class="pass-in">
+      </div>
+      <div class="reseze">
+        <input type="text" placeholder="确认密码"  class="pass-in">
+      </div>
+      <button style="width:100%;" onclick="checkUser()"  type="button" class="gopay">确定</button>
+      <p class="toforget"><a href="forget_password.html">忘记密码?</a></p>
+      <div class="alertK">密码修改成功</div>
+  </form>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<!-- <script src="js/layer.js"></script> -->
+<script type="text/javascript">
+var height=$(document).height();
+var width=$(document).width();
+$(function(){
+    $(".dropdown-menu li a").click(function(){
+        $(this).parents(".dropdown-menu").siblings(".dropdown-toggle").find("span").text($(this).text());
+    });
+   
+})
+var countdown=60; 
+function settime(val) { 
+  
+  if (countdown == 0) { 
+    val.removeAttribute("disabled");    
+    val.value="免费获取验证码"; 
+    countdown = 60; 
+  } else { 
+    val.setAttribute("disabled", true); 
+    val.value="重新发送(" + countdown + ")"; 
+    countdown--; 
+  } 
+  setTimeout(function() { 
+    settime(val) 
+  },1000); 
+}
+
+
+// 提交表单
+function checkUser(){
+   $(".alertK").fadeIn(function(){
+      $(".alertK").fadeOut(1000);
+   })
+} 
+</script>
+</html>

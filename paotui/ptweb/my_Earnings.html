@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-我的收入</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/faq.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		/*body{
+			background:#f2f2f2;
+		}*/
+		.btn-default{
+		    outline: none;
+		    background: none;
+		    border: none;
+		    width: 100%;
+		    font-size:0.8125rem;
+		    color:#555555;
+		    box-shadow: none;
+		}
+
+		.modal-dialog{
+			    margin: 17px;
+			margin-top:10rem;
+		}
+
+		.modal-title{
+			    text-align: center;
+			color:#ff5429;
+			font-size:1.125rem;
+			font-weight:600;
+		}
+
+		.modal-header{
+			border-bottom: 2px solid #ff5429;
+		}
+
+		.modal-body p{
+			color:#555;
+			font-size:1.125rem;
+		}
+	</style> 
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/back_icon.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>我的收入</p>
+	</div>
+</header>
+<div class="aSSet">
+	<div class="all-asset">
+		<div class="top">
+			<p>总资产</p>
+			<h2>0.0</h2>
+		</div>
+		<div class="bom clearfix">
+			<div class="left">
+				<p class="clearfix p1">
+					<span>当前待到账（元）</span>
+					<span data-toggle="modal" data-target="#myModal"><img src="images/tishi.png" alt=""></span>
+				</p>
+				<p class="p2">0.00</p>
+			</div>
+			<div class="right">
+				<p class="clearfix p1">
+					<span>账户余额（元）</span>
+					<span class="eye">
+						<img src="images/show.png" alt="">
+						<img src="images/hide.png" alt="">
+					</span>
+				</p>
+				<p class="p2"><input type="text" value="0.00" readonly="readonly"></p>			
+			</div>
+		</div>
+	</div>
+
+	<div class="all-a">
+		<ul>
+			<li class="clearfix">
+				<a href="account_details.html">
+					<div class="left">
+						<img src="images/zhangh.png" alt="">
+					</div>
+					<div class="middle">账户明细</div>
+					<div class="right">
+						<img src="images/right_select_icon.png" alt="">
+					</div>
+				</a>
+			</li>
+			<li class="clearfix li2">
+				<a href="rule_description.html">
+					<div class="left">
+						<img src="images/gzsm.png" alt="">
+					</div>
+					<div class="middle">规则说明</div>
+					<div class="right">
+						<img src="images/right_select_icon.png" alt="">
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="a-box">
+			<a href="#">申请提现</a>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+        <h4 class="modal-title" id="myModalLabel">提示</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+        	今日待到账：今日配送收入，暂未经过系统审核！
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">我知道了</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script>
+	$(function(){
+			var onoff=true;
+		$('.eye img:eq(1)').hide();
+		$('.eye').click(function(){
+			if(onoff){
+				$(this).find('img').eq(0).hide().siblings().show();
+				$(this).parent().siblings('.p2').find('input').attr('type','password');
+				onoff=false;
+				// alert(2);
+			}else{
+				$(this).find('img').eq(1).hide().siblings().show();
+				$(this).parent().siblings('.p2').find('input').attr('type','text');
+				onoff=true;
+				// alert(1);
+
+
+			}
+			
+		});
+	})
+	</script>
+</body>
+</html>

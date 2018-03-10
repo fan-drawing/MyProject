@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-满减服务</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/lc_switch.css">
+
+	<style>
+		body{
+			background:#f4f4f4;
+		}
+		.lcs_switch{
+		    width: 3.25rem;
+  			height:1.9375rem;
+		  border-radius: 0.9375rem;
+		  position: relative;
+		  top:-0.09375rem;
+		  float: right;
+		
+		}
+		.lcs_cursor {
+		   width: 1.75rem;
+ 			 height: 1.75rem;
+		  border-radius: 50%;
+		  position: absolute;
+		  background: white;
+		  box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+		  top:.1rem;
+		}
+		.lcs_switch.lcs_on{		
+ 			 background: #4cd964;
+ 			 box-shadow: 0 0 2px #4cd964 inset;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>满减服务</p>
+	</div>
+</header>
+<div class="new_activity">
+	<h2>店铺活动<a href="new_activity.html">新建活动</a></h2>
+	<div class="In_store">
+		<div class="storebox clearfix">
+			<div class="left box1">
+				<div class="title">活动编号</div>
+				<div class="contents">001</div>
+				<div class="contents">001</div>
+
+			</div>
+			<div class="middle box2">
+				<div class="title">活动详情</div>
+				<div class="contents">
+					<p>满20减<b>10</b></p>
+				</div>
+				<div class="contents">
+					<p>满20减<b>10</b></p>
+				</div>				
+			</div>
+			<div class="right box1">
+				<div class="title">活动状态</div>
+				<div class="contents">
+
+	       				<div class="lcs_wrap">
+	       					<input type="checkbox" name="check-1" value="4" class="lcs_check" autocomplete="off">
+	       					<div class="lcs_switch lcs_off lcs_checkbox_switch">
+	       						<div class="lcs_cursor"></div>
+	       					</div>
+	       				</div>
+
+				</div>
+				<div class="contents">
+
+	       				<div class="lcs_wrap">
+	       					<input type="checkbox" name="check-1" value="4" class="lcs_check" autocomplete="off">
+	       					<div class="lcs_switch lcs_off lcs_checkbox_switch">
+	       						<div class="lcs_cursor"></div>
+	       					</div>
+	       				</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/lc_switch.js" type="text/javascript"></script>
+
+	<script>
+	$(function(){	
+		// $('#div2').on('click',function(){
+
+	 //          div1.className=(div1.className=="close1")?"open1":"close1";
+	 //          div2.className=(div2.className=="close2")?"open2":"close2";
+		// });
+	})
+		$(document).ready(function(e) {
+			$('input').lc_switch();
+				// triggered each time a field changes status
+			$('body').delegate('.lcs_check', 'lcs-statuschange', function() {
+					var status = ($(this).is(':checked')) ? 'checked' : 'unchecked';
+					// console.log('field changed status: '+ status );
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-资讯详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <p class="title">资讯详情</p>
+    <div class="right">
+      <a href="index.html">家教网</a>
+    </div>
+  </div>
+  <div class="infor-details">
+    <div class="top">
+      <div class="title">北京启明星大学生家教值得信赖</div>
+      <div class="time">2017-10-28</div>
+    </div>
+    <div class="center">
+      <p>
+        启明大学始终致力于实现“为了真理，正义和博爱的国家“的教育理念，奉行“追求学术的卓越性，提高学术的伦理性”的教育宗旨。在 2004 年，该校迎接建校50 周年之际，又开始了实施“第二次创业”，将通过 计划使本校更好的适应多变的教育环境，更好的满足学生的不同要求。我们将进行以课程设置，教学管理为主要内容的教育改革，以期为学生提供更为优质的教育服务，培养出更多是适应国际化时代要求的国际性专业人才。</p><p>
+       启明大学的海外交流大学及机关为韩国之最高水平，110个海外学校与该大学达成双务协议并结成姊妹大学，包括国际交换学生项目—ISFP（本部在华盛顿），拥有328个姊妹大学，是美国CCIS指定的唯一的韩国学指定大学，122门专业课程采用英语授课。仿照美国哈佛大学建筑风格.</p>
+      </p>
+    </div>
+    <div class="bottom">
+      <a class="left">
+        <span>上一条</span>
+        上一条文章标题
+      </a>
+      <a class="right">
+        <span>下一条</span>
+        下一条文章标题
+      </a>
+    </div>
+  </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+  $('.infor-nav li').click(function(){
+    var cc=$(this).index();
+    $(this).find('a').addClass('active').parent().siblings().find('a').removeClass('active');
+    $('.infor-list').eq(cc).show().siblings().hide();
+  })
+</script>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-加入班级</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body>
+	<div class="study-header">
+		<a href="javascript:history.go(-1);" class="back">
+			<img src="img/back.png">
+		</a>
+		<p class="text">确认支付</p>
+	</div>
+  <div class="sc-matter special">
+        <ul>
+          <li class="clearfix">
+            <a href="#" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                      <div class="t-g">
+                        <a href="#" class="title">英语课程名称</a>
+                        <p class="price">
+                          <span>￥248</span>
+                        </p>
+                      </div>
+                      <a href="#" class="sc-teacher" style="position:relative;">
+                        <img src="img/r1.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                      <div class="n-p">
+                        <span class="price pricesnum">×1</span>
+                      </div>
+                    </div>
+          </li>
+        </ul>
+  </div>
+      <div class="payStyle">
+        <p class="title_p">请选择支付方式</p>
+        <ul class="clearfix list_pay">
+          <li class="active">
+            <img src="./img/pay_1.png">
+            <div class="mian_pay">
+              <p class="name_pay">银行卡</p>
+              <p class="tip_pay">推荐有银行卡账户的用户使用</p>
+            </div>
+            <i class="icon_gou"></i>
+            <input name="pay" value="" type="radio" class="hideRadio">
+          </li>
+          <li>
+            <img src="./img/pay_2.png">
+            <div class="mian_pay">
+              <p class="name_pay">支付宝</p>
+              <p class="tip_pay">推荐有银行卡账户的用户使用</p>
+            </div>
+            <i class="icon_gou"></i>
+            <input name="pay" value="" type="radio" class="hideRadio">
+          </li>
+          <li>
+            <img src="./img/pay_3.png">
+            <div class="mian_pay">
+              <p class="name_pay">微信</p>
+              <p class="tip_pay">推荐有银行卡账户的用户使用</p>
+            </div>
+            <i class="icon_gou"></i>
+            <input name="pay" value="" type="radio" class="hideRadio">
+          </li>
+        </ul>
+
+        <div class="annu">
+          <button><span>确认支付￥</span><em>248</em></button>
+        </div>
+      </div>
+  
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/echarts.js"></script>
+<script>
+$(function(){
+  $("#ban").on("click","li",function(){
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+  $(".list_pay li").click(function(){
+    $(this).addClass("active").siblings("li").removeClass("active");
+  })
+})
+
+
+
+
+
+</script>
+</html>

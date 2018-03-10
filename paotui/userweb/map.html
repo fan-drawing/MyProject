@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-附近跑腿</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>附近跑腿</p>
+	</div>
+</header>
+<div class="index-map">
+	<div id="allmap">
+		
+	</div>
+	<div class="map-top">
+		<div class="left">
+			<p class="p1">12</p>
+			<p class="p2">分钟</p>
+		</div>
+		<div class="middle">
+			<p class="p1">我在<b>史各庄站</b></p>
+			<p class="p2">附近有<b>16跑男</b>为您服务</p>
+		</div>
+		<div class="right">
+			<a href="#"><img src="images/my_19.png" alt=""></a>
+		</div>
+	</div>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=V22GZGIsf9gR6G7d3L1KoZq4OVDAbsx2"></script>
+    <!-- 带检索功能的信息窗口 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+  <script src="./js/jquery.min.js"></script>
+ <script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(116.431717,39.921207); //定义一个中心点坐标
+    map.centerAndZoom(poi, 16);//初始化地图，设置中心点坐标和地图级别
+
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+
+    //地图控件添加
+    function addMapControl(){
+        //向地图中添加缩放控件
+        map.addControl(new BMap.NavigationControl()); 
+        //向地图中添加缩略图控件
+        map.addControl(new BMap.OverviewMapControl()); 
+        //向地图中添加比例尺控件
+        map.addControl(new BMap.ScaleControl()); 
+    }
+    //地图事件设置
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    var markerArr = [  
+        { title: "Ogilvy Beijing Office 奥美北京办公室", point: "116.431717,39.921207", address: "9TH FLOOR, HUALI BUILDING, 58 JINBO STREET, BEIJING8888 <br>北京市东城区金宝街58号华丽大厦9层<br>", tel: "TEL  +86 10 8520 6688" }
+    ];
+    var searchInfoWindow = null;
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    markerArr[0].address + markerArr[0].tel +
+                  '</div>';
+    //创建检索信息窗口对象
+    searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+            title  : markerArr[0].title,      //标题
+            width  : 290,             //宽度
+            height : 105,              //高度
+            panel  : "panel",         //检索结果面板
+            enableAutoPan : true,     //自动平移
+            searchTypes   :[
+                BMAPLIB_TAB_SEARCH,   //周边检索
+                BMAPLIB_TAB_TO_HERE,  //到这里去
+                BMAPLIB_TAB_FROM_HERE //从这里出发
+            ]
+        });
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.addEventListener("click", function(e){
+        searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.footer{width:100%;height:3.125rem;background:white;position:fixed;bottom:0;height:3.125rem;box-shadow: 0rem 0.2125rem 0.55625rem #888888;}
+.footer ul{width:100%;overflow: hidden;padding-top:0.4125rem;}
+.footer ul li{width:20%;float:left;text-align: center;}
+.footer ul li a{display: block;width:100%;}
+.footer ul li a.active p{color:#f89c3d;}
+.footer ul li a img{width:1.375rem;height:1.375rem;display: inline;margin-bottom: 0.2125rem;}
+.footer ul li a  p{font-size: 0.625rem;color:#aca9a6;}
+.footer-empty{width:100%;height:3.125rem;}

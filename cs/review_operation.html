@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>布置作业</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <link rel="stylesheet" type="text/css" href="css/mobileSelect.css">
+    <style type="text/css">
+    .header.study-header .message {
+        position: absolute;
+        top: 0.75rem;
+        right: 0;
+        color: #999999;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+
+    .header .message img {
+        width: 1.0625rem;
+        height: 1.0625rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header study-header">
+        <a href="javascript:history.go(-1);" class="back">
+          <img src="img/back.png">
+        </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message">
+            <img src="img/edit_icon_hei.png">
+        </a>
+    </div>
+    <div class="review-operation">
+        <div class="study-user">
+            <div class="study-user-img" style="background-image: url(images/1231XjUqswGB12313.jpg);"></div>
+            <p class="study-user-name">李华</p>
+        </div>
+        <div class="title-card-wrap">
+            <h3 class="title-card-h3">1.单选题</h3>
+            <div class="topic-msg">
+                <pre>
+Where _____you  this morning ?   I _____at a meeting .
+A. were, was      B. are , am       C. do , am</pre>
+            </div>
+            <div class="answer-main">
+                <div class="answer-text">
+                    学生答案：<span>A</span>
+                </div>
+                <div class="confirm-answer">
+                    <a href="#" class="confirm-blue">对</a>
+                    <a href="#" class="confirm-red">错</a>
+                </div>
+            </div>
+        </div>
+        <div class="evaluating-msg">
+            <ol>
+                <li class="evaluating-lists trigger2">
+                    <p class="evaluating-lists-title">成绩：</p>
+                    <p class="evaluating-lists-msg">80分</p>
+                </li>
+                <li class="evaluating-lists trigger1">
+                    <p class="evaluating-lists-title">评价：</p>
+                    <p class="evaluating-lists-msg">A</p>
+                </li>
+                <li class="evaluating-lists">
+                    <p class="evaluating-lists-title">评价：</p>
+                    <textarea class="evaluating-lists-msg" placeholder="作业做得很不错继续努力"></textarea>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#" class="active">
+           <img src="img/ft1.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft3.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/mobileSelect.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".courseware-tab .courseware-tab-lists").click(function() {
+        $(this).addClass("active").siblings(".courseware-tab-lists").removeClass("active");
+        $(".assignment-tabs-c .assignment-tabs").eq($(this).index()).show().siblings(".assignment-tabs").hide();
+    })
+    var weekdayArr1 = ["A++","A","A--","B++","B","B--"];
+    new MobileSelect({
+        trigger: ['.trigger1'],
+        title: '评价',
+        wheels: [
+                {data : weekdayArr1}
+            ],
+        transitionEnd:function(indexArr, data){
+            console.log(data);
+        },
+        callback:function(indexArr, data){
+            $(this.trigger).html('<p class="evaluating-lists-title">评价：</p><p class="evaluating-lists-msg">'+data+'</p>')
+        }
+    });
+    var weekdayArr2 = ["100分","90分","80分","70分","60分","50分"];
+    new MobileSelect({
+        trigger: ['.trigger2'],
+        title: '成绩',
+        wheels: [
+                {data : weekdayArr2}
+            ],
+        transitionEnd:function(indexArr, data){
+            console.log(data);
+        },
+        callback:function(indexArr, data){
+            $(this.trigger).html('<p class="evaluating-lists-title">成绩：</p><p class="evaluating-lists-msg">'+data+'</p>')
+        }
+    });
+})
+</script>
+
+</html>

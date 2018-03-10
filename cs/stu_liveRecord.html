@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-直播记录</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style>
+    .header .search .text {
+        line-height: 1.7rem;
+    }
+
+    .header .search {
+        margin-left: 3rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+      </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message" href="stu_message.html">
+            <img src="img/mess.png">
+        </a>
+    </div>
+    <div class="sc-box record">
+        <div class="sc-matter">
+            <ul>
+                <li class="clearfix">
+                    <a href="#" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="t-g clearfix">
+                            <a href="#" class="title">英语课程名称</a>
+                            <span class="img_text">7：55</span>
+                        </div>
+                        <a href="#" class="sc-teacher">
+                        <img src="img/r3.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                        <div class="n-p">
+                            <span class="price">
+                          已结束
+                        </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                        <div class="t-g clearfix">
+                            <a href="#" class="title">英语课程名称</a>
+                            <span class="img_text">7：55</span>
+                        </div>
+                        <a href="#" class="sc-teacher">
+                        <img src="img/r3.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                        <div class="n-p">
+                            <a href="stu_videoDeatils.html"><span class="price containue">
+                          继续观看</a>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$('.sc-matter ul li .right .t-g .img').click(function() {
+    if ($(this).attr('src') == 'img/xin1.png') {
+        $(this).attr('src', 'img/xin.png');
+    } else {
+        $(this).attr('src', 'img/xin1.png');
+    }
+})
+</script>
+
+</html>

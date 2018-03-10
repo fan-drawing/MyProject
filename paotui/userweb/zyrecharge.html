@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-用户端-充值</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/zyadd_adress.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="">
+<header class="clearfix">
+  <div class="back">
+    <a href="#"><img src="images/s_back.png" alt=""></a>
+  </div>
+  <div class="middle">
+    <p>充值</p>
+  </div>
+  <div class="header_right">
+	<button>保存</button>
+  </div>
+</header>
+<div class="balance_big_box1">
+	<div class="balance_box">
+		<span class="balance_words">余额</span>
+		<span class="balance_text">￥4.14</span>
+	</div>
+	<div class="select_balancemoney">
+		<span class="select_balancemoney_left">请选择充值金额</span>
+		<div class="select_balancemoney_right">
+			<input type="text" name="" placeholder="请输入充值金额">
+			<span>元</span>
+		</div>
+	</div>
+	<ul class="balancemoney_list">
+		<li>
+			<div>
+				<div class="balancemoney_matter balancemoney_matter1">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+		<li>
+			<div>
+				<div class="balancemoney_matter">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+		<li>
+			<div>
+				<div class="balancemoney_matter">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+		<li>
+			<div>
+				<div class="balancemoney_matter">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+		<li>
+			<div>
+				<div class="balancemoney_matter">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+		<li>
+			<div>
+				<div class="balancemoney_matter">
+					<p>100元</p>
+					<p>送10元优惠券</p>
+				</div>
+				<input type="radio" name="money">
+			</div>
+		</li>
+	</ul>
+	<p class="balancemoney_text">充100元，可得100元余额+10元优惠券</p>
+</div>
+<div class="balance_big_box2">
+	<ul class="pay_list">
+		<li>
+			<div class="pay_list_left">
+				<img src="img/zhifu.png">
+				<div>
+					<p>支付宝</p>
+					<p>推荐有支付宝账户的用户使用</p>
+				</div>
+			</div>
+			<div class="pay_list_right">
+				<img src="img/select.png" class="select_img">
+				<input type="radio" name="pay">
+			</div>
+		</li>
+		<li>
+			<div class="pay_list_left">
+				<img src="img/wei.png">
+				<div>
+					<p>微信</p>
+					<p>推荐安装微信5.0及以上版本用户使用</p>
+				</div>
+			</div>
+			<div class="pay_list_right">
+				<img src="img/selecta.png" class="select_img">
+				<input type="radio" name="pay">
+			</div>
+		</li>
+	</ul>
+	<button class="imma_balance">立即充值</button>
+</div>
+<div class="agree_balance">
+点击立即充值，即表示您同意<a href="#">《充值协议》</a>
+</div>
+</form>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('.balancemoney_list li>div').click(function(){
+			$('.balancemoney_matter').removeClass('balancemoney_matter1')
+			$(this).find('.balancemoney_matter').addClass('balancemoney_matter1');
+		})
+		$('.pay_list_right').click(function(){
+			if($(this).find('.select_img').attr('src')=="img/selecta.png"){
+				$('.select_img').attr('src','img/selecta.png')
+				$(this).find('.select_img').attr('src','img/select.png')
+			}
+		})
+	</script>
+</body>
+</html>

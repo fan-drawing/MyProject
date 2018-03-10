@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-我的订单</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <p class="text">我的订单</p>
+        <a href="#" class="edit">编辑</a>
+    </div>
+    <div class="ul_nav_l">
+        <ul class="clearfix">
+            <li class="active"><span>全部订单</span></li>
+            <li class=""><span>代收款</span></li>
+            <li class=""><span>待收货</span></li>
+            <li class=""><span>已完成</span></li>
+            <li class=""><span>待评价</span></li>
+        </ul>
+    </div>
+    <div class="sc-matter">
+        <ul>
+            <li class="clearfix">
+                <a href="#" class="left">
+                      <img src="img/sl3.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                <div class="right">
+                    <div class="t-g">
+                        <a href="#" class="title">英语课程名称</a>
+                        <span class="price">
+                          <span>￥248</span>
+                        </span>
+                    </div>
+                    <div class="over_tf clearfix">
+                        <div class="set over">已完成</div>
+                    </div>
+                    <p class="number_order">订单号：36256456231245636</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="left">
+                      <img src="img/sl3.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                <div class="right">
+                    <div class="t-g">
+                        <a href="#" class="title">英语课程名称</a>
+                        <span class="price">
+                          <span>￥248</span>
+                        </span>
+                    </div>
+                    <div class="over_tf clearfix">
+                        <div class="set">未完成</div>
+                    </div>
+                    <p class="number_order">订单号：36256456231245636</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/echarts.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".ul_nav_l li").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+})
+</script>
+
+</html>

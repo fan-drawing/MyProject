@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>个人中心教员-评论详情</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/instructor.css">
+    <style>.common{position: relative;padding-left:0.9rem;padding-right: 0.9rem;}</style>
+</head>
+<body class="all-color-one">
+  <header>
+    <a class="left-img" href="javascript:history.go(-1);"><img src="./img/back-left.png"></a>
+    <h4>评论详情</h4>
+    <a class="right-text" href="index.html">家教网</a>
+  </header>
+  <div class="myComment">
+    <div class="comment-show common">
+        <ul class="clearfix list-comments">
+            <li>
+                <div class="comment-details">
+                    <div class="left">
+                        <img src="./img/121.png">
+                    </div>
+                    <div class="right">
+                      <p class="topf"><span>田伟(123)</span><span class="starts"><i class="start"></i><i class="start"></i><i class="start"></i><i class="start"></i></span> <span class="data-right">2017-10-01</span></p>
+                      <p class="lis">
+                        老师讲课非常有条理性，并且非常有耐心，非常满意！老师讲课非常有条理性，并且非常有耐心，非常满意！老师讲课非常有条理性，并且非常有耐心，非常满意！
+                      </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+      <h4 class="anotherComment common"><i class="orange-zhu"></i><em>其他评论</em></h4>
+       <div class="comment-show common">
+        <ul class="clearfix list-comments">
+            <li><a href="commentDetails.html">
+                <div class="comment-details">
+                    <div class="left">
+                        <img src="./img/121.png">
+                    </div>
+                    <div class="right">
+                      <p class="topf"><span class="ss">田伟2(123)<i>2017-10-01</i></span><span class="starts" style="margin-top:-0.2rem"><i class="start"></i><i class="start"></i><i class="start"></i><i class="start"></i></span> <span class="callback">回复</span></p>
+                      <p class="lis limit-comment">
+                        非常满意！
+                      </p>
+                      <p class="back-call">回复：谢谢您的评价，有什么问题随时问老师哦！</p>
+                    </div>
+                </div></a>
+            </li>
+
+        </ul>
+    </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<!-- <script src="js/layer.js"></script> -->
+<script type="text/javascript">
+$(function(){
+  $(".navs li").click(function(){
+    var type=$(this).attr("data-type");
+    if(parseInt(type)==1){
+      $(".list-details li").show();
+    }else{
+      $(".list-details .common").hide()
+      $(".list-details .common"+type).show();
+    }
+    $(this).addClass("active").siblings().removeClass("active");
+    var type=$(this).attr("type");
+
+  })
+
+})
+</script>
+</html>

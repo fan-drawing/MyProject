@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-在线预约</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/common.css" type="text/css" rel="stylesheet"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body class="grey">
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+    
+    </div>
+    <p class="title">在线预约</p>
+    <div class="right">
+     <a href="index.html">家教网</a>
+    </div>
+  </div>
+ <div class="cadet-message">
+   <p class="words">请填写以下表单</p>
+ </div>
+ <div class="sign-messagebox">
+  <div class="sitem-list">
+     <span class="left">联系电话：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入手机号（手机号即为用户名）">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">姓名：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入姓名 如：张女士">
+     </div>
+  </div>
+  <div class="sitem-list">
+       <span class="left">所在地区：</span>
+       <div class="right">
+         <section class="express-area">
+              <a id="expressArea" href="javascript:void(0)">
+                  <dl>
+                      <dd>请选择您所在的城市</dd>
+                  </dl>
+              </a>
+          </section>
+       </div>
+    </div>
+  <div class="per-intro">
+    <span class="left">地区描述：</span>
+    <div class="right">
+      <textarea placeholder="填写居住的街道／小区或公交地铁车站，方便
+老师查询上课距离"></textarea>
+    </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">学员性别：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>请选择性别</option>
+      </select>
+     </div>
+  </div>
+   <div class="sitem-list">
+     <span class="left">学员年级：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>请选择年级</option>
+      </select>
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">求教科目：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请填写求教科目">
+     </div>
+  </div>
+    <div class="sitem-list">
+     <span class="left">上课时间：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请填写上课时间">
+     </div>
+  </div>
+   <div class="per-intro">
+    <span class="left">学员描述：</span>
+    <div class="right">
+      <textarea placeholder="填写学员的基本情况"></textarea>
+    </div>
+  </div>
+  <!-- <div class="agree agree-bottom or-agree">
+    <div class="agree-img">
+      <input type="checkbox">
+      <img src="img/dui.png">
+    </div>
+    <div class="text">使用60积分抵消现金<a href="javascript:;">6</a>元</div>
+  </div> -->
+  <!-- <div class="or-import">注：现金：积分   比例为   1:10</div> -->
+  <div class="sign-btn or-btn">
+    <button>在线预约</button>
+  </div>
+  
+
+ </div>
+ <!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box">
+            <header>
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </header>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"></ul>
+            </article>
+        </section>
+        <!--遮罩层-->
+        <div id="areaMask" class="mask"></div>
+    <aside class="mask works-mask">
+      <div class="mask-content">
+        <p class="del-p">您确定要删除图片吗？</p>
+        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+      </div>
+    </aside>
+    <div class="mask1">
+      <div class="oryes-pay">
+        <div class="or-list">
+          <span class="left">联系电话:</span>
+          <span class="right">13100699411</span>
+        </div>
+         <div class="or-list">
+          <span class="left">姓名:</span>
+          <span class="right">张女士</span>
+        </div>
+         <div class="or-list">
+          <span class="left">地区描述:</span>
+          <span class="right"><textarea>昌平区生命科学园地铁站附近</textarea></span>
+        </div>
+         <div class="or-list">
+          <span class="left">学员性别:</span>
+          <span class="right">女</span>
+        </div>
+         <div class="or-list">
+          <span class="left">学员年级:</span>
+          <span class="right">一年级</span>
+        </div>
+        <div class="or-list">
+          <span class="left">求教科目:</span>
+          <span class="right">语文</span>
+        </div>
+        <div class="or-list">
+          <span class="left">上课时间:</span>
+          <span class="right">周五上午</span>
+        </div>
+        <div class="or-list">
+          <span class="left">学员描述:</span>
+          <span class="right"><textarea>我语文考试都在75左右，希望老师可
+以指导一下</textarea></span>
+        </div>
+        <div class="or-btnlist">
+          <a href="javascript:;" class="or-no">取消</a>
+          <a href="reservation_success.html" class="or-yes">确认</a>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.area.js"></script>
+<script src="js/imgUp.js"></script>
+<script type="text/javascript">
+  // $('.agree-img').click(function(){
+  //   if($(this).find('img').attr('src')=="img/dui.png"){
+  //     $(this).find('img').attr('src','img/nos.png')
+  //   }else{
+  //     $(this).find('img').attr('src','img/dui.png')
+  //   }
+  // })
+  $('.or-btnlist a').click(function(){
+    $(this).parents('.mask1').hide();
+  })
+  $('.sign-btn').click(function(){
+    $('.mask1').show();
+  })
+</script>
+<script>
+  // $('#file').takungaeImgup({
+  //   formData:{"path":"art/","name":"uploadPic"},
+  //   url:appServer+"/ajax/uploadPic.html",
+  //   success:function(data){
+  //     console.log(data);
+  //   },
+  //   error:function(err){
+  //     console.log(error);
+  //   }
+  // })
+</script>
+</html>

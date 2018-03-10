@@ -1,0 +1,310 @@
+header {
+  background: #fe753e;
+  height: 2.75rem;
+  /*line-height:2.75rem;*/
+  width: 100%;
+  padding: 0 1.09375rem;
+  position: relative;
+}
+header .left {
+  width: 10%;
+  float: left;
+}
+header .left img {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-top: .68rem;
+}
+header .middle {
+  width: 70%;
+  float: left;
+}
+header .middle p {
+  color: #fff;
+  line-height: 2.75rem;
+  font-size: 1.125rem;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+header .right {
+  float: right;
+  width: 20%;
+  line-height: 2.75rem;
+  background: url(../images/s_xsj.png) right no-repeat;
+  background-size:0.875rem 0.4375rem;
+}
+header .right{
+  color: #fff;
+  font-size: 0.8125rem;
+}
+header aside {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 33;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+header aside .aside-left {
+  width: 89%;
+  height: 100%;
+  background: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: -23.4375rem;
+  /*left:0;*/
+}
+header aside .aside-left .l-top {
+  width: 100%;
+  height: 11.5rem;
+  background: url(../images/beijing.png);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+header aside .aside-left .l-top .t-left {
+  /*float: left;*/
+  margin-left: 1.375rem;
+  margin-right: 0.9375rem;
+  margin-top: 1.25rem;
+}
+header aside .aside-left .l-top .t-left img {
+  width: 5.0rem;
+  height: 5.0rem;
+  border-radius: 50%;
+}
+header aside .aside-left .l-top .t-right {
+  /*float: left;*/
+  /*margin-top: 1.7rem;*/
+  padding:0 1.5625rem;
+}
+header aside .aside-left .l-top .t-right .p1 {
+  color: #fff;
+  font-size: 1.0625rem;
+  margin-top:.3rem;
+}
+header aside .aside-left .l-top .t-right .p2 {
+  font-size:1.0625rem;
+  color: #fff;
+  line-height: 1.4rem;
+}
+header aside .aside-left .l-ul {
+  /**/
+  width: 100%;
+  /*padding: 0 1.3125rem;*/
+  margin-top:1.03125rem;
+}
+header aside .aside-left .l-ul li {
+  width: 100%;
+  padding: 0.78125rem 1.3125rem;
+  background:#fff;
+}
+header aside .aside-left .l-ul li a {
+  display: block;
+  width:100%;
+  height:1rem;
+}
+header aside .aside-left .l-ul li .li-left {
+  float: left;
+}
+header aside .aside-left .l-ul li .li-left img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+header aside .aside-left .l-ul li .li-middle {
+  color: #555555;
+  font-size: 0.9375rem;
+  float: left;
+  padding: 0 0.625rem;
+}
+header aside .aside-left .l-ul li .li-middle p {
+  line-height: 1.25rem;
+  float: left;
+}
+header aside .aside-left .l-ul li .li-middle b {
+  float: left;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  background: #e60012;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  margin-top: .2rem;
+  margin-left: .5rem;
+}
+header aside .aside-left .l-ul li .li-right {
+  float: right;
+}
+header aside .aside-left .l-ul li .li-right img {
+  width: 0.5rem;
+  height: 0.8125rem;
+  margin-top: .25rem;
+}
+header aside .aside-left .l-order {
+  /**/
+  width: 100%;
+  background: #fff;
+  margin-top:0.28125rem;
+}
+header aside .aside-left .l-order .o-top {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+}
+header aside .aside-left .l-order .o-top .o-t-left {
+  float: left;
+  width: 50%;
+  color: #555555;
+  font-size: 1.0625rem;
+}
+header aside .aside-left .l-order .o-top .o-t-right {
+  width: 50%;
+  float: left;
+}
+header aside .aside-left .l-order .o-bom {
+  width: 100%;
+  padding: 1.0rem 0;
+  border-top: 1px solid #f4f4f4;
+}
+header aside .aside-left .l-order .o-bom .o-b-left {
+  float: left;
+  width: 50%;
+}
+header aside .aside-left .l-order .o-bom .o-b-left p {
+  width:7.96875rem;
+  height:3.75rem;
+  background:#f0f0f0;
+  margin:0 auto;
+}
+header aside .aside-left .l-order .o-bom>div b{
+  color:#fe753e;
+  font-size:1.0625rem;
+  display:block;
+  text-align: center;
+    padding-top: .55rem;
+}
+header aside .aside-left .l-order .o-bom>div span{
+  color:#1c1c1c;
+  font-size:0.9375rem;
+  display:block;
+  text-align: center;
+
+}
+header aside .aside-left .l-order .o-bom .o-b-right {
+  float: right;
+  width: 50%;
+
+}
+header aside .aside-left .l-order .o-bom .o-b-right p {
+  width:7.96875rem;
+  height:3.75rem;
+  background:#f0f0f0;
+  margin:0 auto;
+}
+header aside .aside-left .l-out {
+  /**/
+  width: 10.78125rem;
+ height:2.375rem;
+  line-height:2.375rem;
+  text-align: center;
+  background: #fe753e;
+  margin: 0 auto;
+  border-radius: 0.46875rem;
+  margin-top: 1.3125rem;
+}
+header aside .aside-left .l-out a{
+  font-size:1.0625rem;
+  color: #fff;
+}
+header aside .aside-right {
+  width: 11%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#div1 {
+  width: 2.1875rem;
+  height: 1.0625rem;
+  border-radius: 0.9375rem;
+  position: relative;
+  float: right;
+  margin-top: .22rem;
+}
+#div2 {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  /*box-shadow: 0px 2px 4px rgba(0,0,0,0.4);*/
+}
+.open1 {
+  background: #fe753e;
+}
+.open2 {
+  top: 0.06425rem;
+  right: 0.125rem;
+}
+.close1 {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: transparent;
+}
+.close2 {
+  left: 0px;
+  top: -0.021rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+#aside2 .aside-left .l-ul li{
+ border-bottom: 1px solid #eee; 
+}
+#aside2 .span1{
+  float:left;
+  color:#666666;
+  font-size:1.125rem;
+}
+#aside2 .span2{
+  float:right;
+}
+#aside2 .span2 img{
+    width:0.5rem;
+    height:0.8125rem;
+    margin-top: 0.4rem;
+}
+
+#aside2 .aside-left .l-top {
+    width: 100%;
+    height: 9.0625rem;
+    background: url(../images/beijing.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#aside2 .aside-left .l-top .t-left {
+    float: left;
+    margin-left: 1.375rem;
+    margin-right: 0.9375rem;
+    margin-top: 3rem;
+}
+#aside2 .aside-left .l-top .t-left img {
+    width: 3.8125rem;
+    height: 3.8125rem;
+    border-radius: 50%;
+}
+#aside2 .aside-left .l-top .t-right {
+    float: left;
+    margin-top: 3.4rem;
+    padding:0;
+}
+
+#aside2 .aside-left .l-top .t-right .p1 {
+    color: #fff;
+    font-size: 1.0625rem;
+
+}

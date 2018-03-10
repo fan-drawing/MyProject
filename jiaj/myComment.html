@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>个人中心教员-我的评论</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/instructor.css">
+    <style>.common{position: relative;padding-left:0.9rem;padding-right: 0.9rem;}</style>
+</head>
+<body class="all-color-one">
+  <header>
+    <a class="left-img" href="javascript:history.go(-1);"><img src="./img/back-left.png"></a>
+    <h4>我的评论</h4>
+    <a class="right-text" href="index.html">家教网</a>
+  </header>
+  <div class="myComment">
+    <h2 class="common condition">学生评论</h2>
+    <div class="comment-show common">
+        <ul class="clearfix list-comments">
+            <li><a href="commentDetails.html">
+                <div class="comment-details">
+                    <div class="left">
+                        <img src="./img/121.png">
+                    </div>
+                    <div class="right">
+                      <p class="topf"><span>田伟(123)</span><span class="starts"><i class="start"></i><i class="start"></i><i class="start"></i><i class="start"></i></span> <span class="data-right">2017-10-01</span></p>
+                      <p class="lis limit-comment">
+                        老师讲课非常有条理性，并且非常有耐心，非常满意！
+                      </p>
+                    </div>
+                </div></a>
+            </li>
+
+        </ul>
+    </div>
+    
+  </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<!-- <script src="js/layer.js"></script> -->
+<script type="text/javascript">
+$(function(){
+  $(".navs li").click(function(){
+    var type=$(this).attr("data-type");
+    if(parseInt(type)==1){
+      $(".list-details li").show();
+    }else{
+      $(".list-details .common").hide()
+      $(".list-details .common"+type).show();
+    }
+    $(this).addClass("active").siblings().removeClass("active");
+    var type=$(this).attr("type");
+
+  })
+
+})
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-加入班级</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body>
+	<div class="study-header">
+		<a href="javascript:history.go(-1);" class="back">
+			<img src="img/back.png">
+		</a>
+		<p class="text">加入班级</p>
+		<!-- <a href="#" class="edit">编辑</a> -->
+	</div>
+	<div class="take-box">
+		<div class="take_In">
+      <div class="clearfix">
+          <div class="cameraUp">
+            <img src="./img/camera.png">
+          </div>
+          <div class="inputGroup">
+              <div>
+                <p>姓名</p>
+                <input type="text" >
+              </div>
+              <div>
+                <p>年级</p>
+                <input type="text" >
+              </div>
+          </div>
+      </div>
+      <div class="jishao">
+        <p>简介</p>
+        <textarea></textarea>
+      </div>
+    </div>
+    <div class="sc-matter itemOne">
+        <ul>
+          <li class="clearfix">
+            <a href="#" class="left">
+                      <img src="img/sl1.png" class="img">
+                      <img src="img/bf.png" class="play-img">
+                    </a>
+                    <div class="right">
+                      <div class="t-g">
+                        <a href="#" class="title">英语课程名称</a>
+                       
+                      </div>
+                      <div class="time">
+                        <img src="img/time.png">
+                        <span>40 minutes</span>
+                      </div>
+                      <div class="n-p">
+                        <span class="number">
+                          <img src="img/stu.png">
+                          <span>128</span>
+                        </span>
+                        
+                      </div>
+                      <a href="#" class="sc-teacher">
+                        <img src="img/r1.png">
+                        <p>Teacher Mr.Kim</p>
+                      </a>
+                    </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list_class">
+        <ul id="ban" class="clearfix">
+          <li class="active">
+             二年级三班（9/10）<input class="hideInput" type="radio" value="" name ="banHao" style="">
+          </li>
+          <li>
+             二年级四班（9/10）<input class="hideInput" type="radio" value="" name ="banHao" >
+          </li>
+          <li>
+             二年级五班（9/10）<input class="hideInput" type="radio" value="" name ="banHao" >
+          </li>
+          <li>
+             二年级六班（9/10）<input class="hideInput" type="radio" value="" name ="banHao" >
+          </li>
+        </ul>
+
+      </div>
+    
+      <div class="tijiao">
+          <p><img src="./img/qianbao.png"><span>付费加入</span></p>
+      </div>
+	</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+$(function(){
+  $("#ban").on("click","li",function(){
+
+    $(this).addClass("active").siblings().removeClass("active");
+  })
+})
+</script>
+</html>

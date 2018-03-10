@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  background: #fe753e;
+}
+header .back {
+  float: left;
+  padding-left: 1.09375rem;
+}
+header .back img {
+  width: 0.53125rem;
+  height: 0.9375rem;
+  margin-top: 0.875rem;
+}
+header .middle {
+  float: left;
+  width: 87%;
+}
+header .middle p {
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+}

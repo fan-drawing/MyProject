@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-免密登录</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body class="grey">
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <div class="right">
+      <a href="login_p.html">登录/</a>
+      <a href="sign1.html">注册</a>
+    </div>
+  </div>
+  <div class="login-box">
+    <ul class="l-nav">
+      <li class="active">
+        <a href="javascript:;">教员登录</a>
+      </li>
+      <li>
+        <a href="javascript:;">学员登录</a>
+      </li>
+    </ul>
+    <div class="l-matter-big">
+      <form action="" method="post">
+        <div class="l-matter">
+          <div class="input-box user-name">
+            <input type="text" placeholder="手机号">
+          </div>
+          <div class="input-box password">
+            <input type="text" placeholder="验证码">
+            <a href="javascript:;" class="send-code">发送验证码</a>
+          </div>
+          <button class="login-btn">教员登录</button>
+          <div class="sign-login">
+            <a href="sign_teacher.html">注册教员</a>
+            <a href="login_nop.html">账号登录</a>
+          </div>
+        </div>
+      </form>
+      <form action="" method="post">
+        <div class="l-matter">
+          <div class="input-box user-name">
+            <input type="text" placeholder="手机号">
+          </div>
+          <div class="input-box password">
+            <input type="text" placeholder="验证码">
+            <a href="javascript:;" class="send-code">发送验证码</a>
+          </div>
+          <button class="login-btn">学员登录</button>
+          <div class="sign-login">
+            <a href="sign_cadet.html">注册学员</a>
+            <a href="login_nop.html">账号登录</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+  $('.l-nav li').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    var _index=$(this).index();
+    $('.l-matter').hide();
+    $('.l-matter').eq(_index).show();
+
+  })
+</script>
+</html>

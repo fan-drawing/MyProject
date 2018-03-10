@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>个人中心教员-修改资料</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/instructor.css">
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+    <link href="css/zy.css" type="text/css" rel="stylesheet"/>
+    <style>.common{position: relative;}</style>
+    <style>
+    .tan-qian .main-tan {
+        position: absolute;
+        width: 18.8rem;
+        height: 8rem;
+        border-radius: 0.4rem;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        margin-left: -9.4rem;
+        top: 30%;
+    }
+    .y-title{width:100%;background:#f5f4f4;color:#333;line-height: 2.5rem;padding-left:0.3125rem;}
+    .y-title span{padding-left:0.625rem;border-left:0.1875rem solid #fa933b;font-size: 0.875rem;}
+    .resave-btn{width:100%;background:white;padding:0.625rem;overflow: hidden;}
+    .resave-btn .gopay{margin:0 auto;width:26%;height:2rem;font-size:0.85rem;}
+    .imgShow{border-bottom: 1px solid #eee;}
+  </style>
+</head>
+<body class="all-color-one">
+  <header>
+    <a class="left-img" href="javascript:history.go(-1);"><img src="./img/back-left.png"></a>
+    <h4>修改资料</h4>
+    <a class="right-text" href="index.html">家教网</a>
+  </header>
+  <div>
+  <form>
+    <div class="y-title"><span>基本资料</span></div>
+      <div class="ziliao-header common">
+        <p>  <em>头像</em> <img src="./img/128.png"></p>
+      </div>
+
+      <div class="name-set common">
+          <p onclick="reviseName($(this))"> <em>姓名</em> <span id="name">张美美</span></p>
+      </div>
+      <div class="mobile-set common" style="border-bottom:1px solid #eee;">
+         <a href="reviseMobile.html"> <p><em>手机号</em> <span>151989898989</span></p></a>
+      </div>
+      <div class="resave-btn"><button class="gopay">保存</button></div>
+      </form>
+      <form>
+      <div class="y-title"><span>授课信息</span></div>
+      <div class="teacherY-set common" style="border-bottom:1px solid #eee;">
+          <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em>教 &nbsp&nbsp 龄:</em> <span>1年以内</span></p>
+          <ul class="dropdown-menu">
+            <li><a >Action</a></li>
+            <li><a >Another action</a></li>
+            <li><a >Something else here</a></li>
+            <li><a >Separated link</a></li>
+          </ul>
+      </div>
+      <div class="teacherY-sets common">
+          <p><em>授课时间:</em> <label class="re"><input type="checkbox" checked><i>✓</i><span>常年授课</span></label>
+                <label class="re"><input type="checkbox" ><i>✓</i><span>寒假授课</span></label>
+                <label class="re"><input type="checkbox" ><i>✓</i><span>暑假授课</span></label>
+          </p>
+      </div>
+      <div class="common listArry">
+          <table>
+               <thead>
+                   <tr style="background:#f4f4f4">
+                       <th style="width:4rem;">时间</th>
+                       <th style="width:3rem;">一</th>
+                       <th style="width:3rem;">二</th>
+                       <th style="width:3rem;">三</th>
+                       <th style="width:3rem;">四</th>
+                       <th style="width:3rem;">五</th>
+                       <th style="width:3rem;">六</th>
+                       <th style="width:3rem;">日</th>
+                   </tr>
+               </thead>
+              <tbody>
+                  <tr style="background:#fef8dd">
+                      <td >上午</td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                  </tr>
+                  <tr style="background:#e5fcfd">
+                      <td >下午</td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                  </tr>
+                  <tr style="background:#ffe9e9">
+                      <td >晚上</td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                      <td><label class="res"><input type="checkbox" ><i>✓</i></label></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <div class="teacherY-set common">
+          <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em>授课方式:</em> <span>本人上门</span></p>
+          <ul class="dropdown-menu">
+            <li><a >Action</a></li>
+            <li><a >Another action</a></li>
+            <li><a >Something else here</a></li>
+            <li><a >Separated link</a></li>
+          </ul>
+      </div>
+      <div class="teacherY-set common">
+          <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em>授课地点:</em> <span>北京北京市朝阳区</span></p>
+          <ul class="dropdown-menu">
+            <li><a >Action</a></li>
+            <li><a >Another action</a></li>
+            <li><a >Something else here</a></li>
+            <li><a >Separated link</a></li>
+          </ul>
+      </div>
+      <div class="teacherY-set common">
+          <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em>授课科目:</em> <span>语文</span></p>
+          <ul class="dropdown-menu">
+            <li><a >Action</a></li>
+            <li><a >Another action</a></li>
+            <li><a >Something else here</a></li>
+            <li><a >Separated link</a></li>
+          </ul>
+      </div>
+      <div class="teacherY-set common">
+          <p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em>课时费用:</em> <span>50元／小时</span></p>
+          <ul class="dropdown-menu">
+            <li><a >Action</a></li>
+            <li><a >Another action</a></li>
+            <li><a >Something else here</a></li>
+            <li><a >Separated link</a></li>
+          </ul>
+      </div>
+      <div class="ans common">
+          <div class="left">
+              个人介绍:
+          </div>
+          <div class="right">
+              <textarea placeholder="">请从以下几个方面介绍：
+1.什么时间做家教，经验怎么样？
+2.获得过什么奖项或证书？
+3.擅长什么科目？
+4.带过什么样的学生，教学效果如何？</textarea>
+          </div>
+      </div>
+      <div class="resave-btn"><button class="gopay">保存</button></div>
+     </form>
+     <form>
+       <div class="y-title"><span>身份认证</span></div>
+         <div class="common bgWhite">
+          <div class="authen">
+             <h4>所获证书:</h4>
+             <div style="position:relative;">
+               <input data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" type="text" value="" placeholder="比如：教师资格证、学生证" class="zhengshu dropdown-toggle">
+               <ul class="dropdown-menu">
+                  <li><a>Action</a></li>
+                  <li><a>Another action</a></li>
+                  <li><a>Something else here</a></li>
+                  <li><a>Separated link</a></li>
+                </ul>
+             </div>
+             <h4>证书照片:</h4>
+             <div class="imgShow clearfix">
+                <img src="./img/21.png">
+                <div class="an">
+                  <img src="./img/add.png">
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="resave-btn"><button class="gopay">保存</button></div>
+     </form>
+     <form>
+     <div class="y-title"><span>我的相册</span></div>
+     <div class="common bgWhite" style="padding:1.09375rem 1.09375rem 0rem 1.09375rem">
+       <div class="img-box full">
+      <section class=" img-section">
+        
+        <div class="z_photo upimg-div clear" >
+                      <section class="up-section fl"><span class="up-span"></span><img class="close-upimg" src="img/shan.png"><img class="up-img" src="img/ao2.png"><p class="img-name-p">3ji_16.jpg</p><input id="taglocation" name="taglocation" value="" type="hidden"><input id="tags" name="tags" value="" type="hidden"></section>
+                      <section class="up-section fl"><span class="up-span"></span><img class="close-upimg" src="img/shan.png"><img class="up-img" src="img/ao2.png"><p class="img-name-p">3ji_12.jpg</p><input id="taglocation" name="taglocation" value="" type="hidden"><input id="tags" name="tags" value="" type="hidden"></section>
+                      <section class="up-section fl"><span class="up-span"></span><img class="close-upimg" src="img/shan.png"><img class="up-img" src="img/ao2.png"><p class="img-name-p">3ji_06.jpg</p><input id="taglocation" name="taglocation" value="" type="hidden"><input id="tags" name="tags" value="" type="hidden"></section>
+                     <!--  <section class="up-section fl"><span class="up-span"></span><img class="close-upimg" src="img/shan.png"><img class="up-img" src="img/ao2.png"><p class="img-name-p">3ji_05.jpg</p><input id="taglocation" name="taglocation" value="" type="hidden"><input id="tags" name="tags" value="" type="hidden"></section> -->
+                     <section class="z_file fl" >
+                      <img src="img/add1.png" class="add-img">
+                      <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                     </section>
+             </div>
+             <p class="up-p" style="margin-top:0.625rem;clear:both;">注:默认显示最近上传的三张照片</span></p>
+       </section>
+    </div>
+    </div>
+    <div class="resave-btn"><button class="gopay">保存</button></div>
+     </form>
+  </div>
+ 
+
+
+
+<div id="reverseName"  class="tan-qian">
+      <div class="meng"></div>
+      <div class="main-tan">
+          <h4>修改姓名</h4>
+          <input type="text" value="丸子">
+          <div class="button-froup clearfix">
+            <button class="back-qu">取消</button>
+            <button class="go-now">确定</button>
+          </div>
+      </div>
+  </div>
+   <aside class="mask works-mask">
+      <div class="mask-content">
+        <p class="del-p">您确定要删除作品图片吗？</p>
+        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+      </div>
+    </aside>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/imgUp.js"></script>
+<!-- <script src="js/layer.js"></script> -->
+<script type="text/javascript">
+var height=$(document).height();
+var width=$(document).width();
+$(function(){
+    $(".dropdown-menu li a").click(function(){
+        $(this).parents(".dropdown-menu").siblings(".dropdown-toggle").find("span").text($(this).text());
+    })
+    $(".meng").click(function(){
+      $(this).parent().hide();
+      $("body").css({"height":"auto","width":"auto","overflow":"auto"});
+    });
+    $(".go-now").click(function(){
+      var textName=$(this).parents("div").siblings("input").val();
+      $(this).parents(".tan-qian").hide();
+      $("#name").text(textName);
+    })
+})
+ function reviseName(that){
+        $("#reverseName").show();
+    }
+</script>
+</html>

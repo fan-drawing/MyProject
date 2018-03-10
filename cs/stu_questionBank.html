@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-题库练习</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style type="text/css">
+    .header .search {
+        position: absolute;
+        float: none!important;
+        left: 50%;
+        margin-left: -7.3rem;
+        margin-top: 0.465rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header header">
+        <a href="javascript:history.go(-1);" class="back">
+      <img src="img/back.png">
+    </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message">
+            <img src="img/mess.png">
+        </a>
+    </div>
+    <div class="errorTest-box">
+        <div class="bankBlock">
+            <ul class="bankMenue clearfix">
+                <li class="mleft">
+                    <span class="tobottomCommon">科目</span>
+                </li>
+                <li class="mright">
+                    <span class="tobottomCommon">类型</span>
+                </li>
+            </ul>
+        </div>
+        <div class="list_bankTest">
+            <div class="">
+                <ul class="clearfix list_errors">
+                    <li class="limit ">
+                        <a href="stu_questionList.html" class="list_errors_link">
+                            <div class="clearfix item_bank">
+                                <div class="title_item">
+                                    英语基础理论知识
+                                </div>
+                                <div class="numSet">
+                                    <p class="bookRed">
+                                        <span><em class="red">50</em>/<em>100</em></span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                                <div class="numError">
+                                    <p class="errorRed">
+                                        <span>50</span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="limit ">
+                        <a href="#" class="list_errors_link">
+                            <div class="clearfix item_bank">
+                                <div class="title_item">
+                                    英语基础理论知识
+                                </div>
+                                <div class="numSet">
+                                    <p class="bookRed">
+                                        <span><em class="red">50</em>/<em>100</em></span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                                <div class="numError">
+                                    <p class="errorRed">
+                                        <span>50</span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="limit ">
+                        <a href="#" class="list_errors_link">
+                            <div class="clearfix item_bank">
+                                <div class="title_item">
+                                    英语基础理论知识
+                                </div>
+                                <div class="numSet">
+                                    <p class="bookRed">
+                                        <span><em class="red">50</em>/<em>100</em></span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                                <div class="numError">
+                                    <p class="errorRed">
+                                        <span>50</span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="limit ">
+                        <a href="#" class="list_errors_link">
+                            <div class="clearfix item_bank">
+                                <div class="title_item">
+                                    英语基础理论知识
+                                </div>
+                                <div class="numSet">
+                                    <p class="bookRed">
+                                        <span><em class="red">50</em>/<em>100</em></span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                                <div class="numError">
+                                    <p class="errorRed">
+                                        <span>50</span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="limit ">
+                        <a href="#" class="list_errors_link">
+                            <div class="clearfix item_bank">
+                                <div class="title_item">
+                                    英语基础理论知识
+                                </div>
+                                <div class="numSet">
+                                    <p class="bookRed">
+                                        <span><em class="red">50</em>/<em>100</em></span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                                <div class="numError">
+                                    <p class="errorRed">
+                                        <span>50</span>
+                                        <span class="number_set">(练习量)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$(".nav_homework li").click(function() {
+
+    var index = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+})
+</script>
+
+</html>

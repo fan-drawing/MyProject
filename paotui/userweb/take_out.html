@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-用户端-外卖</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/zyadd_adress.css">
+	<link rel="stylesheet" href="css/my.css">
+	<style>
+		body{
+			/*background:#f2f2f2;*/
+		}
+		header .middle{
+			width:80%;
+		}
+		header .middle p{
+			    padding-left: 1.2rem;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>外卖</p>
+	</div>
+	<div class="right"><a href="rule_description.html"><img src="images/wenhao.png" alt=""></a></div>
+</header>
+<div class="take-out-main">
+<form action="" method="post">
+	<div class="serach clearfix">
+		<button><img src="images/sear.png" alt=""></button>
+		<input type="text">
+	</div>
+</form>
+<div class="nearby-goods">
+	<h4 class="clearfix"><span></span><b>附近商品</b><span></span></h4>
+</div>
+<div class="all-classify">
+	<ul class="parent-ul">
+		<li class="li1">
+			<span class="all-span">全部分类</span>
+			<ul class="child-ul">
+				<li><span>吃的</span></li>
+				<li><span>喝的</span></li>
+				<li><span>玩的</span></li>
+				<li><span>乐的</span></li>
+			</ul>
+		</li>
+		<li><span>销量最高</span></li>
+		<li><span>距最近</span></li>
+	</ul>
+</div>
+</div>
+
+<ul class="shopcollect_list">
+	<li>
+		<a href="take-out_details.html">
+			<img src="img/img1.png" class="shopcollect_list_left">
+			<div class="shopcollect_list_right">
+				<h3 class="shop_name">店名称</h3>
+				<p class="shop_money">起送￥10元|配送费￥10元</p>
+				<div class="reduced_price">
+					<div class="reduced_price_left">
+						<img src="img/jian.png">
+						<p>满九十减<span>89</span></p>
+					</div>
+					<div class="reduced_price_right">销量<span>99999</span></div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li>
+		<a href="take-out_details.html">
+			<img src="img/img1.png" class="shopcollect_list_left">
+			<div class="shopcollect_list_right">
+				<h3 class="shop_name">店名称</h3>
+				<p class="shop_money">起送￥10元|配送费￥10元</p>
+				<div class="reduced_price">
+					<div class="reduced_price_left">
+						<img src="img/jian.png">
+						<p>满九十减<span>89</span></p>
+					</div>
+					<div class="reduced_price_right">销量<span>99999</span></div>
+				</div>
+			</div>
+		</a>
+	</li>
+	<li>
+		<a href="take-out_details.html">
+			<img src="img/img1.png" class="shopcollect_list_left">
+			<div class="shopcollect_list_right">
+				<h3 class="shop_name">店名称</h3>
+				<p class="shop_money">起送￥10元|配送费￥10元</p>
+				<div class="reduced_price">
+					<div class="reduced_price_left">
+						<img src="img/jian.png">
+						<p>满九十减<span>89</span></p>
+					</div>
+					<div class="reduced_price_right">销量<span>99999</span></div>
+				</div>
+			</div>
+		</a>
+	</li>
+</ul>
+
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+		$('.child-ul li').on('click',function(){
+			$(this).addClass('child-li-active').siblings().removeClass('child-li-active');
+			var text = $(this).find('span').text();
+			$('.parent-ul .li1').find('.all-span').text(text);
+			// alert(text);
+		});
+		$('.parent-ul>li').eq(2).css({'borderRight':'none'});
+		$('.parent-ul .li1').on('click',function(){
+			$(this).find('.child-ul').toggle();
+		})
+	})
+</script>
+</body>
+</html>

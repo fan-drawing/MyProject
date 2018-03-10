@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-资讯列表</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <p class="title">资讯</p>
+    <div class="right">
+      <a href="index.html">家教网</a>
+    </div>
+  </div>
+  <div class="infor">
+    <ul class="infor-nav">
+      <li>
+        <a href="javascript:;" class="active">动态</a>
+      </li>
+      <li>
+        <a href="javascript:;">小学</a>
+      </li>
+      <li>
+        <a href="javascript:;">初中</a>
+      </li>
+      <li>
+        <a href="javascript:;">高中</a>
+      </li>
+    </ul>
+    <div class="infor-matter">
+      <ul class="infor-list">
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+      </ul>
+      <ul class="infor-list">
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+      </ul>
+       <ul class="infor-list">
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+      </ul>
+       <ul class="infor-list">
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+        <li>
+          <a href="information_details.html">
+            <div class="text">北京启明星大学生家教值得信赖北京启明星大学生家教值得信赖</div>
+            <div class="time">2017-10-28</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+  $('.infor-nav li').click(function(){
+    var cc=$(this).index();
+    $(this).find('a').addClass('active').parent().siblings().find('a').removeClass('active');
+    $('.infor-list').eq(cc).show().siblings().hide();
+  })
+</script>
+</html>

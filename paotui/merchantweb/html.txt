@@ -1,0 +1,35 @@
+faq.html   常见问题
+Terms_of_Service.html   服务条款
+
+
+rule_description.html   规则说明
+
+About_us.html 关于我们
+
+change_password.html  修改密码
+
+
+set 设置
+
+system_ to_notify.html  系统通知
+account_details.html   账户明细
+order_details.html   订单明细
+new_activity.html  新建活动
+
+option_city.html  城市选择
+
+index.html 首页
+
+In_store_event.html  满减服务 店铺活动
+
+new_activity.html 满减服务 新建活动
+
+marketing.html  营销
+
+evaluate.html  评价
+manage.html  菜品管理
+
+new_dish.html 添加新菜品
+
+shop_message.html 店铺信息
+shop_Management.html  店铺管理

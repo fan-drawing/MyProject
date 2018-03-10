@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-提现</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/faq.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+	</style> 
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/back_icon.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>提现</p>
+	</div>
+</header>
+<div class="Withdraw">
+	<form action="" method="post">
+		<div class="input-box">
+			<div class="box">
+				<p>姓名</p>
+				<input type="text">
+			</div>
+			<div class="box">
+				<p>手机号</p>
+				<input type="text">
+			</div>
+			<div class="box">
+				<p>提现金额</p>
+				<input type="text">
+			</div>
+		</div>
+		<div class="radio-box">
+			<div class="box">
+				<div class="R-Show clearfix">
+					<div class="left"><img src="images/zfb.png" alt=""></div>
+					<div class="middle">支付宝</div>
+					<div class="pay-img">
+						<input type="radio">
+						<img src="images/xz.png" alt="">
+					</div>				
+				</div>
+				<div class="R-Hide">
+					<input type="text" placeholder="请输入支付宝账号">
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="R-Show clearfix">
+					<div class="left"><img src="images/weixin.png" alt=""></div>
+					<div class="middle">微信</div>
+					<div class="pay-img">
+						<input type="radio">
+						<img src="images/no_check.png" alt="">
+					</div>				
+				</div>
+				<div class="R-Hide" style="display:none;">
+					<input type="text" placeholder="请输入微信账号">
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="R-Show clearfix">
+					<div class="left"><img src="images/ka.png" alt=""></div>
+					<div class="middle">银行卡</div>
+					<div class="pay-img">
+						<input type="radio">
+						<img src="images/no_check.png" alt="">
+					</div>				
+				</div>
+				<div class="R-Hide" style="display:none;">
+					<input type="text" placeholder="请输入银行卡账号">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+			$('.pay-img').on('click',function(){
+				$(this).find('img').attr('src','images/xz.png');
+				$(this).parents('.box').siblings('.box').find('.pay-img').find('img').attr('src','images/no_check.png');
+				$(this).parents('.R-Show').siblings('.R-Hide').slideDown();
+				$(this).parents('.box').siblings('.box').find('.R-Hide').slideUp('fast');
+			});
+		});
+	</script>
+</body>
+</html>

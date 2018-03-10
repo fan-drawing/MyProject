@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-注册教员</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/common.css" type="text/css" rel="stylesheet"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body class="grey">
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <p class="title">注册教员</p>
+    <div class="right">
+      <a href="login_p.html">登录/</a>
+      <a href="sign1.html">注册</a>
+    </div>
+  </div>
+ <div class="cadet-message">
+   <p class="words">欢迎注册会员</p>
+ </div>
+ <div class="sign-messagebox">
+  <div class="sitem-list">
+     <span class="left">手机号码：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入手机号（手机号即为用户名）">
+     </div>
+  </div>
+   <div class="sitem-list">
+     <span class="left">邮箱：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入邮箱">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">姓名：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入姓名">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">设置密码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入6～16位数字或字母">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">确认密码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入确认密码">
+     </div>
+  </div>
+  <div class="sitem-list">
+       <span class="left">注册地址：</span>
+       <div class="right">
+         <section class="express-area">
+              <a id="expressArea" href="javascript:void(0)">
+                  <dl>
+                      <dd>请选择您所在的城市</dd>
+                  </dl>
+              </a>
+          </section>
+       </div>
+    </div>
+<div class="sitem-list">
+     <span class="left">高校：</span>
+     <div class="right">
+      <select class="sel-school">
+        <option>高校</option>
+        <option>高校1</option>
+      </select>
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">教龄：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>请选择教龄</option>
+        <option>1年内</option>
+      </select>
+     </div>
+  </div>
+  <div class="class-time">
+    <div class="top">
+      <span class="t-words">授课时间：</span>
+      <div class="t-time-matter">
+        <div class="t-time-list">
+          <label for="sel1">
+            <input type="radio" name="pro" id="sel1">
+            <span>常年授课</span>
+          </label>
+        </div>
+         <div class="t-time-list">
+         <label for="sel2">
+            <input type="radio" name="pro" id="sel2">
+            <span>寒假授课</span>
+          </label>
+        </div>
+         <div class="t-time-list">
+          <label for="sel3">
+            <input type="radio" name="pro" id="sel3">
+            <span>暑假授课</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <table>
+        <tr>
+          <td>时间</td>
+          <td>一</td>
+          <td>二</td>
+          <td>三</td>
+          <td>四</td>
+          <td>五</td>
+          <td>六</td>
+          <td>日</td>
+        </tr>
+        <tr>
+          <td>上午</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>下午</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>晚上</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">授课方式：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>本人上门</option>
+      </select>
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">授课地点：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>请选择授课地点</option>
+      </select>
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">授课科目：</span>
+     <div class="right">
+      <select class="sel-tage">
+        <option>请选择授课科目</option>
+      </select>
+     </div>
+  </div>
+  <div class="per-intro">
+    <span class="left">个人介绍：</span>
+    <div class="right">
+      <textarea placeholder="请从以下几个方面介绍：
+1.什么时间做家教，经验怎么样？
+2.获得过什么奖项或证书？
+3.擅长什么科目？
+4.带过什么样的学生，教学效果如何？"></textarea>
+    </div>
+  </div>
+    <div class="sitem-list s-code">
+     <span class="left">验证码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入验证码">
+       <div class="code-img">
+         <img src="img/yzm2.png">
+       </div>
+     </div>
+  </div>
+  <div class="imgs-file">
+    <span class="left">相册上传：</span>
+    <div class="right">
+          <div class="img-box full">
+      <section class=" img-section">
+        <div class="z_photo upimg-div clear" >
+           <section class="z_file fl">
+            <img src="img/add1.png" class="add-img">
+            <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+           </section>
+        </div>
+      </section>
+      <p class="up-p">注：可上传授课风采的照片，最多4张</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="sign-btn">
+    <button>注册</button>
+  </div>
+  <div class="agree agree-bottom">
+    <div class="agree-img">
+      <input type="checkbox">
+      <img src="img/dui.png">
+    </div>
+    <div class="text">我已阅读并同意<a href="#">《会员协议和隐私条款》</a></div>
+  </div>
+
+ </div>
+ <!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box">
+            <header>
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </header>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"></ul>
+            </article>
+        </section>
+        <!--遮罩层-->
+        <div id="areaMask" class="mask"></div>
+    <aside class="mask works-mask">
+      <div class="mask-content">
+        <p class="del-p">您确定要删除图片吗？</p>
+        <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+      </div>
+    </aside>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.area.js"></script>
+<script src="js/imgUp.js"></script>
+<script type="text/javascript">
+  $('.agree-img').click(function(){
+    if($(this).find('img').attr('src')=="img/dui.png"){
+      $(this).find('img').attr('src','img/nos.png')
+    }else{
+      $(this).find('img').attr('src','img/dui.png')
+    }
+  })
+</script>
+<script>
+  // $('#file').takungaeImgup({
+  //   formData:{"path":"art/","name":"uploadPic"},
+  //   url:appServer+"/ajax/uploadPic.html",
+  //   success:function(data){
+  //     console.log(data);
+  //   },
+  //   error:function(err){
+  //     console.log(error);
+  //   }
+  // })
+</script>
+</html>

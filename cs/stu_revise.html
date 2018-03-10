@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-修改资料</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body style="background:#f8f8f8;">
+	<div class="study-header">
+		<a href="javascript:history.go(-1);" class="back">
+			<img src="img/back.png">
+		</a>
+		<p class="text">修改资料</p>
+	</div>
+  <div class="revise">
+    <ul class="clearfix">
+      <li class="">
+        <a href="#">
+          <div class="clearfix item_revise">
+            <span class="left">头像</span>
+            <img class="rightImg" src="./img/example.png">
+          </div>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <div class="clearfix item_revise">
+            <span class="left">昵称</span>
+            <span class="rightText">安安</span>
+          </div>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <div class="clearfix item_revise">
+            <span class="left">姓名</span>
+            <span class="rightText">安安(已实名)</span>
+          </div>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <div class="clearfix item_revise">
+            <span class="left">手机号</span>
+            <span class="rightText">1212919284923</span>
+          </div>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <div class="clearfix item_revise">
+            <span class="left">签名</span>
+            <p class="rightTextP">睡觉是一门艺术，谁也无法阻挡我追求
+艺术的脚步。</p>
+          </div>
+        </a>
+      </li>
+       <li class="">
+        <a href="stu_myAddress.html">
+          <div class="clearfix item_revise">
+            <span class="left">收货地址</span>
+            <span class="rightText"></span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/echarts.js"></script>
+<script type="text/javascript">
+  
+  $(function(){
+    $(".ul_nav_C li").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      var index =$(this).index();
+      $(".transparentS").find(".bing").eq(index).show().siblings().hide();
+    })
+  })
+</script>
+</html>

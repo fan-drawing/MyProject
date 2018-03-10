@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-课程详情页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/c_index.css">
+    <style type="text/css">
+    .video-js .vjs-big-play-button {
+        top: 50%;
+        margin-top: -0.75em;
+        left: 50%;
+        margin-left: -1.5em;
+    }
+
+    .vjs-volume-control {
+        width: 5em!important;
+        height: 3em!important;
+        opacity: 1!important;
+    }
+
+    .vjs-button>.vjs-icon-placeholder:before {
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+
+    .video-js .vjs-volume-bar {
+        margin: 1.38em 0.45em;
+    }
+
+    .vjs-volume-level {
+        opacity: 1!important;
+    }
+
+    .video-js .vjs-volume-panel.vjs-volume-panel-horizontal {
+        width: 9em!important;
+    }
+    </style>
+</head>
+
+<body style="padding-top:0;">
+    <div class="videoSet">
+        <div class="top">
+            <a href="javascript:history.go(-1);"><img src="./img/backWhite.png">
+    </div>
+
+
+
+    <video id="my-video" class="video-js" width="675" height="325" controls preload="auto" poster="./img/19.png" data-setup="{}">
+        <source src="http://cs.yemian.zaiyoudao.com/MP3/J.Fla - Closer.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="box_size">
+    <p class="title_V">
+        教你编写小故事
+    </p>
+    <a href="#" class="sc-teacher">
+        <img src="img/r1.png">
+        <p>Teacher Mr.Kim</p>
+    </a>
+            <p class="price"><span>￥</span><em>69.00</em></p>
+            <p class="show_title">
+                简介：纯正美式英语发音，形成第二母语思维能力，能流利的运用英语进行日常生活交流，独立表达想法、意见。培养孩子良好的语言学习基础和认知能力。
+            </p>
+            <p class="homeWork"><a href="stu_homeworkList.html">课后作业</a></p>
+        </div>
+        <div class="comment_block special">
+            <p class="sign_title"><span class="title">学生评论</span><span class="rightIconG"><img style="margin-right:0.3rem;" src="./img/xg.png"><em>评论</em></span></p>
+            <ul class="clearfix">
+                <li class="item_comment">
+                    <img src="./img/header.png">
+                    <div class="item_text">
+                        <div class="bgSet" style="background:#fff;">
+                            <div>
+                                <p><span class="tit">周亚弄:</span><span class="date">2017-11-25 15:25:30</span></p>
+                                <p class="tit_main" style="text-align:justify;">这个阶段的孩子有强烈的表达欲，但不具备写句的能力。选词填句是孩子借助词库来填写一个有意义的句子。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item_comment">
+                    <img src="./img/header.png">
+                    <div class="item_text">
+                        <div class="bgSet" style="background:#fff;">
+                            <div>
+                                <p><span class="tit">周亚弄:</span><span class="date">2017-11-25 15:25:30</span></p>
+                                <p class="tit_main" style="text-align:justify;">这个阶段的孩子有强烈的表达欲，但不具备写句的能力。选词填句是孩子借助词库来填写一个有意义的句子。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item_comment">
+                    <img src="./img/header.png">
+                    <div class="item_text">
+                        <div class="bgSet" style="background:#fff;">
+                            <div>
+                                <p><span class="tit">周亚弄:</span><span class="date">2017-11-25 15:25:30</span></p>
+                                <p class="tit_main" style="text-align:justify;">这个阶段的孩子有强烈的表达欲，但不具备写句的能力。选词填句是孩子借助词库来填写一个有意义的句子。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="box_floor">
+            <div class="clearfix left_floot">
+                <div class="left">
+                    <span>
+           <img src="./img/xin.png">
+           <em>收藏</em>
+       </span>
+                    <span>
+           <img src="./img/share.png">
+           <em>分享</em>
+       </span>
+                    <span>
+           <img src="./img/carg.png">
+       </span>
+                </div>
+                <div class="right">
+                    <button>￥69.00 购买 </button>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/video.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+var myPlayer = videojs('my-video');
+videojs("my-video").ready(function() {
+
+});
+</script>
+
+</html>

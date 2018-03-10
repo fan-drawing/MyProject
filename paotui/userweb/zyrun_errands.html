@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-用户端-跑腿申请</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/zyadd_adress.css">
+	<style>
+		body{
+			background:#f2f2f2;
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="">
+<header class="clearfix">
+  <div class="back">
+    <a href="#"><img src="images/s_back.png" alt=""></a>
+  </div>
+  <div class="middle">
+    <p>跑腿申请</p>
+  </div>
+</header>
+<div class="add_adress_box">
+	<ul class="add_adress_list add_adress_list1">
+		<li>
+			<span>所在城市</span>
+			<input type="text" name="" placeholder="刘先生">
+		</li>
+		<li>
+			<span>真实姓名</span>
+			<input type="text" name="" placeholder="张三">
+		</li>
+		<li>
+			<span>身份证号</span>
+			<input type="text" name="" placeholder="1313281890106456">
+		</li>
+		<li>
+			<span>紧急联系人</span>
+			<input type="text" name="" placeholder="李四">
+		</li>
+		<li>
+			<span>联系人电话</span>
+			<input type="text" name="" placeholder="15198700166">
+		</li>
+	</ul>
+	<p class="please_take">请按照示例样式进行拍照，保证照片清晰</p>
+	<ul class="teke_list">
+		<li>
+			<div class="teke_list_left1">
+				<img src="img/pic1.png">
+			</div>
+		</li>
+		<li>
+			<div class="teke_list_right">
+				<div class="file_img">
+					<img src="img/pic4.png">
+					<p>点击上传</p>
+				</div>
+				<input type="file" name="">
+			</div>
+		</li>
+		<li>
+			<div class="teke_list_left2">
+				<img src="img/pic2.png">
+			</div>
+		</li>
+		<li>
+			<div class="teke_list_right">
+				<div class="file_img">
+					<img src="img/pic4.png">
+					<p>点击上传</p>
+				</div>
+				<input type="file" name="">
+			</div>
+		</li>
+		<li>
+			<div class="teke_list_left3">
+				<img src="img/pic3.png">
+			</div>
+		</li>
+		<li>
+			<div class="teke_list_right">
+				<div class="file_img">
+					<img src="img/pic4.png">
+					<p>点击上传</p>
+				</div>
+				<input type="file" name="">
+			</div>
+		</li>
+	</ul>
+	<p class="agree_user1">提交表示同意并接受<a href="#">《用户协议》</a></p>
+	<p class="agree_user2">平台审核后会电话和您沟通</p>
+	<button class="submit_btn">立即提交</button>
+</div>
+
+</form>
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$('.select_button').click(function(){
+		$(this).find('img').toggle();
+	})
+	</script>
+</body>
+</html>

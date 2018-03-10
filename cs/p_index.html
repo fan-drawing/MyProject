@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家长端-首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/c_index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="area">
+            <select>
+                <option>北京</option>
+            </select>
+        </div>
+        <div class="kid-img">
+            <img src="img/kids.png">
+        </div>
+        <a class="message" href="p_message.html">
+            <img src="img/fmes.png">
+        </a>
+    </div>
+    <div class="kid-intro clearfix">
+        <div class="left">
+            <img src="img/pkid.png">
+        </div>
+        <div class="right">
+            <div class="l-p clearfix">
+                <div class="level clearfix">
+                    <img src="img/zuan.png">
+                    <span>LV:10</span>
+                </div>
+                <div class="progress-box clearfix">
+                    <span class="text">EXP</span>
+                    <div class="p-bar">
+                        <div class="p-bar-matter">
+                            <span style="width:80%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="name-box">
+                <span class="left1">
+            <span class="greyc">昵称:</span>
+                <span class="blackc">彤彤</span>
+                </span>
+                <span class="right1">
+            <span class="greyc">姓名:</span>
+                <span class="blackc">周彦彤<span class="pinkc">(实名)</span></span>
+                </span>
+            </div>
+            <p class="tel">
+                <span class="left1">手机:</span>
+                <span class="right1">155-4659-4596</span>
+            </p>
+            <p class="signature">
+                <span class="left1">签名:</span>
+                <span class="right1">睡觉是门艺术，谁也无法阻挡我追求艺术的脚步</span>
+            </p>
+        </div>
+    </div>
+    <div class="pi-list">
+        <a href="learning_progress.html" class="learning-nav">
+        <img src="img/jindu.png" class="img">
+        <div class="c-text">
+          <p>学习进度</p>
+          <p>rate of learning</p>
+        </div>
+      </a>
+        <a href="result_view.html" class="rv-nav">
+        <img src="img/cj.png" class="img">
+        <div class="c-text">
+          <p>成绩查看</p>
+          <p>Result view</p>
+        </div>
+      </a>
+        <a href="study_report2.html" class="sr-nav">
+        <img src="img/xx.png" class="img">
+        <div class="c-text">
+          <p>学习报告</p>
+          <p>Study Report</p>
+        </div>
+      </a>
+        <a href="class_view.html" class="cv-nav">
+            <div class="c-text">
+                <p>班级查看</p>
+                <p>Class view</p>
+            </div>
+            <img src="img/bj.png" class="img">
+        </a>
+    </div>
+    <div class="pi-footer">
+        <ul>
+            <li>
+                <a href="p_index.html" class="active kid">
+            <img src="img/kids.png">
+            <span>我的孩子</span>
+          </a>
+            </li>
+            <li>
+                <a href="contact_teacher.html" class="friend">
+            <img src="img/fri.png">
+            <span>我的好友</span>
+          </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.banner .swiper-container', {
+    spaceBetween: 0,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.banner .swiper-pagination',
+        clickable: true,
+    },
+});
+</script>
+
+</html>

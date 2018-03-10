@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>班级</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <link rel="stylesheet" type="text/css" href="css/mobileSelect.css">
+    <style type="text/css">
+    .text-right {
+        height: 100%;
+        line-height: 2.75rem;
+        color: #999999;
+        position: absolute;
+        right: 1.09375rem;
+        top: 0;
+        font-size: 1rem;
+    }
+
+    .teacher-notices {
+        position: relative;
+    }
+
+    .teacher-notices p {
+        position: absolute;
+        right: 2.1rem;
+        bottom: 0.625rem;
+        font-size: 0.625rem;
+        color: #999999;
+    }
+
+    .teacher-notices span {
+        color: #33a9f9;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+	      <img src="img/back.png">
+	    </a>
+        <p class="text">发布通知</p>
+        <a class="text-right">发布</a>
+    </div>
+    <div class="teacher-notice-wrap">
+        <div class="teacher-notice">
+            <div class="teacher-notices">
+                <textarea class="teacher-notice-textarea" placeholder="请输入发布的内容..."></textarea>
+                <p>最多<span>300</span>个字</p>
+            </div>
+            <div class="students-wrap">
+                <div class="notice-student-main" id="trigger1">
+                    <p>选择通知的学生</p>
+                    <p><span>一年级1班</span> <img src="img/create_more.png"></p>
+                </div>
+                <div class="all-select"><img src="img/baiGou.png">全选</div>
+                <ol class="clearfix select-all">
+                    <li class="students-lists">
+                        <div class="children-img" style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists">
+                        <div class="children-img" style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists">
+                        <div class="children-img" style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                    <li class="students-lists active">
+                        <div class="children-img " style="background: url('images/OYZzLHOXjUqswGBz.jpg');background-size: 100%;"></div>
+                        <p class="children-p">李潇潇</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="t_index.html" class="active">
+           <img src="img/ft1.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="index.html">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="teacher_my.html">
+           <img src="img/ft3.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mobileSelect.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var i = 2;
+    $(".all-select").click(function() {
+        if (i % 2) {
+            $(this).find("img").attr("src", "img/baiGou.png")
+            $(".select-all li").removeClass("active");
+        } else {
+            $(this).find("img").attr("src", "img/report_tab_select.png");
+            $(".select-all li").addClass("active");
+        }
+        i++;
+    })
+    $(".select-all li").click(function() {
+        $(this).toggleClass("active");
+        if ($(this).parents('.select-all').find(".active").length != $(".select-all li").length) {
+            $('.all-select img').attr("src", "img/baiGou.png");
+            i = 2;
+        } else {
+            $('.all-select img').attr("src", "img/report_tab_select.png");
+            i = 1;
+        }
+    })
+    var weekdayArr = ["一年级1班", "一年级2班", "一年级3班", "二年级1班", "二年级2班", "三年级1班"];
+    var mobileSelect1 = new MobileSelect({
+        trigger: '#trigger1',
+        title: '班级选择',
+        wheels: [
+            { data: weekdayArr }
+        ],
+        position: [1], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+        transitionEnd: function(indexArr, data) {},
+        callback: function(indexArr, data) {
+            $("#trigger1").html('<p>选择通知的学生</p><p><span>' + data[0] + '</span> <img src="img/create_more.png"></p>');
+
+        }
+    });
+})
+</script>
+
+</html>

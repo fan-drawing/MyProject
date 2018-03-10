@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>班级</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <style type="text/css">
+    .header.study-header .message {
+        position: absolute;
+        top: 0.75rem;
+        right: 0;
+        color: #999999;
+        font-size: 0.875rem;
+        margin-top: 0;
+    }
+
+    .header .message img {
+        width: 1.0625rem;
+        height: 1.0625rem;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header study-header">
+        <a href="javascript:history.go(-1);" class="back">
+          <img src="img/back.png">
+        </a>
+        <div class="search">
+            <a href="#" class="img">
+                <img src="img/ser.png">
+            </a>
+            <input type="text" class="text" placeholder="搜索关键词">
+        </div>
+        <a class="message" href="create_courseware.html">
+            <img src="img/edit_icon_hei.png">
+        </a>
+    </div>
+    <div class="courseware-management">
+        <div class="courseware-tab">
+            <ol>
+                <li class="courseware-tab-lists">科目</li>
+                <li class="courseware-tab-lists">付费</li>
+                <li class="courseware-tab-lists">类型</li>
+                <li class="courseware-tab-lists">排序</li>
+            </ol>
+        </div>
+        <div class="courseware-tab-main">
+            <ul>
+                <li class="courseware-tab-lists">
+                    <div class="tab-lists-top">
+                        <h3 class="lists-top-title">英语课件</h3>
+                        <img src="img/del_icon.png">
+                    </div>
+                    <div class="lists-top-msg">
+                        <div class="msg-img">
+                            <img src="images/OYZzLHOXjUqswGB12313.jpg">
+                        </div>
+                        <div class="lists-top-msg-right">
+                            <p class="lists-msg-p">这个课件很详细这个课件很详细这个课件很详细这个课件很详细这个课...</p>
+                            <div class="price">价格:免费</div>
+                            <div class="fabulous-wrap">
+                                <div class="fabulous"><img src="img/fabulous_none_icon.png"><span>102</span></div>
+                                <div class="comment"><img src="img/comment_icon.png"><span>102</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="courseware-tab-lists">
+                    <div class="tab-lists-top">
+                        <h3 class="lists-top-title">英语课件</h3>
+                        <img src="img/del_icon.png">
+                    </div>
+                    <div class="lists-top-msg">
+                        <div class="msg-img">
+                            <img src="images/OYZzLHOXjUqswGB12313.jpg">
+                        </div>
+                        <div class="lists-top-msg-right">
+                            <p class="lists-msg-p">这个课件很详细这个课件很详细这个课件很详细这个课件很详细这个课...</p>
+                            <div class="price">价格:免费</div>
+                            <div class="fabulous-wrap">
+                                <div class="fabulous"><img src="img/fabulous_none_icon.png"><span>102</span></div>
+                                <div class="comment"><img src="img/comment_icon.png"><span>102</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="courseware-tab-lists">
+                    <div class="tab-lists-top">
+                        <h3 class="lists-top-title">英语课件</h3>
+                        <img src="img/del_icon.png">
+                    </div>
+                    <div class="lists-top-msg">
+                        <div class="msg-img">
+                            <img src="images/OYZzLHOXjUqswGB12313.jpg">
+                        </div>
+                        <div class="lists-top-msg-right">
+                            <p class="lists-msg-p">这个课件很详细这个课件很详细这个课件很详细这个课件很详细这个课...</p>
+                            <div class="price">价格:免费</div>
+                            <div class="fabulous-wrap">
+                                <div class="fabulous"><img src="img/fabulous_none_icon.png"><span>102</span></div>
+                                <div class="comment"><img src="img/comment_icon.png"><span>102</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="t_index.html" class="active">
+           <img src="img/ft1.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="student_list.html">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="teacher_my.html">
+           <img src="img/ft3.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".courseware-tab-main .courseware-tab-lists img").click(function() {
+        $(this).parents(".courseware-tab-lists").remove();
+    })
+})
+</script>
+
+</html>

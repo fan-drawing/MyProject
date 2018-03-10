@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>学生端-学生消息</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/z_index.css">
+    <link rel="stylesheet" href="css/sc_t.css">
+    <style>
+    .study-header .edit img {
+        width: 1.1875rem;
+        height: 1.375rem;
+        margin-top: 0.7rem;
+		
+    }
+	body{}
+    </style>
+</head>
+
+<body style="padding-top:2.75rem!important;">
+    <div class="study-header">
+        <a href="javascript:history.go(-1);" class="back">
+         <img src="images/sc_t_1.png">
+        </a>
+        <p class="text black">学生消息</p>
+        <a href="javascript:;" class="edit"><img src="images/sc_t_22.png" alt=""></a>
+    </div>
+    <div class="sc-box">
+        <div class="English">
+            <ul class="s-message">
+                <li class="clearfix pr">
+                    <a href="javascript:;">
+                        <div class="li-top c-333">
+                            <img src="images/sc_t_23.png" alt="">
+                            <span>李华</span>
+                        </div>
+                        <div class="li-content">
+                            <p class="c-333">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus </p>
+                        </div>
+                        <p class="c-333 bom-p">2017-01-01 18:20</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  -->
+    <div class="empty-tf"></div>
+    <div class="ti-footer">
+        <ul>
+            <li>
+                <a href="#">
+           <img src="images/ft01.png">
+           <p>首页</p>
+         </a>
+            </li>
+            <li>
+                <a href="#">
+           <img src="img/ft2.png">
+           <p>学生</p>
+         </a>
+            </li>
+            <li>
+                <a href="#" class="active">
+           <img src="images/ft03.png">
+           <p>我的</p>
+         </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+<script type="text/javascript">
+$('.sc-matter ul li .right .t-g .img').click(function() {
+    if ($(this).attr('src') == 'img/xin1.png') {
+        $(this).attr('src', 'img/xin.png');
+    } else {
+        $(this).attr('src', 'img/xin1.png');
+    }
+})
+</script>
+
+</html>

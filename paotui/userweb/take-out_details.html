@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes" />
+  	<meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>跑腿-外卖详情</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/header.css">
+	<style>
+		/*body{
+			background:#f2f2f2;
+		}*/
+		header .middle{
+			width:80%;
+		}
+		header .middle p{
+			    padding-left: 1.8rem;
+		}
+		.forMyPurchase footer .footer-right a{
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+<header class="clearfix">
+	<div class="back">
+		<a href="#"><img src="images/s_back.png" alt=""></a>
+	</div>
+	<div class="middle">
+		<p>外卖详情</p>
+	</div>
+	<div class="right"><a href="rule_description.html"><img src="images/wenhao.png" alt=""></a></div>
+</header>
+<div class="forMyPurchase">
+	<div class="take-out">
+		<ul class="clearfix">
+			<li class="take-li-border"><a href="#">菜单</a></li>
+			<li><a href="evaluate.html">评价</a></li>
+			<li><a href="take-out_details_shop.html">店铺</a></li>
+		</ul>
+	</div>
+
+	<!-- 购物车加减 -->
+	<div class="cardNum">
+		<div class="cardShop-box clearfix">
+			<div class="left"><img src="images/my_40.png" alt=""></div>
+			<div class="middle">
+				<h6>商品名称</h6>
+				<p class="p1">店名称</p>
+				<p class="p2">￥<b>15</b></p>
+			</div>
+			<div class="right clearfix">
+				<span class="num-minus"><img src="images/my_46.png" alt=""></span>
+				<input type="text" value="1" readonly="readonly">
+				<span class="num-plus"><img src="images/my_45.png" alt=""></span>
+			</div>
+		</div>
+		<div class="cardShop-box clearfix">
+			<div class="left"><img src="images/my_41.png" alt=""></div>
+			<div class="middle">
+				<h6>商品名称</h6>
+				<p class="p1">店名称</p>
+				<p class="p2">￥<b>15</b></p>
+			</div>
+			<div class="right clearfix">
+				<span class="num-minus"><img src="images/my_46.png" alt=""></span>
+				<input type="text" value="1" readonly="readonly">
+				<span class="num-plus"><img src="images/my_45.png" alt=""></span>
+			</div>
+		</div>
+		<div class="cardShop-box clearfix">
+			<div class="left"><img src="images/my_42.png" alt=""></div>
+			<div class="middle">
+				<h6>商品名称</h6>
+				<p class="p1">店名称</p>
+				<p class="p2">￥<b>15</b></p>
+			</div>
+			<div class="right clearfix">
+				<span class="num-minus"><img src="images/my_46.png" alt=""></span>
+				<input type="text" value="1" readonly="readonly">
+				<span class="num-plus"><img src="images/my_45.png" alt=""></span>
+			</div>
+		</div>
+		<div class="cardShop-box clearfix">
+			<div class="left"><img src="images/my_44.png" alt=""></div>
+			<div class="middle">
+				<h6>商品名称</h6>
+				<p class="p1">店名称</p>
+				<p class="p2">￥<b>15</b></p>
+			</div>
+			<div class="right clearfix">
+				<span class="num-minus"><img src="images/my_46.png" alt=""></span>
+				<input type="text" value="1" readonly="readonly">
+				<span class="num-plus"><img src="images/my_45.png" alt=""></span>
+			</div>
+		</div>
+	</div>
+	<div class="kong"></div>
+	<footer class="clearfix">
+		<div class="footer-left clearfix">
+			<div class="f-l-l">
+				<img src="images/my_9.png" alt="">
+				<span>1</span>
+			</div>
+			<div class="f-l-r">
+				<p>￥15</p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<a href="order_identify.html"><p>去结算</p></a>
+		</div>
+	</footer>
+</div>
+
+
+	<script src="js/rem.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+		$('.purchase-ul1 li').on('click',function(){
+			$(this).addClass('purchaseUlLi-active').siblings().removeClass('purchaseUlLi-active');
+		});
+		$('.num-minus').on('click',function(){
+			var value = $(this).next().val();
+			value--;
+			if(value < 1){
+				value = 1;
+			}
+			$(this).next().val(value);
+		});
+		$('.num-plus').on('click',function(){
+			var value = $(this).prev().val();
+			value++;
+			$(this).prev().val(value);
+		});
+
+
+		$('.manner-right span').on('click',function(){
+			$(this).addClass('manner-span-bg').parents('.clearfix').siblings().find('.manner-right').find('span').removeClass('manner-span-bg');
+	 
+			$(this).siblings('input').attr('checked',true).parents('.clearfix').siblings().find('.manner-right').find('input').removeAttr('checked');
+		});
+
+		$('.footer-right').on('click',function(){
+			$('.Purchase-shade').show();
+		});
+		$('.Purchase-shade-close').on('click',function(){
+			$('.Purchase-shade').hide();
+		});
+	});
+</script>
+</body>
+</html>

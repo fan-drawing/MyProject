@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>家教网-注册学员</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/zy.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="grey">
+  <div class="header yellow">
+    <div class="left">
+      <a href="javascript:;" class="back" onclick="history.go(-1)">
+        <img src="img/baw.png">
+      </a>
+      <select class="area">
+        <option>北京</option>
+      </select>
+    </div>
+    <p class="title">注册学员</p>
+    <div class="right">
+      <a href="login_p.html">登录/</a>
+      <a href="sign1.html">注册</a>
+    </div>
+  </div>
+ <div class="cadet-message">
+   <div class="matter">
+     <div class="left">
+       <img src="img/mess.png">
+     </div>
+     <div class="right">
+       网站对请家教对用户<span class="blue">不收取任何中介费用</span>，拨打本地客服电话：
+    <img src="img/telp.png" class="telimg"><span class="red">123123123（接听时间9:00～18:00）</span>，我们会为您推荐最合
+适的家教老师。您也可以填写以下信息完成注册，注册后可以在
+线预约适合的老师，我们会在<span class="blue">24小时</span>内联系您。
+     </div>
+   </div>
+   <p class="words">欢迎注册会员</p>
+ </div>
+ <div class="sign-messagebox">
+   <div class="sitem-list">
+     <span class="left">注册地址：</span>
+     <div class="right">
+       <section class="express-area">
+            <a id="expressArea" href="javascript:void(0)">
+                <dl>
+                    <dd>请选择您所在的城市</dd>
+                </dl>
+            </a>
+        </section>
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">手机号码：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入手机号（手机号即为用户名）">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">姓名：</span>
+     <div class="right">
+       <input type="text" class="int-infor" placeholder="请输入姓名">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">设置密码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入6～16位数字或字母">
+     </div>
+  </div>
+  <div class="sitem-list">
+     <span class="left">确认密码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入确认密码">
+     </div>
+  </div>
+  <div class="sitem-list s-code">
+     <span class="left">验证码：</span>
+     <div class="right">
+       <input type="password" class="int-infor" placeholder="请输入验证码">
+       <div class="code-img">
+         <img src="img/yzm2.png">
+       </div>
+     </div>
+  </div>
+  <div class="sign-btn">
+    <button>注册</button>
+  </div>
+  <div class="agree">
+    <div class="agree-img">
+      <input type="checkbox">
+      <img src="img/dui.png">
+    </div>
+    <div class="text">我已阅读并同意<a href="#">《会员协议和隐私条款》</a></div>
+  </div>
+  <div class="qr-code1">
+    <img src="img/ma1.png">
+    <p>扫描平台微信二维码，及时与我们业务员联系</p>
+  </div>
+ </div>
+ <!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box">
+            <header>
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </header>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"></ul>
+            </article>
+        </section>
+        <!--遮罩层-->
+        <div id="areaMask" class="mask"></div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.area.js"></script>
+<script type="text/javascript">
+  $('.agree-img').click(function(){
+    if($(this).find('img').attr('src')=="img/dui.png"){
+      $(this).find('img').attr('src','img/nos.png')
+    }else{
+      $(this).find('img').attr('src','img/dui.png')
+    }
+  })
+</script>
+</html>
